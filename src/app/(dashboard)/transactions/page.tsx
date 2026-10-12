@@ -3,7 +3,7 @@ import { getCategories } from '@/actions/categories'
 import { TransactionModal } from '@/components/transactions/TransactionModal'
 import { deleteTransaction } from '@/actions/transactions'
 import { formatCurrency, formatDate } from '@/lib/utils'
-import { ArrowDownRight, ArrowUpRight, Trash2, Filter } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight, Trash2 } from 'lucide-react'
 
 export default async function TransactionsPage() {
   const [transactions, categories] = await Promise.all([
@@ -45,7 +45,7 @@ export default async function TransactionsPage() {
               {transactions.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="py-10 text-center text-slate-500">
-                    Nenhuma transação cadastrada ainda. Clique em "Nova Transação" para começar!
+                    Nenhuma transação cadastrada ainda. Clique em &quot;Nova Transação&quot; para começar!
                   </td>
                 </tr>
               ) : (

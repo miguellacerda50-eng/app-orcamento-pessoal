@@ -1,0 +1,7646 @@
+
+
+=== Introdução e instalação ===
+
+
+--- Boas-vindas ---
+
+1
+Olá, seja muito bem-vindo, ou muito bem-vinda,
+2
+ao curso de Dominando a ITE Antigraft,
+3
+Arquitetura, Agente e Automação.
+4
+Este curso foi pensado para ser um curso rápido,
+5
+objetivo e, sobretudo, prático,
+6
+para que você aprenda a como implementar recursos como
+7
+regras, habilidades, fluxos de trabalho
+8
+e integrações utilizando o protocolo MCP.
+9
+Tudo isso por meio do Google Antigraft IDE.
+10
+Entender estes recursos, sem hype,
+11
+sem sensacionalismo, é fundamental para que você,
+12
+como desenvolvedor de software, se posicione nessa nova era
+13
+em que estamos vivendo, na era da inteligência artificial.
+14
+Estes são recursos já validados pelo mercado de trabalho,
+15
+recursos que já são vastamente utilizados por equipes
+16
+de desenvolvimento de software e que, portanto, são fundamentais
+17
+para que você se mantenha alinhado com o mercado.
+18
+Meu nome é Jorge e eu serei o seu instrutor neste curso.
+19
+Então, sem mais delongas, eu te encontro na próxima aula. Até lá!
+
+--- Apostila do curso ---
+
+[No transcript available for this lecture]
+
+
+=== Criando aplicações com IA ===
+
+
+--- Conexão ---
+
+[No transcript available for this lecture]
+
+
+=== Regras (Rules) - Estruturando o comportamento do Agente ===
+
+
+--- Introdução ao Antigravity ---
+
+1
+Nessa aula, eu farei uma rápida introdução
+2
+a respeito do Antigraft.
+3
+Mas antes de falar do Antigraft, efetivamente,
+4
+nós precisamos dar alguns passos para trás.
+5
+E eu quero começar relembrando você
+6
+a respeito do termo IDE.
+7
+IDE significa Ambiente de Desenvolvimento Integrado.
+8
+Ou seja, um ambiente
+9
+onde nós teremos uma série de recursos integrados
+10
+para o desenvolvimento das nossas aplicações.
+11
+E existem diversos IDEs disponíveis no mercado.
+12
+Um desses IDEs, o mais utilizado, inclusive,
+13
+é o Visual Studio Code,
+14
+uma IDE que nos permite escrever aplicações
+15
+em diferentes linguagens de programação.
+16
+E uma IDE, ela traz, como eu comentei há pouco,
+17
+diversos recursos integrados que facilitam o desenvolvimento.
+18
+Então, eu vou falar aqui rapidamente
+19
+quais são esses recursos tradicionais, ok?
+20
+Então, uma IDE como o VS Code ou qualquer outra,
+21
+ela basicamente nos permite a edição de código.
+22
+Então, por meio da IDE, nós vamos conseguir abrir os arquivos,
+23
+editar o conteúdo dos arquivos,
+24
+criar arquivos, remover arquivos, enfim.
+25
+Basicamente, vamos conseguir lidar com os arquivos
+26
+e com a digitação dos scripts,
+27
+do código-fonte das aplicações.
+28
+As IDEs, elas disponibilizam um gerenciamento de arquivos.
+29
+Basicamente, um explorador
+30
+em que nós temos o diretório do projeto,
+31
+os subdiretórios dentro desse projeto e os arquivos.
+32
+Então, basicamente, uma forma de navegar
+33
+entre os arquivos e subdiretórios do projeto.
+34
+Além disso, as IDEs, de forma geral,
+35
+disponibilizam o autocomplete,
+36
+também conhecido como IntelliSense.
+37
+Basicamente, quando estamos digitando algum comando,
+38
+a IDE sugere o comando completo.
+39
+E aí, nós podemos pressionar geralmente a tecla Tab
+40
+e o comando é inserido ali para nós,
+41
+com o objetivo de diminuir a necessidade de digitação.
+42
+Com o Tab, autocompletando os comandos,
+43
+nós temos condições de digitar o código mais rapidamente.
+44
+Além disso, as IDEs, de modo geral,
+45
+fornecem ferramentas de debug ou depuração.
+46
+Basicamente, nós podemos colocar breakpoints no nosso código,
+47
+executar o código até um determinado ponto
+48
+justamente para testar a lógica,
+49
+o comportamento do estado da aplicação
+50
+até determinado ponto marcado ali.
+51
+Nós temos também a possibilidade de abrir terminais integrados.
+52
+Então, estando dentro da IDE, navegando por entre o nosso código,
+53
+nós temos condições de interagir com o próprio sistema operacional,
+54
+executando comandos no terminal.
+55
+As IDEs, de modo geral, disponibilizam também integração com Git
+56
+para realizar o versionamento do código.
+57
+E, no caso do VS Code, algo que foi muito significativo dessa IDE
+58
+foi a possibilidade de instalar extensões ou plugins
+59
+de forma muito simplificada.
+60
+Essas extensões, esses plugins,
+61
+eles basicamente trazem funcionalidade
+62
+para o Visual Studio Code.
+63
+Ou seja, nós podemos adicionar um plugin
+64
+que vai desde o gerenciamento de containers Docker
+65
+até a análise da qualidade ou da estética do código fonte.
+66
+Então, as mais variadas possibilidades
+67
+de funcionalidades dentro de uma IDE
+68
+podem ser atribuídas, por exemplo, ao VS Code
+69
+justamente com a instalação de uma extensão,
+70
+de um plugin de forma muito simplificada.
+71
+Então, tudo isso trouxe uma revolução
+72
+na época das IDEs tradicionais.
+73
+Elas realmente incorporaram recursos
+74
+que trouxeram muita vantagem para o desenvolvimento,
+75
+para o dia a dia, para a produtividade.
+76
+Mas agora, na era da IA, nós temos uma nova realidade.
+77
+Na verdade, nós temos uma mudança de paradigma significativa.
+78
+E aí surgem novas IDEs,
+79
+novos ambientes de desenvolvimento integrado
+80
+com paradigmas revolucionários.
+81
+O Antigravity, por exemplo, traz um paradigma
+82
+em que ele incorpora tudo o que uma IDE convencional tem.
+83
+Inclusive, o Antigravity é um fork do Visual Studio Code.
+84
+Então, a própria interface visual do Antigravity
+85
+é semelhante ao do VS Code.
+86
+Então, isso traz, inclusive, uma familiaridade para os desenvolvedores.
+87
+Se você vem do VS Code,
+88
+você vai notar que a navegação é análoga, é idêntica.
+89
+Até porque o Antigravity é um fork do VS Code.
+90
+Mas, além de incorporar os recursos que nós já estamos habituados,
+91
+dentro de uma IDE convencional,
+92
+o Antigravity traz essa mudança de paradigma
+93
+porque ele vem como uma plataforma de desenvolvimento
+94
+orientada a agentes.
+95
+Então, a ideia aqui é ter agentes dentro da nossa IDE
+96
+que vão lidar ali controlando diferentes aspectos do projeto.
+97
+Os agentes terão por trás LLMs
+98
+e eles terão também condições de manipular a própria IDE,
+99
+manipular o navegador e o próprio terminal do sistema operacional.
+100
+E o que é bacana é que quando nós temos um agente
+101
+com essa capacidade de controle de diversos recursos
+102
+do nosso computador, nosso ambiente de trabalho,
+103
+e atrás desse agente nós temos um LLM,
+104
+nós temos condições de, por meio de uma linguagem natural,
+105
+encaminhando prompts para esse agente,
+106
+nós temos condições de criar códigos
+107
+de forma muito mais acelerada.
+108
+Então, desde o autocomplete, do IntelliSense,
+109
+o grande objetivo das IDEs sempre foi, de fato,
+110
+trazer produtividade para os desenvolvedores,
+111
+criar código mais rápido.
+112
+E agora com os agentes, com LLMs por trás,
+113
+nós temos condições de criar toda essa codificação
+114
+de forma praticamente autônoma.
+115
+Então, realmente, em termos de digitação de código,
+116
+nós vamos ter uma produtividade imensa.
+117
+Então, agora nós estamos entrando em outra realidade,
+118
+em uma realidade em que o paradigma
+119
+desse ambiente de desenvolvimento integrado
+120
+muda conforme a inteligência artificial e generativa
+121
+vai tomando cada vez mais corpo.
+122
+Bom, na próxima aula, eu vou falar um pouquinho mais
+123
+sobre o que é, de fato, um agente,
+124
+apenas para que esse conceito fique mais claro na sua mente.
+125
+E aí, na sequência, vamos avançar com a instalação
+126
+e a utilização do Antigravity.
+127
+Então, até a próxima aula.
+
+
+=== Fluxos de Trabalho (Workflows) - Fluxos passo a passo para executar tarefas ===
+
+
+--- O que é um Agente de IA? ---
+
+1
+Agora que você já sabe que o Antigraft é uma IDE,
+2
+um ambiente de desenvolvimento integrado,
+3
+que se propõe a atuar em um novo paradigma,
+4
+em um paradigma de orquestração de agentes de inteligência artificial,
+5
+nessa aula, a ideia é que você entenda
+6
+o que é, afinal, um agente de inteligência artificial.
+7
+Bom, um agente de inteligência artificial
+8
+é responsável por analisar e interagir
+9
+com o ambiente onde ele está inserido.
+10
+Então, no caso do Antigraft,
+11
+o agente ou os agentes que estão em execução ali no Antigraft,
+12
+eles vão, basicamente, interagir com o ambiente.
+13
+Eles vão entender qual o conteúdo dos scripts dentro do projeto.
+14
+Eles têm essa capacidade de ler os scripts.
+15
+Os agentes também conseguem interagir com o próprio sistema operacional.
+16
+Então, eles são capazes, por exemplo,
+17
+de instalar programas no sistema operacional
+18
+que são necessários para a execução das tarefas.
+19
+E, além disso, eles também conseguem executar comandos diversos.
+20
+E, inclusive, eles conseguem interagir com o browser.
+21
+Então, é possível solicitar que um agente de IA do Antigraft
+22
+acesse uma determinada aplicação web
+23
+e colete informações dessa aplicação.
+24
+Então, o agente de IA tem essa capacidade,
+25
+analisa e interage com o ambiente.
+26
+E você vai notar que, ao longo do curso,
+27
+nós vamos configurar uma série de capacidades para esses agentes,
+28
+para que eles atuem dentro daquilo que nós esperamos
+29
+e entendemos como sendo o ideal.
+30
+Mas acontece que o agente de IA,
+31
+embora ele tenha essa capacidade de analisar e interagir,
+32
+inclusive de forma autônoma,
+33
+com o ambiente onde ele está em execução,
+34
+ainda assim, ele não detém o conhecimento, ok?
+35
+O conhecimento está em uma LLM.
+36
+Então, por trás de um agente de IA,
+37
+nós precisamos de uma LLM.
+38
+Então, o agente faz essa ponte.
+39
+Nós, desenvolvedores, utilizando o Antigraft,
+40
+vamos entrar com prontes em linguagem natural.
+41
+O agente vai entender todo esse ambiente,
+42
+vai realizar uma série de operações necessárias
+43
+para compreender, para analisar todo o ambiente
+44
+em função do prompt que foi encaminhado.
+45
+E aí, sim, ele vai interagir com a LLM.
+46
+E com base na resposta da LLM,
+47
+ele vai de volta interagir com esse ambiente,
+48
+promovendo todas as alterações, correções,
+49
+enfim, tudo aquilo que for necessário.
+50
+Então, você vai notar que, com apenas linguagem natural,
+51
+nós vamos obter resultados impressionantes.
+52
+A produtividade realmente aumenta significativamente.
+53
+E, no caso do Antigraft,
+54
+a proposta realmente é orquestrar agentes,
+55
+ou seja, ter mais de um agente em execução.
+56
+Você vai notar que isso é possível.
+57
+E essa tem sido a proposta das ideias modernas,
+58
+trazer a execução de múltiplos agentes.
+59
+Claro que existe ainda uma complexidade humana
+60
+em lidar com toda essa, digamos, execução de múltiplos agentes, mas é o futuro.
+61
+As ideias estão cada vez mais tentando facilitar
+62
+o gerenciamento da execução de múltiplos agentes.
+63
+Você vai ver um pouquinho disso,
+64
+o que o Antigraft já tem à disposição em relação a isso.
+65
+Então, é importante a ter em mente.
+66
+Não mais apenas um único agente em execução,
+67
+mas múltiplos agentes realizando tarefas,
+68
+tarefas diferentes em projetos diferentes, inclusive.
+69
+Bom, na próxima aula, nós vamos instalar o Antigraft
+70
+e vamos começar a tirar tudo isso do campo teórico.
+71
+Vamos começar a ver no detalhe como tudo isso funciona.
+72
+Então, até a próxima aula.
+
+
+=== Habilidades (Skills) - Adicionando habilidades ao Agente ===
+
+
+--- Introdução aos produtos do Google Antigravity ---
+
+1
+Em maio de 2026, inclusive durante a gravação deste curso,
+2
+o Google adotou uma estratégia alinhada aos principais players de mercado,
+3
+que é o foco no desenvolvimento Agent-First.
+4
+O que significa Agent-First?
+5
+Significa que agora o Google está colocando o agente de inteligência artificial
+6
+como a peça central no desenvolvimento de código.
+7
+Até então, a peça central é o humano
+8
+apoiado ou assistido por inteligência artificial.
+9
+É dessa forma que estamos hoje, em maio de 2026,
+10
+o estado da arte, digamos assim,
+11
+é o humano desenvolvendo o código apoiado por uma inteligência artificial.
+12
+Mas o Google, assim como outros players de mercado,
+13
+estão apostando agressivamente em um futuro
+14
+em que o agente fará o desenvolvimento do código,
+15
+fazendo com que o desenvolvedor cada vez menos toque no código-fonte
+16
+daquilo que ele está desenvolvendo.
+17
+Porém, essa é uma aposta para o futuro.
+18
+Ainda existe um caminho muito longo
+19
+até alcançarmos esse resultado com produtividade e segurança.
+20
+Mas o Antigraft já está estrategicamente se posicionando com essa ideia.
+21
+E o que isso significa para nós neste momento e neste curso?
+22
+Acontece que o Antigraft antes era um programa só.
+23
+Ele era baixado, instalado e pronto.
+24
+Tínhamos ali a IDE com todas as funções agênticas para serem configuradas.
+25
+Agora, o Antigraft foi dividido em quatro produtos.
+26
+Então, ele passa a ser um ecossistema.
+27
+Se acessarmos o site do antigraft.google,
+28
+aqui na relação de produtos, olha só, é possível ver,
+29
+o Antigraft 2.0 passa a ser um ambiente de orquestração
+30
+de múltiplos agentes simultaneamente, inclusive em background.
+31
+Já o Antigraft CLI chega como uma interface de linha de comando
+32
+para os desenvolvedores.
+33
+E com o tempo, ele deve substituir o Gemini CLI.
+34
+Já o Antigraft IDE, que é o foco deste curso,
+35
+funciona como um ambiente de desenvolvimento integrado,
+36
+que é, neste momento, o padrão de mercado.
+37
+Então, o Google segue alinhado com essa vertente,
+38
+disponibilizando o Antigraft IDE
+39
+com recursos de inteligência artificial agêntica.
+40
+Então, hoje, o que o mercado precisa é o Antigraft IDE,
+41
+ou seja, o desenvolvimento humano assistido por inteligência artificial. Ok?
+42
+Esse é o estado da arte em maio de 2026.
+43
+Mas, como eu já comentei, com a filosofia agent-first,
+44
+a ideia é que o Antigraft 2.0,
+45
+e futuramente as versões superiores, ganhem protagonismo. Combinado?
+46
+Bom, e além desses três, temos também o Antigraft SDK,
+47
+que permite criar e controlar agentes do Antigraft via código,
+48
+em vez de usar via terminal, com CLI, por exemplo, ou via IDE.
+49
+Com essa divisão, o Google sinaliza essa virada histórica.
+50
+A IA deixa de ser apenas um assistente de Copilot
+51
+para se transformar na própria plataforma operacional de desenvolvimento.
+52
+Como eu comentei, é uma decisão estratégica mirando o futuro.
+53
+Neste curso, nós vamos utilizar o Antigraft IDE,
+54
+justamente por ser o padrão de mercado,
+55
+o que é necessário agora e deve continuar sendo pelos próximos anos.
+56
+No entanto, como eu comentei, mantenha o radar ligado.
+57
+O futuro da nossa profissão envolve tocar cada vez menos no código-fonte
+58
+e atuar mais na gestão de agentes de IA que escrevem códigos por nós.
+59
+Algo bacana é que, aprendendo o Antigraft IDE,
+60
+que será apresentado ao longo deste curso,
+61
+você não terá dificuldade em lidar posteriormente com o Antigraft 2.0,
+62
+porque aqui no Antigraft IDE,
+63
+nós vamos trabalhar basicamente sem tocar em código.
+64
+Nós vamos trabalhar nas configurações dos agentes de inteligência artificial.
+65
+Portanto, neste curso, além de aprender o padrão de mercado,
+66
+você ainda terá os insumos necessários para o próximo passo,
+67
+para acompanhar essa revolução
+68
+em que os agentes estão sendo colocados como protagonistas
+69
+na criação do código das aplicações. Combinado?
+70
+Então, eu te encontro na próxima aula. Até lá.
+
+
+=== Protocolo de Contexto do Modelo (MCP - Model Context Protocol) ===
+
+
+--- Instalando o Antigravity IDE ---
+
+1
+Nessa aula, você vai aprender a como realizar a instalação do Google Antigravity.
+2
+O primeiro passo é acessar o site do projeto na internet, no link antigravity.google.
+3
+Ao acessar o site, basta clicar na opção Download.
+4
+Neste momento do vídeo, eu gostaria apenas de abrir um parênteses para acrescentar um conteúdo a esta aula.
+5
+Acontece que o Google subdividiu o Antigravity em produtos distintos, como você viu na aula anterior.
+6
+Então, a página de download está um pouco diferente.
+7
+Você deve navegar até a opção Antigravity IDE e, na sequência, seguir com a seleção do instalador de
+8
+acordo com o seu sistema operacional.
+9
+Então, feita essa observação neste vídeo, vamos retomar a aula.
+10
+O Antigravity está disponível para macOS, Windows e Linux.
+11
+No meu caso, eu farei a instalação para o sistema operacional Windows.
+12
+Para ter certeza se devemos utilizar a versão x64 ou ARM64 no Windows, você pode pesquisar por
+13
+System para acessar o painel de controle.
+14
+E aqui, nesta janela de sistema, é possível ver qual o processador que está sendo utilizado para
+15
+rodar o sistema operacional.
+16
+Então, neste caso, eu vou utilizar a opção x64.
+17
+Caso você esteja utilizando o macOS e o Linux, é só seguir as instruções de instalação.
+18
+E também é fácil pesquisar na internet para ver como executar a instalação nesses sistemas operacionais.
+19
+Então, eu vou começar fazendo o download aqui para o Windows.
+20
+Vou aguardar a conclusão.
+21
+Download completo.
+22
+Vou clicar aqui para executar o Antigravity, o instalador, no caso.
+23
+Muito bem.
+24
+Instalador iniciado.
+25
+Vamos começar aceitando o acordo de uso.
+26
+Basicamente, o Antigravity, a IDE, ela é gratuita, de uso livre.
+27
+Você pode baixar e instalar no seu computador sem nenhum tipo de custo, ok?
+28
+Vamos clicar em avançar.
+29
+Podemos manter o local de instalação conforme o sugerido aqui pelo instalador.
+30
+Repare que ele instala dentro do diretório do usuário.
+31
+Vamos manter dessa forma. Vou avançar.
+32
+Aqui nós podemos indicar se queremos que o Antigravity esteja disponível no menu iniciar.
+33
+Podemos manter conforme o instalador sugere. Vamos avançar.
+34
+As tarefas adicionais também podemos manter de acordo com o padrão, o sugerido.
+35
+Aqui é o resumo da instalação e da configuração que vai ser aplicada nessa instalação.
+36
+Podemos clicar em instalar.
+37
+Vamos aguardar a conclusão da instalação.
+38
+Eu farei um corte no vídeo e retomo assim que a instalação finalizar.
+39
+Muito bem, a instalação foi concluída.
+40
+No meu caso, levou cerca de 3 minutos.
+41
+Vou concluir e vou iniciar o Antigravity aqui na conclusão.
+42
+Muito bem, então essa é a tela de boas-vindas no primeiro acesso ao Antigravity.
+43
+Eu vou fixá-lo aqui na barra de tarefas.
+44
+Legal, e aí podemos avançar.
+45
+Ele pergunta qual é a configuração de fluxo.
+46
+Vou colocar aqui para iniciar sem nada, sem nenhum tipo de importação,
+47
+seja do VS Code ou cursor.
+48
+Aqui nós podemos escolher o tema.
+49
+Vou manter o Dark Modern. Vamos avançar.
+50
+Aqui é como vamos utilizar o Antigravity, os agentes.
+51
+Então olha só, temos várias opções.
+52
+Podemos manter aqui na opção Review Driving Development, que é a opção recomendada.
+53
+Depois vamos falar mais sobre isso. Vamos avançar.
+54
+Aqui é as configurações do editor.
+55
+Podemos manter de acordo com o padrão. Vamos avançar.
+56
+Nessa tela podemos fazer login com Google ou podemos utilizar um projeto no GCP,
+57
+que é a nuvem do Google.
+58
+Podemos ir na opção de entrar com o Google.
+59
+Vou fazer login com a minha conta.
+60
+Vamos retornar à IDE.
+61
+Legal.
+62
+Aqui nós temos os termos de uso.
+63
+Podemos manter de acordo com o que veio aqui já definido. Vou avançar. Muito bem.
+64
+Então essa é a tela inicial do Antigravity.
+65
+Vou só teclar CTRL mais para aumentar o zoom, para facilitar a leitura aqui no vídeo.
+66
+Acho que dessa forma já está com um tamanho legal.
+67
+Ele vai fazer o carregamento e a instalação de alguns recursos, então não se preocupe.
+68
+Por enquanto vamos finalizar a nossa aula por aqui, não se preocupe com tantos detalhes.
+69
+Na próxima aula vamos começar a explorar os recursos da IDE. Então até lá.
+
+
+=== Conclusão ===
+
+
+--- Instalando o Antigravity 2.0 ---
+
+1
+Nessa aula, eu quero abrir um parênteses
+2
+para apresentar para você como que você pode instalar o Antigraft 2.0.
+3
+Acontece que ao longo do mês de maio de 2026, durante a gravação do curso,
+4
+o Antigraft foi subdividido em produtos diferentes.
+5
+Então, antes, nós tínhamos apenas o Antigraft e fazíamos tudo por dentro dele.
+6
+Agora, nós vamos utilizar a IDE para desenvolver o nosso projeto.
+7
+A IDE você já instalou na aula anterior,
+8
+mas para fazer a gestão dos agentes, nós precisamos do Antigraft 2.0.
+9
+Antes, era feito tudo pela IDE.
+10
+Agora, nós precisamos do Antigraft 2.0 para nos apoiar neste processo, ok?
+11
+Então, a ideia aqui é bem simples.
+12
+É que você tenha o Antigraft IDE e o Antigraft 2.0
+13
+para seguir neste curso sem problemas, combinado?
+14
+Bom, então, acessando o antigraft.google,
+15
+basta clicar na opção Download.
+16
+A primeira opção aqui de produto do ecossistema é o Antigraft 2.0.
+17
+Então, é só você selecionar o sistema operacional apropriado para você
+18
+e clicar na opção de download mais adequada.
+19
+Então, vou baixar aqui o Antigraft 2.0 para Windows.
+20
+Vou aguardar o download.
+21
+Download concluído.
+22
+Vou iniciar a instalação.
+23
+No meu caso, eu já tenho o Antigraft IDE instalado
+24
+e eu também já instalei anteriormente o Antigraft 2.0.
+25
+Então, aqui, para mim, a expectativa é que ele já abra o projeto,
+26
+inclusive configurado, que foi criado ao longo do curso.
+27
+Então, no seu caso, como será provavelmente o primeiro acesso,
+28
+você vai precisar seguir ali alguns passos
+29
+adicionando algumas configurações, coisa simples.
+30
+Então, é só você se certificar
+31
+de que a instalação do Antigraft 2.0 foi feita no seu ambiente.
+32
+Não se preocupe com as informações que estão aparecendo aqui no meu caso, ok?
+33
+Como eu comentei, eu já estava utilizando o Antigraft 2.0
+34
+e o Antigraft IDE,
+35
+então, por isso que ele trouxe aqui algumas informações,
+36
+mas não se preocupe.
+37
+Ao longo do curso, nós vamos criar tudo isso,
+38
+vamos adicionar aqui os prompts, vamos criar o projeto,
+39
+tudo será feito de forma passo a passo.
+40
+O importante nessa aula
+41
+é ter o Antigraft 2.0 instalado no seu ambiente
+42
+ao lado do Antigraft IDE que foi instalado na aula anterior.
+43
+Com isso, temos o setup necessário
+44
+para avançar com o desenvolvimento de aplicações
+45
+utilizando inteligência artificial agêntica,
+46
+ou seja, nos adaptando à nova era da inteligência artificial
+47
+no que diz respeito ao desenvolvimento de software.
+48
+Então, até a próxima aula.
+
+--- Formato de cobrança do Antigravity ---
+
+1
+Nessa aula, eu gostaria de abrir um parênteses
+2
+para falar sobre o formato de cobrança do AntiGravity.
+3
+Por envolver custos, geralmente esse tipo de informação
+4
+costuma ser estratégico.
+5
+Então, é interessante que você já tenha
+6
+esse conhecimento neste momento.
+7
+Eu já te adianto que, ao longo deste curso,
+8
+não haverão custos, ok?
+9
+Nós vamos conseguir utilizar toda uma camada gratuita do AntiGravity.
+10
+Mas é interessante que você saiba que
+11
+a IDE do AntiGravity, o Ambiente de Desenvolvimento Integrado,
+12
+este ambiente é gratuito.
+13
+Nós podemos baixar, instalar no nosso computador e utilizá-lo,
+14
+inclusive, para fins comerciais.
+15
+Porém, por trás do agente de inteligência artificial do AntiGravity,
+16
+nós precisamos consumir um modelo de LLM.
+17
+Então, é aqui que entra a cobrança
+18
+que pode acontecer quando estamos trabalhando com o AntiGravity,
+19
+que é justamente em relação ao consumo dos modelos de inteligência artificial.
+20
+O AntiGravity traz alguns modelos pré-definidos.
+21
+Em maio de 2026, que é a data em que eu estou gravando esta aula,
+22
+por padrão, o AntiGravity traz os modelos do Gemini,
+23
+que são os modelos da Google,
+24
+e traz também dois modelos do Cloud e um da OpenAI.
+25
+Então, estes modelos, carregados aqui por padrão,
+26
+cada um deles tem uma camada gratuita.
+27
+Nós podemos utilizar estes modelos a princípio sem custo,
+28
+mas em um dado momento, claro, nós vamos esgotar
+29
+a quantidade de tokens dessa camada gratuita,
+30
+e aí será necessário contratar mais tokens.
+31
+Então, é nesse momento que entram os custos envolvidos
+32
+na utilização do AntiGravity,
+33
+que é basicamente quando precisamos consumir mais tokens
+34
+nos modelos de LLMs.
+35
+Bacana. Sabendo-se disso, voltando aqui no site do AntiGravity,
+36
+olha só, repare que nós temos uma aba chamada Pricing,
+37
+e aqui nós temos o plano individual, gratuito.
+38
+Basicamente, nós vamos conseguir consumir o modelo do Gemini,
+39
+do Cloud e da OpenAI de forma gratuita,
+40
+como eu comentei, nós temos uma camada gratuita de uso desses modelos,
+41
+e claro, todos os recursos da IDE.
+42
+Mas aqui nós também podemos contratar um plano de desenvolvimento
+43
+ou um plano de desenvolvedor do AntiGravity
+44
+por meio do Google One.
+45
+Esse plano, e aí eu vou fazer login aqui, olha só,
+46
+nós precisamos acessar, claro, com o mesmo e-mail utilizado na IDE, ok?
+47
+Esse plano, ele traz aqui, na verdade, duas opções,
+48
+o Google AI Pro e o Google AI Ultra.
+49
+Vale reforçar que os planos, eles são muito dinâmicos,
+50
+nós estamos num momento em que as empresas estão entendendo
+51
+e modificando a forma de exploração desses tipos de serviços,
+52
+então, é natural que esses planos mudem bastante,
+53
+então, no momento em que você estiver assistindo a esse vídeo,
+54
+é esperado que haja algumas mudanças de planos ou de formas de cobrança.
+55
+Mas basicamente, nós temos aqui dois planos nesse momento,
+56
+o AI Pro e o AI Ultra,
+57
+que podem ser contratados em um formato mensal ou anual,
+58
+e basicamente, esses planos vão aumentar as capacidades
+59
+em relação ao consumo de tokens nas LLMs do Gemini, ok?
+60
+Esses planos, eles também trazem benefícios
+61
+em relação à utilização de outras ferramentas do ecossistema do Google.
+62
+Mas, nesse momento, não faz muito sentido
+63
+entrar aqui em cada detalhe, porque são ferramentas distintas
+64
+da que vamos conhecer aqui nesse treinamento.
+65
+Mas, basicamente, o formato de cobrança do Antigravity é esse,
+66
+em relação ao consumo dos modelos.
+67
+Mas, pode ficar tranquilo, pode ficar tranquila,
+68
+neste curso, nós vamos conseguir criar recursos realmente muito profissionais,
+69
+recursos muito bacanas,
+70
+apenas com a camada gratuita desses modelos, tá bom?
+71
+Bom, então, eu te encontro na próxima aula. Até lá.
+
+--- Prompts - Execução direta e Modo de Planejamento ---
+
+1
+Um detalhe sutil, mas que faz toda a diferença
+2
+na hora de lidar com os agentes de adentro do Antigravity,
+3
+são os modos de execução do prompt
+4
+que são encaminhados para esses agentes.
+5
+Acontece que nós podemos trabalhar com um prompt
+6
+de execução direta ou execução rápida,
+7
+e também com um prompt em modo de planejamento.
+8
+Basicamente falando,
+9
+quando nós estamos lidando com uma atividade muito específica
+10
+dentro da aplicação,
+11
+algo pontual, nós podemos utilizar a execução direta.
+12
+Já quando nós estamos lidando com algo mais complexo,
+13
+como, por exemplo, a inicialização de um projeto,
+14
+a implantação dos testes,
+15
+ou configurações mais relevantes
+16
+que acabam contendo mais passos,
+17
+mais complexidade em torno da solução,
+18
+nesses casos, nós podemos adotar o modo de planejamento.
+19
+O modo de planejamento é interessante
+20
+porque o agente de IA pensa antes de executar aquele prompt.
+21
+Ou seja, com base no contexto em que ele está inserido,
+22
+ele adiciona um objetivo,
+23
+ele analisa esse ambiente,
+24
+ele entende o contexto onde ele está,
+25
+ele cria um plano de implantação,
+26
+ou seja, antes de sair executando,
+27
+em uma execução direta, por exemplo,
+28
+ele, na verdade, monta todo um plano, um roteiro
+29
+para, na sequência, de fato, executar esse roteiro.
+30
+E, no final, ele ainda faz uma verificação.
+31
+Ele analisa para verificar se o objetivo
+32
+esperado foi, de fato, alcançado.
+33
+Então, quando estamos lidando com atividades mais complexas,
+34
+o modo de planejamento vai nos ajudar muito.
+35
+E, como eu comentei,
+36
+a utilização do modo de planejamento é algo bastante sutil.
+37
+Se voltarmos aqui no Antigravity, olha só.
+38
+Repare que, no prompt, nós já temos aqui o modo de planejamento
+39
+ativado por padrão.
+40
+Eu posso retirar esse modo de planejamento.
+41
+Então, aqui seria uma execução direta.
+42
+Como eu comentei, não tem problema nenhum
+43
+realizar execuções diretas, execuções rápidas do prompt.
+44
+Mas, nesse caso, o ideal
+45
+é que essas execuções sejam para coisas pontuais.
+46
+A alteração do retorno de uma função
+47
+ou refatorar pequena parte de uma lógica.
+48
+Então, realmente, alterações bem específicas.
+49
+Já quando a complexidade for maior,
+50
+a dica realmente é adicionar o modo de planejamento. Ok?
+51
+Então, vamos fazer um teste aqui.
+52
+Eu vou começar criando um novo projeto.
+53
+Então, eu vou abrir um diretório aqui no Antigravity.
+54
+Lá no diretório C://,
+55
+eu vou criar um novo diretório
+56
+que eu vou chamar de curso-antigravity.
+57
+E aqui dentro, eu vou criar um novo diretório chamado
+58
+app-forçamento-pessoal.
+59
+E, ao abrir esse diretório no Antigravity,
+60
+nós estamos, portanto, iniciando o nosso projeto
+61
+e, automaticamente, o Antigravity cria um workspace
+62
+específico para este projeto.
+63
+Na próxima aula, eu vou falar sobre workspace.
+64
+Ok? Mas tenha em mente que os projetos possuem workspaces
+65
+que são os locais onde os, digamos, as capacidades do agente de IA
+66
+serão armazenados para aquele respectivo projeto.
+67
+E também as configurações da IDE
+68
+feitas especificamente para o projeto.
+69
+Então, tudo isso fica atribuído a um workspace.
+70
+E, nesse caso, repare que workspace tem o mesmo nome do projeto.
+71
+Ok? Mas vamos lá.
+72
+Vamos seguir aqui com a execução de um prompt
+73
+sem o modo planejamento.
+74
+Ok? Então, uma execução fast, uma execução rápida.
+75
+Eu vou apenas copiar um prompt que eu deixei pronto aqui
+76
+para facilitar um pouco o andamento da aula.
+77
+E eu vou executar esse prompt com o modelo Cloud Sonnet.
+78
+Muito bem. Qual é esse prompt?
+79
+Então, olha só. Apresente um prompt
+80
+que eu possa usar no Google Antigravity
+81
+com o modelo Gemini 3 Flash.
+82
+Então, eu vou trocar depois o modelo
+83
+no modo plan, ou seja, no modo planejamento,
+84
+para criar uma aplicação de orçamento pessoal
+85
+utilizando a stack Next com Super Base.
+86
+Então, nós vamos utilizar aqui um back-end as a service
+87
+para suportar a nossa aplicação. Combinado?
+88
+Bom, então, como essa é uma solicitação simples, objetiva,
+89
+o que eu quero é um prompt otimizado.
+90
+Então, como é algo específico,
+91
+eu posso fazer essa execução de forma rápida,
+92
+sem um plano de ação, sem utilizar o modo planejamento.
+93
+Ele está gerando.
+94
+Muito bem. Ele trouxe o resultado.
+95
+Então, repare que é um prompt bastante completo.
+96
+Do ponto de vista de engenharia de prompt,
+97
+nós temos aqui um resultado ideal.
+98
+Claro que nós podemos ler e ajustar aqui as informações,
+99
+mas eu não vou entrar no detalhe agora, ok?
+100
+O importante é que realmente executar um prompt
+101
+sem o modo de planejamento.
+102
+Então, aqui nós temos as informações que foram carregadas.
+103
+Lembrando que eu vou disponibilizar essas interações com o chat
+104
+como recurso dessa aula.
+105
+Então, caso você queira copiar depois, não tem problema nenhum.
+106
+Então, ele trouxe aqui as informações de banco de dados,
+107
+trouxe aqui todos os detalhes,
+108
+os patrões de código obrigatórios, legal,
+109
+os requisitos de design, os entregáveis esperados,
+110
+regras de segurança, bacana.
+111
+Trouxe aqui um plano completo de implementação
+112
+antes de escrever qualquer código.
+113
+Então, ele inclusive pensou,
+114
+mas ele não chegou a gerar esse planejamento de fato,
+115
+mas nós temos aqui o resultado.
+116
+Então, agora, o que eu vou fazer?
+117
+Olha só, eu vou ativar o modo de planejamento
+118
+e aí eu vou adicionar um novo prompt aqui
+119
+para gerar um plano de implantação, ok?
+120
+Então, como nós estamos aqui com o plano de implantação ativo,
+121
+ele vai fazer isso automaticamente, né?
+122
+Mas eu estou reforçando que eu quero gerar o plano de implantação do app
+123
+baseado no prompt para o app orçamento pessoal
+124
+contido no histórico desse chat.
+125
+Então, basicamente, eu estou reaproveitando tudo isso,
+126
+estou pedindo para ele gerar um plano de implantação
+127
+e estou reforçando, olha só, apenas gere o plano, não execute.
+128
+Em algumas situações, ele gera o plano e sai executando.
+129
+Então, eu estou apenas reforçando que eu quero que ele apenas
+130
+mostre esse planejamento para nós.
+131
+Então, vou apenas ajustar aqui o modelo, né?
+132
+Esse prompt, olha só,
+133
+eu gerei para que ele fosse ideal para o Gemini Flash.
+134
+Então, vou alterar aqui para o Gemini Flash, muito bem.
+135
+Vou disparar este prompt e vamos aguardar.
+136
+Muito bem, ele concluiu a geração do plano de execução.
+137
+Então, repare que o plano de execução é um artefato do projeto.
+138
+Ele traz aqui todos os detalhes, né?
+139
+Então, nós podemos dar uma lida, olha só.
+140
+Este documento detalha a estratégia para a construção
+141
+de uma aplicação de gestão financeira robusta
+142
+utilizando o Next, com o app Router e SupaBase,
+143
+com foco em segurança, performance, bacana.
+144
+Então, configuração de SupaBase, ok, é necessário
+145
+que o projeto esteja criado no SupaBase.
+146
+Ele vai precisar das variáveis, né?
+147
+Next Public, SupaBase URL, Next Public SupaBase Anon Key.
+148
+O Taming, ele está colocando aqui na versão 4.
+149
+O fluxo de autenticação, prevê Magic Link mais e-mail e senha.
+150
+Ele verifica aqui se deseja adicionar provedores
+151
+como o Coalf do Google ou o GitHub.
+152
+Ele trouxe aqui informações sobre o sistema, moeda e localização,
+153
+as categorias iniciais.
+154
+Aqui ele trouxe propostas de alteração,
+155
+então configuração de estrutura e persistência e segurança,
+156
+a criação das tabelas,
+157
+a implementação do Row Level Security,
+158
+do RLS lá do SupaBase,
+159
+as triggers para criação automática de perfil e categoria padrão
+160
+no off-signup, enfim, trouxe aqui todas as informações necessárias
+161
+e no plano de execução, claro, nós podemos ler todos os detalhes
+162
+e podemos adicionar informações, adicionar comentários
+163
+que devem ser considerados na sequência, na execução do plano.
+164
+Então, por exemplo,
+165
+eu vou adicionar alguns comentários aqui nessa seção importante, aqui no final.
+166
+Vou colocar aqui o next. Opa.
+167
+Vou colocar aqui o next.
+168
+Deve ser iniciado com a versão 16,
+169
+que é a versão mais atual.
+170
+Eu vou retirar aqui o do Tailwind,
+171
+vou falar, na verdade, para que ele utilize o Tailwind CSS
+172
+na versão mais apropriada,
+173
+de acordo com o next na versão 16. Bacana.
+174
+Então, eu posso ir adicionando comentários nos pontos
+175
+em que eu achar necessário.
+176
+Aqui ele está falando, né,
+177
+Magic Link para o fluxo de autenticação.
+178
+Eu vou colocar aqui que, na verdade,
+179
+eu quero utilizar o método de usuário e senha do Superbase.
+180
+Então, o próprio Superbase tem um serviço de gestão de usuários
+181
+que, inclusive, otimiza, né, já tem toda a parte implantada
+182
+de envio de e-mail, de recuperação de senha e tudo mais.
+183
+Então, nós vamos utilizar o método de usuários do Superbase
+184
+mais à frente, né?
+185
+Nós vamos adicionar a skill do Superbase necessária para isso
+186
+e vamos entender melhor como isso funciona.
+187
+Claro que para realizar um plano bem completo,
+188
+com uma boa qualidade,
+189
+é necessário que você tenha conhecimento técnico
+190
+acerca daquilo que você está fazendo.
+191
+Então, essa stack que eu selecionei
+192
+é uma stack que eu utilizo com frequência.
+193
+Então, eu conheço os detalhes, né?
+194
+Eu sei o que está acontecendo aqui
+195
+em relação a cada citação, a cada definição
+196
+que está sendo apresentada no plano.
+197
+Então, eu consigo ajustar isso
+198
+de acordo com a necessidade deste projeto.
+199
+Bacana. E uma vez que tudo foi revisado, né,
+200
+nós podemos executar o plano.
+201
+Então, eu posso vir aqui no terminal e falar
+202
+execute o plano de implantação.
+203
+Então, novamente, no modo de planejamento,
+204
+ele traz para nós um plano de implantação.
+205
+E aí, eu vou disparar esse prompt
+206
+e ele vai começar a executar tudo
+207
+de forma supervisionada, nesse caso, né?
+208
+Solicitando interação em alguns momentos,
+209
+autorização em alguns momentos para executar algumas atividades,
+210
+mas ele vai começar a seguir todo esse plano.
+211
+Olha só, vamos aguardar.
+212
+Note que, com base no plano,
+213
+ele gerou uma lista de tarefas.
+214
+E agora, como ele está ainda em modo supervisionado,
+215
+se eu voltar aqui, olha só,
+216
+repare que a execução não está automática, né?
+217
+Ela requer uma revisão.
+218
+Então, nesse caso, ele nos questiona,
+219
+o agente nos questiona se ele pode executar essas ações.
+220
+Então, nesse momento, ele vai tentar criar
+221
+a aplicação utilizando a versão mais recente, né?
+222
+A versão LTS do Next.
+223
+Então, eu vou clicar aqui para que sim, pode executar.
+224
+Ele vai interagir com o retorno do terminal.
+225
+Então, pode haver erros,
+226
+mas ele mesmo vai interpretar esses erros
+227
+e vai seguir a ação.
+228
+Então, olha só, ele entendeu que não foi possível criar
+229
+com o comando inicial, né?
+230
+Então, ele vai tentar criar de outra forma agora.
+231
+Então, vou autorizar a execução
+232
+e assim consecutivamente.
+233
+E como ele é baseado em um planejamento
+234
+e ele tem um objetivo sempre no contexto,
+235
+e a partir desse planejamento, ele tem uma lista de tarefas,
+236
+então, ele não perde o contexto, ok?
+237
+Ele vai interagindo dentro do plano de implantação,
+238
+seguindo as tarefas.
+239
+Você vai notar que, inclusive,
+240
+ele vai marcando as tarefas como concluídas.
+241
+E aí, vai validando cada resolução aqui,
+242
+cada entrega de cada tarefa.
+243
+Então, vou seguir aqui executando
+244
+os comandos que o agente está disparando
+245
+diretamente no sistema operacional.
+246
+Olha só, ele começou a inicialização do projeto. Vamos aguardar.
+247
+Repare que, conforme ele vai executando as tarefas,
+248
+ele vai marcando a conclusão
+249
+e vai seguindo aqui para os próximos passos.
+250
+E aí, novamente, sempre mantendo o contexto do plano
+251
+e essa sequência de atividades,
+252
+sempre validando o resultado final
+253
+para garantir que ele não está se desviando
+254
+do objetivo inicial que foi definido pelo prompt.
+255
+Muito bem, ele concluiu a execução.
+256
+Demorou aproximadamente uns 10 minutos.
+257
+Ele trouxe aqui a alteração de alguns arquivos.
+258
+Então, eu vou aceitar todas as alterações.
+259
+Nesse momento, nós temos, inclusive,
+260
+algumas instruções que foram colocadas aqui no chat
+261
+de como lidar com a aplicação,
+262
+o que foi feito, todos os detalhes, legal.
+263
+Alguns arquivos de configuração.
+264
+Nós vamos trabalhar com eles.
+265
+E o que é interessante, nas tarefas,
+266
+a task final sempre é um teste, uma verificação
+267
+para verificar se o resultado gerado
+268
+está de acordo com o plano de implantação.
+269
+Mas, nessa aula, o objetivo é que você compreenda
+270
+o modo de planejamento, ok?
+271
+Sempre quando você tiver um prompt
+272
+cujo objetivo depende de alguns passos,
+273
+então, é interessante ativar o plano
+274
+para evitar que o agente desvia
+275
+do objetivo final em função de contexto
+276
+em relação ao que ele vai trocando de informação
+277
+com o modelo desejado, tá bom?
+278
+Eu vou apenas testar se a aplicação está funcionando.
+279
+Vou colocar aqui no chat mesmo.
+280
+Execute a aplicação
+281
+para que eu possa testar no navegador.
+282
+Como é uma tarefa simples,
+283
+vou retirar aqui o modo de planejamento.
+284
+Posso fechar as abas, vou fechar tudo.
+285
+Bacana. Vamos dar uma olhada.
+286
+Então, o agente quer executar esse comando no terminal,
+287
+no sistema operacional, vou executar.
+288
+Olha só, ele entendeu que um dos arquivos,
+289
+o arquivo middleware-ts,
+290
+na verdade, precisa ser renomeado para proxy-ts.
+291
+Realmente, essa é uma demanda do Next na versão 16
+292
+que troca o nome do arquivo de middleware para proxy.
+293
+Então, ele já entendeu, já solicitou aqui
+294
+a alteração do nome do arquivo.
+295
+Vou fazer essa alteração.
+296
+E olha só, aqui no meu caso, ele disse que o modelo
+297
+já atingiu a cota, o Gemini 3 Flash
+298
+chegou no limite.
+299
+Então, aqui eu posso contratar
+300
+mais tokens para seguir utilizando o modelo.
+301
+Isso porque eu já vinha utilizando o modelo em outros testes.
+302
+Com certeza, você vai conseguir utilizar o Gemini 3 Flash
+303
+por mais algum tempo aí no seu ambiente.
+304
+Eu vou clicar aqui para desfazer.
+305
+Vou aceitar a alteração que foi feita até este momento do proxy.
+306
+Vou apenas trocar o modelo e vou seguir aqui com o Cloud SONET na versão 4.6.
+307
+Vou solicitar a mesma coisa, olha só.
+308
+Execute a aplicação
+309
+para que eu possa testar no navegador.
+310
+Ele identificou a necessidade de ajuste
+311
+no arquivo proxy.ts.
+312
+Vou aceitar os ajustes.
+313
+Vamos verificar se agora ele consegue subir a aplicação.
+314
+Legal, depois de ter interagido com o arquivo proxy.ts,
+315
+corrigindo algumas coisas que foram necessárias,
+316
+aí sim, ele finalmente colocou a aplicação em execução
+317
+no endereço localhost na porta 3000.
+318
+Vou clicar no endereço.
+319
+Vamos verificar se a aplicação está sendo renderizada
+320
+aqui no navegador.
+321
+Olha só, a aplicação carregou, mas ela carregou com um erro
+322
+em relação à chave
+323
+que ela espera do client do Superbase.
+324
+Legal, não se preocupe, porque falta de fato
+325
+configurar o projeto de back-end lá no Superbase,
+326
+que será o nosso banco de dados
+327
+e também o local onde serão armazenados os dados dos usuários.
+328
+Então, é esperado que isso aconteça.
+329
+E nessa aula, o grande objetivo foi iniciar o nosso projeto
+330
+com uma stack bastante comum, que é a stack do Next,
+331
+com um banco de dados ou um back-end as-a-service,
+332
+como é o caso do Superbase.
+333
+Então, basicamente, criamos essa aplicação.
+334
+Espero que você tenha entendido a importância do modo de planejamento
+335
+para atividades mais complexas por parte do agente,
+336
+que nesse modo de planejamento ele cria um plano de implantação,
+337
+ele mantém o contexto de acordo com o objetivo do plano,
+338
+ele faz toda uma análise do ambiente,
+339
+ele executa tudo isso e ele verifica essa execução.
+340
+Então, a lista de tarefas é muito importante
+341
+para que ele execute tudo o que é necessário em sequência,
+342
+dentro de uma sequência lógica.
+343
+E os testes, a verificação final é justamente para confirmar
+344
+que tudo isso deu certo.
+345
+Bom, na próxima aula vamos evoluir com o nosso projeto. Então, até lá.
+
+--- Área de Trabalho (Workspace) e Área Global ---
+
+1
+Nessa aula, você vai entender
+2
+a organização por trás do Antigravity,
+3
+em que as configurações podem ser armazenadas
+4
+na área de trabalho ou workspace,
+5
+ou de forma global.
+6
+Qual a ideia, né?
+7
+Durante a configuração da própria ideia do Antigravity,
+8
+e também durante a configuração das capacidades do agente,
+9
+todas essas configurações precisam ser armazenadas em algum local.
+10
+Então, nós podemos aplicar essas configurações
+11
+a uma área de trabalho vinculada a um determinado projeto.
+12
+Então, essas configurações, como eu comentei,
+13
+configurações da IDE,
+14
+o próprio histórico do chat,
+15
+as regras, workflows, habilidades, as configurações de MCP,
+16
+coisas que você ainda vai ver ao longo desse curso,
+17
+todas essas configurações podem ser alocadas a um workspace,
+18
+uma área de trabalho,
+19
+que estará vinculada a um projeto específico.
+20
+Isso cria um encapsulamento.
+21
+Essas configurações, portanto,
+22
+estão disponíveis para um determinado projeto,
+23
+de modo que o agente vai respeitar essa fronteira, esse limite.
+24
+Mas essas mesmas configurações,
+25
+com exceção do histórico do chat,
+26
+porque o histórico do chat é, de fato, aplicado a um determinado projeto,
+27
+para as demais configurações,
+28
+nós podemos também criá-las de forma global.
+29
+Quando essas configurações são criadas de forma global,
+30
+elas poderão ser compartilhadas entre projetos diferentes.
+31
+Então, se você tem algo que é comum em múltiplos projetos,
+32
+o interessante é que você crie essa
+33
+configuração relacionada a esse algo comum
+34
+de forma global,
+35
+porque dessa forma você vai conseguir reaproveitar
+36
+em múltiplos projetos, ok?
+37
+Então, é apenas uma forma de organização das configurações,
+38
+e é interessante ter isso claro na sua mente.
+39
+Nós temos um ou vários projetos,
+40
+cada projeto tem o seu respeito de workspace,
+41
+mas nós ainda temos uma área global,
+42
+em que as configurações definidas nessa área global
+43
+podem ser reaproveitadas em vários projetos,
+44
+inclusive de forma simultânea.
+45
+Você vai notar que o Antigravity soporta a execução de múltiplos agentes.
+46
+Então, vamos ver isso um pouco na prática, né?
+47
+Olha só, voltando no Antigravity,
+48
+uma forma de localizar, por exemplo, o histórico do chat
+49
+é por meio da opção Open Agent Manager.
+50
+Ao clicar nessa opção,
+51
+vou apenas expandir a tela,
+52
+repare que aqui ele traz orientações
+53
+sobre como nós podemos trabalhar com múltiplos agentes
+54
+em diferentes workspaces.
+55
+Essa é apenas uma tela de introdução, né?
+56
+Eu vou clicar aqui em Next,
+57
+e olha só, repare que ele traz aqui um prompt, né?
+58
+Esse prompt justamente é a entrada para o agente de IA,
+59
+só que com um detalhe importante.
+60
+Esse prompt pode ser direcionado para um workspace específico.
+61
+Então, basicamente, nesse momento, nós temos um workspace
+62
+que é o app Orçamento Pessoal.
+63
+Esse workspace existe porque nós criamos o diretório
+64
+app Orçamento Pessoal e abrimos esse diretório como um projeto, ok?
+65
+Então, este é o projeto e este é o workspace
+66
+que acaba recebendo o mesmo nome.
+67
+E dentro do workspace, é possível ver o histórico
+68
+dos chats que foram executados contra esse projeto, né?
+69
+Nesse respeito de workspace.
+70
+Então, tudo isso vai ficando encapsulado.
+71
+Se eu criar, por exemplo, um novo projeto,
+72
+olha só, vou clicar aqui em New Window, por exemplo,
+73
+vou apenas aumentar a fonte aqui, para ficar mais fácil de ler.
+74
+Então, vou clicar em Open Folder,
+75
+vou navegar lá até o diretório C2.
+76
+Curso Antigravity e aqui ao lado vou criar um novo projeto,
+77
+por exemplo, app Gestão Projetos.
+78
+Olha só, ao abrir esse diretório, ele será aberto como um projeto. Muito bem.
+79
+Automaticamente, um workspace foi criado para esse projeto,
+80
+então, o workspace recebe o mesmo nome.
+81
+E aqui por meio, né, do Manager Agent,
+82
+é possível ver que nós temos agora dois workspaces.
+83
+Nós temos o workspace do Orçamento Pessoal
+84
+com o histórico dos chats realizados dentro dele
+85
+e nós temos agora o workspace do app Gestão Projetos, ok?
+86
+Então, conforme os projetos forem sendo criados,
+87
+os workspaces serão automaticamente criados.
+88
+E ao longo das próximas aulas, nós vamos criar os demais recursos
+89
+e aí você vai entender como é feita a criação para um workspace,
+90
+para uma área de trabalho específica
+91
+e como é feita a criação desses recursos para a área global.
+92
+Não se preocupe muito com isso agora.
+93
+Apenas entenda essa diferença de organização.
+94
+E uma vez que nós temos mais de um workspace,
+95
+vou só abrir aqui essa janelinha,
+96
+uma vez que nós temos mais de um workspace,
+97
+quando nós clicamos para gerar uma nova conversa,
+98
+nós podemos alternar entre os workspaces, ok?
+99
+Então, aqui fica um atalho.
+100
+Se eu abrir esse chat,
+101
+eu poderia, por exemplo, copiar todo o conteúdo dele
+102
+e poderia executar aqui uma nova conversa
+103
+contra esse workspace especificamente.
+104
+Então, conforme os nossos prompts forem sendo refinados,
+105
+nós podemos ir executando esses prompts
+106
+de forma, digamos, paralela em diversos projetos diferentes, ok?
+107
+Mas, por enquanto, se preocupe apenas com o entendimento
+108
+de que existem essas duas grandes áreas.
+109
+Eu vou apenas fechar aqui todas as janelas do AntiGraft,
+110
+vou fechar a app Gestão Projetos,
+111
+vou dizer aqui para fechar completamente,
+112
+vou fechar o Gerenciador de Agente, muito bem.
+113
+Por enquanto, estou apenas com o app Orçamento Pessoal aberto
+114
+e, na próxima aula,
+115
+vamos evoluir um pouco mais com o desenvolvimento deste projeto.
+116
+Combinado? Então, até lá.
+
+--- [IMPORTANTE] - Como abrir o Gerenciador de Agentes ---
+
+1
+Essa aula é uma aula de adaptação,
+2
+visto que o Antigraft foi subdividido em produtos diferentes.
+3
+Então, é apenas uma aula para esclarecer um detalhe aqui no fluxo do curso.
+4
+Na aula anterior, você deve ter notado que a opção
+5
+Open Agent Manager, antes disponível no Antigraft,
+6
+não está mais acessível, ok?
+7
+Acontece que o Antigraft IDE não tem mais o acesso
+8
+ao gerenciador de agente.
+9
+Isso porque a responsabilidade de gerenciar agente
+10
+passa a ser do Antigraft.
+11
+Nesse caso, o Antigraft 2.0,
+12
+porque nós fizemos a instalação também.
+13
+Então, para acompanhar o conteúdo que foi aplicado na aula anterior,
+14
+para fazer toda a parte de gerenciamento
+15
+dos agentes que estão em execução,
+16
+para alternar entre workspaces
+17
+e para ter acesso ao histórico dos chats em cada workspaces,
+18
+toda essa interação é feita agora pelo Antigraft,
+19
+nesse caso, 2.0.
+20
+Então, basta abrir o Antigraft,
+21
+ele vem apenas com o nome Antigraft, ok?
+22
+E aí, nós temos duas aplicações trabalhando em conjunto.
+23
+O Antigraft IDE,
+24
+onde vamos desenvolver as nossas aplicações,
+25
+o ambiente de desenvolvimento integrado,
+26
+e no que diz respeito ao gerenciamento dos agentes
+27
+que estão em execução,
+28
+aí todo esse acompanhamento vai ser feito por meio do Antigraft,
+29
+nesse caso, 2.0.
+30
+Como eu comentei,
+31
+o que eu apresentei na aula anterior
+32
+é totalmente replicável para esta nova aplicação,
+33
+que apenas isola essa responsabilidade.
+34
+Então, ao longo do curso,
+35
+nós vamos utilizar duas ferramentas em conjunto, né,
+36
+para nos apoiar no desenvolvimento das nossas aplicações.
+37
+Bom, agora que esse esclarecimento foi feito,
+38
+vamos retomar a sequência das aulas.
+39
+Então, até a próxima aula.
+
+--- Versionando o projeto com Git e GitHub ---
+
+1
+Nessa aula, vamos iniciar o versionamento do código.
+2
+Na sequência, vamos subir o nosso repositório
+3
+para um hub de versionamento, nesse caso, o GitHub.
+4
+Se antes já era fundamental versionar o código
+5
+quando trabalhávamos com desenvolvimento de software
+6
+de forma tradicional, agora, então, nem se fala.
+7
+Isso porque, quando nós estamos trabalhando com agentes de IA,
+8
+é provável que, em algumas situações,
+9
+os agentes de IA acabem alterando o código fonte da aplicação
+10
+de forma autônoma, sem uma supervisão. Pode acontecer.
+11
+E, quando nós estamos com o código devidamente versionado,
+12
+nós temos uma camada de controle.
+13
+Nós temos condições de identificar exatamente
+14
+o que teve de alteração nas iterações
+15
+que foram feitas pelos agentes de IA.
+16
+A IDE, o Antigravity, ele mostra isso para nós, ok?
+17
+Nós temos condições de identificar exatamente
+18
+aonde as alterações foram feitas pelo agente,
+19
+mas, ainda assim, o versionamento,
+20
+ele vai trazer uma maior confiança
+21
+em relação ao que, de fato, deve ser adicionado, né,
+22
+como alteração ao projeto.
+23
+Então, se antes versionar o código já era importantíssimo,
+24
+agora, então, nem se fala.
+25
+Bom, então, vamos lá. Eu vou fazer o seguinte.
+26
+Eu vou, primeiro, criar o repositório lá no GitHub.
+27
+Vou acessar o navegador.
+28
+Já estou logado na minha conta.
+29
+Aqui na aba de repositórios, vou criar um novo repositório.
+30
+Vou chamar de app-orçamento-pessoal.
+31
+A configuração vai ser a padrão.
+32
+Então, um repositório público, sem o readme, sem o itignore
+33
+e sem uma licença.
+34
+Vou apenas criar o repositório vazio. Legal.
+35
+E agora, no Antigraft, eu vou fazer o seguinte.
+36
+Eu já tenho um prompt.
+37
+Eu vou copiar o conteúdo e vou colar aqui
+38
+para que tudo seja feito, né,
+39
+de acordo com o que seria necessário para o setup do Git
+40
+e para o primeiro commit em um repositório.
+41
+Então, como eu já estou acostumado a realizar essa atividade,
+42
+eu já construí um prompt que funciona bem. Então, olha só.
+43
+Setup inicial de versionamento do Git.
+44
+Você é o responsável por preparar o versionamento do projeto
+45
+seguindo rigorosamente as etapas abaixo.
+46
+Então, o objetivo, né?
+47
+Garantir que o projeto esteja corretamente configurado
+48
+para versionamento com o Git,
+49
+com boas práticas de segurança e estrutura profissional.
+50
+Regras obrigatórias.
+51
+Então, configure o usuário Git local do projeto.
+52
+Então, aqui vou colocar o meu nome,
+53
+na sequência o e-mail.
+54
+Antes de versionar qualquer arquivo,
+55
+analise o projeto em busca de senhas, tokens, secrets,
+56
+credenciais, variáveis sensíveis, arquivos .env, chaves privadas,
+57
+certificados, arquivos temporários, arquivos de build.
+58
+Então, garanta que todos os arquivos sensíveis
+59
+estejam adicionados ao .gitignore.
+60
+Ele já tem um .gitignore.
+61
+O primeiro ponto é o .gitignore.
+62
+O primeiro prompt já criou esse arquivo para nós.
+63
+Então, aqui ele vai apenas revisar tudo isso.
+64
+Na sequência, crie ou ajuste o .gitignore, se necessário.
+65
+Inicie o Git, caso o projeto ainda não esteja versionado.
+66
+No primeiro prompt, o Git já foi iniciado,
+67
+tanto que é possível ver aqui as alterações
+68
+que foram aplicadas durante a criação do projeto.
+69
+Então, o Git já estava iniciado,
+70
+mas caso não estivesse, ele faria isso.
+71
+Configure o repositório remoto, o Git Remote,
+72
+caso ainda não exista.
+73
+Então, eu vou copiar o link do repositório remoto,
+74
+vou trabalhar aqui com o protocolo HTTPS,
+75
+vou copiar o endereço do repositório e vou colocar aqui.
+76
+Bacana.
+77
+Garanta que a branch main seja main.
+78
+Em alguns casos, os versionamentos são iniciados com a branch master,
+79
+mas, de forma geral, você vai querer alterar o nome de master para main.
+80
+Então, já adicionei essa instrução aqui também.
+81
+Renomeie a branch atual para main, caso necessário.
+82
+Adicione todos os arquivos válidos ao stage,
+83
+basicamente o git add.
+84
+Realize o commit inicial, utilizando exatamente a mensagem.
+85
+Então, a primeira mensagem de commit já deixei pré-configurada.
+86
+Envie o commit para o GitHub.
+87
+Então, realize o push para a branch main,
+88
+configure upstream, se necessário.
+89
+Como essa branch não existe lá,
+90
+então, primeiro é necessário o upstream
+91
+para depois o carregamento do repositório no hub,
+92
+no hub remoto, nesse caso, no GitHub.
+93
+Então, as práticas adicionais,
+94
+nunca versione arquivos.env,
+95
+reforceie aqui aqueles pontos,
+96
+arquivos.env, credenciais, tokens, arquivos de cache,
+97
+dependências locais, builds, logs e arquivos do sistema operacional.
+98
+Caso identifique dados sensíveis já rastreados pelo git,
+99
+remova-os do versionamento antes de comitar.
+100
+Valide que o repositório está íntegro antes do push final.
+101
+E o resultado esperado, né?
+102
+Então, projeto versionado corretamente,
+103
+branch main criada, remote configurado,
+104
+commit inicial realizado, push enviado ao GitHub
+105
+e nenhum dado sensível versionado.
+106
+Eu estou utilizando o modelo de MNI3 Flash, nesse caso.
+107
+Recebi aqui a liberação dos tokens para uso.
+108
+Então, vou disparar esse prompt
+109
+e vamos aguardar com que o agente resolva tudo isso para nós.
+110
+Ele está solicitando iterações aqui, né?
+111
+Então, vou executar a ação que ele solicitou.
+112
+Git status.
+113
+Agora, ele está fazendo a configuração do usuário e do e-mail
+114
+de forma local para o projeto.
+115
+Está pesquisando a existência de dados sensíveis.
+116
+Agora, ele está adicionando o endereço do repositório lá do GitHub
+117
+como um endereço, o orange, um endereço remoto.
+118
+Então, vamos executar essa ação.
+119
+Agora, ele entende que ele possui uma branch
+120
+e está resolvendo a configuração.
+121
+Uma branch e está renomeando essa branch para main.
+122
+Adicionando os arquivos ao stage, vamos autorizar.
+123
+Mensagem de commit, né? Vai commitar as alterações, vamos confirmar.
+124
+Agora, ele fará o push do repositório local aqui no meu desktop
+125
+para o hub de versionamento, o endereço, né?
+126
+Lá do repositório remoto, vamos confirmar.
+127
+Agora, ele quer validar para ver se realmente conseguiu realizar o commit.
+128
+Ele está indo mais a fundo nessa análise.
+129
+Agora, ele quer mostrar o nome do commit.
+130
+Vamos dar uma olhada.
+131
+Olha só o nome dos arquivos lá envolvidos no commit.
+132
+Bacana. Então, ele disse que o projeto foi configurado com sucesso.
+133
+Esse prompt, ele poderia ter sido executado de forma autônoma,
+134
+já que ele está bem completo, bastante testado.
+135
+Então, o resultado final já é um resultado que funciona muito bem.
+136
+Então, poderia ter sido colocado aqui
+137
+para que a execução fosse sem um request reveal,
+138
+que ela fosse autorizada a ser executada de forma autônoma.
+139
+Mas bacana, é sempre importante acompanhar o que o agente de IA está fazendo
+140
+ao passo em que você vai refinando os prompts do seu portfólio.
+141
+Então, vamos lá. Vamos confirmar isso.
+142
+Repare que nesse momento, olhando aqui para o git da IDE,
+143
+repare que o commit foi feito, né?
+144
+Não tem nenhuma alteração local.
+145
+Se observarmos o repositório remoto,
+146
+vou só abrir o navegador ou atualizar.
+147
+Bacana, os arquivos foram enviados.
+148
+Legal.
+149
+Nesse momento, nós ainda temos um bug na aplicação, né?
+150
+Porque ainda não foi feita a configuração do SupaBase,
+151
+mas já temos a configuração inicial do projeto.
+152
+Já está versionado
+153
+e, a partir da próxima aula, podemos evoluir,
+154
+por meio de linguagem natural, o desenvolvimento do nosso projeto. Então, até lá.
+
+--- Supabase (BaaS) - Introdução e arquitetura ---
+
+1
+Antes de avançarmos com o desenvolvimento do app Orçamento Pessoal,
+2
+eu quero apresentar para você a arquitetura que vai suportar esse sistema
+3
+e também justificar a escolha da arquitetura.
+4
+Bom, você já sabe, nós vamos utilizar o framework Next.js
+5
+para desenvolver esse projeto.
+6
+E o Next, ele foi selecionado porque ele é um framework full stack.
+7
+Ele tem tanto a parte front-end quanto a parte back-end.
+8
+E no nosso caso, a parte de back-end vai ser muito importante
+9
+para o armazenamento da lógica de negócio
+10
+e principalmente para o armazenamento das variáveis de ambiente
+11
+dentro de um contexto seguro.
+12
+Então, o front vai se comunicar com o back
+13
+e o back vai conter ali as variáveis de ambiente.
+14
+Muitas dessas variáveis serão senhas, tokens de acesso,
+15
+enfim, serão informações que devem ser guardadas de forma segura,
+16
+de modo que o back do Orçamento Pessoal
+17
+vai interagir com um outro back-end, que é o Superbase.
+18
+O Superbase, ele vai entrar na infraestrutura como um back-end as a service.
+19
+Ou seja, dentro do Superbase, nós vamos implementar a parte de banco de dados
+20
+e autenticação de usuários.
+21
+Então, basicamente falando, o front vai se comunicar com o back
+22
+e o back, dentro de um contexto seguro, vai utilizar as credenciais de acesso
+23
+para aí sim se comunicar com o Superbase.
+24
+Essa comunicação direta do front-end com o Superbase
+25
+ou de um front-end com qualquer back-end as a service,
+26
+essa comunicação direta não pode acontecer por questões de segurança.
+27
+Porque senão, na aplicação front-end,
+28
+você precisaria colocar as credenciais de acesso.
+29
+Então, você iria expor essas credenciais no navegador, por exemplo.
+30
+Então, nesse caso, a segurança mínima que nós precisamos
+31
+é essa que eu estou propondo aqui.
+32
+E a ideia de trazer o Superbase para o nosso projeto
+33
+é justamente não ter que se preocupar com a configuração do banco
+34
+e uma configuração voltada para autenticação de usuários.
+35
+Então, ele vai resolver isso para nós.
+36
+O Superbase tem uma camada gratuita.
+37
+É possível fazer bastante coisa na camada gratuita.
+38
+Com certeza, vai ser uma excelente stack
+39
+para que você coloque de pé os MVPs
+40
+e depois, havendo a necessidade,
+41
+para que você evolua o desenvolvimento dos seus projetos, tá bom?
+42
+Então, eu te encontro na próxima aula. Até lá!
+
+--- Supabase (BaaS) - Criação do Projeto ---
+
+1
+Muito bem, agora nós faremos o cadastro de um projeto no SuperBase.
+2
+Na sequência, vamos conectar a nossa aplicação com este projeto, ok?
+3
+Vamos começar a sessão do site do SuperBase, em superbase.com.
+4
+No meu caso, eu já estou logado, mas você vai localizar a opção de sign up,
+5
+vai criar a sua conta, caso você não tenha.
+6
+Criando a sua conta, você vai cair em uma tela parecida com essa aqui, olha só, de dashboard.
+7
+É necessário cadastrar uma organização.
+8
+Então, no seu primeiro acesso, você vai encontrar uma tela parecida com essa,
+9
+de criação de uma nova organização.
+10
+Então, basta definir um nome, na sequência, basta adicionar o tipo de organização que é.
+11
+Fique à vontade para escolher aqui a opção que for mais adequada para o seu caso.
+12
+Aqui, eu já tenho uma organização, eu vou seguir com ela,
+13
+mas fique à vontade para adicionar a que você achar mais interessante.
+14
+E na sequência, é possível selecionar um plano.
+15
+Nós podemos começar aqui com o plano free.
+16
+Não tem problema nenhum, vai servir às nossas necessidades.
+17
+E aí, é só criar a organização.
+18
+Como eu comentei, eu já tenho uma organização criada.
+19
+Então, vou seguir utilizando ela, ok?
+20
+Nessa organização, nós podemos criar projetos.
+21
+Eu tenho um projeto aqui, que foi um projeto já criado de testes, né?
+22
+Mas eu vou adicionar um novo projeto.
+23
+Então, também não tem segredo nenhum.
+24
+Clicando em novo projeto, nós vamos selecionar a organização desejada.
+25
+Vamos indicar aqui o GitHub, de forma opcional.
+26
+Não se preocupe com isso aqui.
+27
+O nome do projeto, então eu vou colocar app, orçamento pessoal.
+28
+Na sequência, nós precisamos adicionar uma senha do banco de dados.
+29
+Então, o Superbase, ele trabalha com o PostgreSQL por baixo.
+30
+Então, o banco de dados é o Postgre.
+31
+Vamos gerar uma senha.
+32
+Eu vou copiar essa senha e vou deixar em um documento aqui ao lado.
+33
+Caso você acabe perdendo essa senha, é possível alterar depois.
+34
+Mas já anote para evitar ter que alterar.
+35
+Bom, na região, nós vamos selecionar a região
+36
+em que ficará mais próxima dos usuários finais da aplicação.
+37
+Então, nesse caso, eu vou colocar aqui a América do Sul.
+38
+Na parte de segurança, podemos manter essas opções habilitadas,
+39
+as que vieram por padrão, e aí basta criar um novo projeto.
+40
+Legal. Então, dentro de um determinado projeto,
+41
+nós temos uma série de recursos do Superbase que podem ser utilizados.
+42
+Então, nós temos o banco de dados, como eu comentei,
+43
+é um banco de dados Postgre.
+44
+Nós temos a parte de autenticação, aonde as credenciais dos usuários
+45
+serão armazenadas seguindo algumas boas práticas.
+46
+Então, é um recurso bem interessante.
+47
+Afinal de contas, os usuários da aplicação,
+48
+o ideal é que eles fiquem isolados do banco de dados da aplicação.
+49
+Uma coisa são os dados da aplicação, outra coisa são os usuários.
+50
+Então, nós temos condições de isolar essa camada.
+51
+Ele também traz uma camada, ou um serviço, melhor dizendo,
+52
+de storage e de funções de borda, e também de ações em tempo real.
+53
+Nós vamos explorar aqui apenas o banco de dados
+54
+e a parte de autenticação.
+55
+Não se preocupe em como utilizar a ferramenta ainda.
+56
+O objetivo dessa aula é apenas criar o projeto.
+57
+Tenha certeza que você conseguiu criar o projeto.
+58
+E na próxima aula, vamos evoluir com a implementação do Superbase na aplicação. Então, até lá.
+
+--- Supabase (BaaS) - Vinculando o projeto ao Supabase ---
+
+1
+Muito bem, chegou a hora de colocarmos o agente de IA para trabalhar um pouco.
+2
+A ideia será solicitar para que o agente conecte o app Orçamento Pessoal com o SupaBase.
+3
+Mas antes de encaminhar essa solicitação para o agente,
+4
+eu vou fazer o seguinte, aqui no SupaBase, na opção Connect,
+5
+nós temos uma sessão que fala sobre como podemos conectar com o app.
+6
+E uma das etapas aqui é a inclusão das skills do SupaBase.
+7
+As skills, nós teremos uma sessão só para isso, tá bom?
+8
+Você vai aprender a criar skills.
+9
+Mas basicamente são habilidades que podem ser adicionadas ao projeto
+10
+ou de forma global para que o agente de IA consiga utilizar aquelas habilidades
+11
+referentes a um determinado pacote ou a uma determinada função, enfim.
+12
+O agente de IA ganha contexto em função da definição da habilidade
+13
+e com isso ele consegue atuar melhor.
+14
+Neste caso, essas skills do SupaBase são justamente para lidar com o Postgre
+15
+e com o SupaBase de forma mais eficiente.
+16
+Eu vou copiar aqui essa instrução. Novamente, não se preocupe com isso,
+17
+você vai entender no detalhe como as skills funcionam.
+18
+Eu vou apenas copiar e adicionar aqui no projeto.
+19
+Por quê? Porque assim, com o prompt que eu vou executar,
+20
+nós vamos conseguir ter uma assertividade maior
+21
+já nas primeiras solicitações feitas para o agente.
+22
+Nós vamos ter que interar menos, porque ele já vai ter uma habilidade por trás
+23
+que provavelmente vai alcançar o resultado muito mais rapidamente.
+24
+O resultado desejado.
+25
+Então, aqui eu farei a instalação da skill.
+26
+Muito bem, ele está perguntando quais skills eu quero instalar.
+27
+Então, vou teclar o barro de espaço para adicionar o Postgre e também o SupaBase.
+28
+Bacana, vou teclar Enter.
+29
+Agora, ele pergunta qual é o agente que eu vou adicionar.
+30
+Então, ele tem várias opções aqui.
+31
+O AntiGraft ainda não está nessa relação,
+32
+mas nós podemos avançar com a opção do Cloud Code, que é compatível.
+33
+Vou teclar Enter.
+34
+Ele pergunta se a instalação será no projeto, ou seja,
+35
+se será a área de trabalho, o workspace vinculado ao projeto,
+36
+ou se será global.
+37
+Se será uma instalação feita de forma global
+38
+que poderá ser utilizada em todos os projetos.
+39
+Nesse caso, eu farei a instalação diretamente no projeto, tá bom?
+40
+Vou teclar Enter.
+41
+Ele pergunta se eu quero seguir com a instalação, vou dizer que sim.
+42
+E aí, é só aguardar, né?
+43
+Ele está perguntando se eu quero fazer a instalação do FindSkills,
+44
+ou seja, um recurso para pesquisar por novas skills.
+45
+Vou falar que não, por enquanto não tem necessidade.
+46
+E repare que ele criou um diretório .agents.
+47
+E dentro desse diretório .agents, ele criou um diretório chamado skills,
+48
+e dentro do diretório skills, ele adicionou aqui as duas skills
+49
+do Superbase e das melhores práticas do Postgre para o Superbase.
+50
+Esse caminho aqui, né, você vai ver que é o mesmo
+51
+que é requisitado pelo Antigraft.
+52
+Então, já está tudo ok.
+53
+As skills para o Cloud Code, geralmente, são compatíveis
+54
+com as skills do Antigraft.
+55
+Quando você não achar a opção, né, para o Antigraft,
+56
+se houver para o Cloud Code, elas são cambiáveis.
+57
+Legal, então, feita a instalação, nós podemos avançar.
+58
+Olha só, vou só reduzir aqui um pouco as janelas laterais.
+59
+O que eu vou fazer agora?
+60
+Eu vou entrar com um prompt.
+61
+Crie um plano de implantação,
+62
+e por isso esse prompt, eu vou colocar ele no modo de planejamento,
+63
+né, cria um plano de implantação para configurar o projeto com o Superbase.
+64
+Eu já criei o projeto no Superbase,
+65
+me oriente sobre como trazer as variáveis de ambiente necessárias
+66
+para este projeto.
+67
+Para garantir melhor eficiência no plano de implantação,
+68
+utilize as skills do Superbase.
+69
+Posso até utilizar o barra e selecionar quais são essas skills.
+70
+Então, vou colocar aqui Superbase e Superbase Postgres.
+71
+Provavelmente, daqui para cima, né,
+72
+ele já entenderia que está à disposição no ambiente as skills,
+73
+então, ele utilizaria.
+74
+Mas, para garantir, eu estou citando elas aqui no prompt.
+75
+Legal, vou disparar essa requisição, vamos aguardar o plano de implantação.
+76
+Muito bem, ele trouxe o plano de implantação.
+77
+Aqui, ele também comentou, né, sobre as variáveis de ambiente.
+78
+Vou só confirmar se são questionadas aqui no plano de implantação. São, sim.
+79
+Basicamente, trouxe aqui todos os detalhes, né,
+80
+então, nós vamos precisar da URL do projeto e da Anon Key.
+81
+O esquema de banco de dados, ele entendeu que está no Initial Schema,
+82
+aqui dentro de Superbase, né, nós temos esse arquivo.
+83
+Legal, então, vamos dar uma olhada no plano agora, né.
+84
+Configuração do projeto com Superbase, importante.
+85
+Você precisará acessar o dashboard para obter as credenciais, ok?
+86
+Você prefere aplicar as migrações via Superbase,
+87
+mais profissional para controle de versão,
+88
+ou via SQL Editor no dashboard, mais rápido para configuração inicial.
+89
+Então, ele está me dando as duas opções.
+90
+Eu vou fazer o seguinte, eu vou copiar, então, toda essa parte do SQL, ok?
+91
+Basicamente isso que ele está perguntando aqui, né.
+92
+Vou acessar o dashboard.
+93
+Aqui, olha só, nós temos o SQL Editor.
+94
+Vou colocar todas as queries aqui. Muito bem.
+95
+Aparentemente tudo certo, vou executar.
+96
+Legal, deu tudo certo.
+97
+Voltando aqui no Table Editor, ou melhor, em Databases,
+98
+em Databases, é possível ver o esquema do banco de dados.
+99
+Então, todas as tabelas que foram criadas a partir do esquema inicial do projeto.
+100
+Bacana, aqui nós temos uma visão bem interessante. Muito bem.
+101
+Agora, voltando aqui no planejamento, eu vou falar o seguinte.
+102
+Optei por criar via Editor no dashboard.
+103
+Já fiz a criação de acordo com o initial esquema.sql.
+104
+Vou adicionar esse comentário.
+105
+Então, aqui configurações de variáveis do ambiente.
+106
+Então, para conectar, precisamos criar o arquivo rave.local na raiz do projeto.
+107
+Passos para obter as variáveis.
+108
+Então, ele está mostrando aqui, para ir até o dashboard, selecionar o projeto,
+109
+no menu lateral esquerdo, clicar nas configurações do projeto, depois em API.
+110
+Bacana, então nós precisamos basicamente da URL e do Anon Key.
+111
+Seguindo esses passos, provavelmente iríamos conseguir essas informações,
+112
+mas eu vou seguir de uma forma um pouquinho mais agilizada,
+113
+porque eu já conheço o local onde essas informações estão disponíveis.
+114
+Então, voltando aqui no Super Base, em Connect, olha só, Framework Next,
+115
+aqui nós temos facilmente a URL.
+116
+Então, já vou copiar essa URL aqui. Muito bem.
+117
+Voltando aqui, vou comentar.
+118
+Muito bem.
+119
+E agora, vamos pegar o Anon Key.
+120
+Voltando no Super Base, vou voltar aqui para o menu, vamos em Project Settings,
+121
+na sequência API Keys, e aqui em Legacy Anon, Service Role e API Keys,
+122
+eu vou copiar o Anon Public.
+123
+Como eu vou trocar essas credenciais depois,
+124
+então não tem problema expor aqui no vídeo.
+125
+O importante é que você utilize as variáveis do seu ambiente,
+126
+e que você não exponha as variáveis do seu ambiente em nenhum local.
+127
+Bacana, isso já deve ser o suficiente.
+128
+Então, a aplicação do esquema de banco de dados, as migrations,
+129
+ele já sabe que o banco já foi criado, já anotei ali em cima,
+130
+então no dashboard, aqui...
+131
+Ah tá, a opção caso a gente queira criar as tabelas, nós já fizemos isso.
+132
+Aqui seria via CLI, não é o caso, ele vai ignorar.
+133
+Então, vamos ver aqui a verificação do plano de implantação.
+134
+Ele vai testar a conexão, a autenticação do usuário,
+135
+e vai verificar o banco de dados também.
+136
+Bacana, então, execute o plano de implantação,
+137
+considerando as anotações feitas.
+138
+Ele está pedindo para subir a aplicação, colocar em execução,
+139
+vamos executar essa instrução.
+140
+Reclamou aqui do acesso para executar esse comando,
+141
+então ele está executando de outra forma, vamos autorizar.
+142
+Ele está executando a aplicação no navegador, olha só, para testar.
+143
+Ele está vendo se a aplicação entrou em execução.
+144
+Ele mesmo está manipulando a aplicação no navegador.
+145
+Agora ele está solicitando autorização para alterar o arquivo .env.local,
+146
+vou aceitar a execução da alteração.
+147
+Legal, ele finalizou o plano de implantação,
+148
+repare que ele alterou diversos arquivos, então eu vou fazer o seguinte,
+149
+eu vou fechar aqui todas essas abas,
+150
+vamos dar uma olhada no .env.local,
+151
+então ele adicionou aqui as variáveis corretamente,
+152
+aqui no diretório src ele não chegou a fazer nenhuma alteração significativa,
+153
+foi apenas a inclusão mesmo, adicionou aqui recursos do Node,
+154
+ok, nós podemos confirmar todas essas abas,
+155
+por meio do controle de versão do Git.
+156
+Eu não vou entrar aqui no detalhe do que foi alterado,
+157
+apenas para não deixar a aula tão extensa,
+158
+mas basicamente neste momento nós podemos colocar a aplicação em execução
+159
+e fazer testes nós mesmos.
+160
+Então aqui, olha só, coloque a aplicação em execução,
+161
+para eu acessá-la via browser,
+162
+ele vai executar o comando,
+163
+aplicação em execução, vou clicar em localhost 3000,
+164
+legal, então repare que neste momento a aplicação não está apresentando nenhum erro,
+165
+mas vamos tentar fazer um teste,
+166
+vamos fazer um teste aqui,
+167
+neste momento a aplicação não está apresentando nenhum erro,
+168
+mas vamos testar, vou clicar aqui em começar agora,
+169
+bacana, trouxe a página de login,
+170
+aqui ele tem a opção de cadastrar e a opção de entrar,
+171
+legal, a navegação está funcionando,
+172
+ele alterou para a criação da conta, então vou criar uma conta,
+173
+mas antes, olha só, vamos acessar o superbase,
+174
+aqui na parte de authentication,
+175
+neste momento nós não temos nenhum usuário,
+176
+então vamos ver se o usuário será criado,
+177
+voltando na aplicação,
+178
+inclusive vou fazer o seguinte,
+179
+vou abrir a aplicação aqui, olha só, colocar o localhost 3000,
+180
+assim fica mais fácil alternar entre a aplicação e o superbase,
+181
+então vamos na opção de cadastro,
+182
+vamos lá,
+183
+aparentemente o cadastro foi realizado com sucesso,
+184
+vamos dar uma olhada no superbase, vou atualizar,
+185
+bacana, temos o usuário registrado,
+186
+então o nome de exibição, o e-mail,
+187
+alguns detalhes aqui básicos, ótimo.
+188
+Agora eu vou tentar fazer o login,
+189
+então com o meu e-mail, vou adicionar a senha que eu cadastrei,
+190
+ele deu um erro de credenciais inválidas no servidor,
+191
+eu vou tirar um print, vou adicionar aqui,
+192
+vou adicionar também a rota,
+193
+vou falar aqui, na tentativa de fazer o login,
+194
+recebi o erro de credencial inválida, ajuste.
+195
+Legal, então repare que agora ele vai interagindo com os scripts,
+196
+solicitando alterações,
+197
+por enquanto eu vou apenas aceitando essas alterações,
+198
+muito bem, vamos dar uma olhada na aplicação,
+199
+vou atualizar, vou clicar em entrar,
+200
+vou tentar fazer um novo acesso,
+201
+ele disse que o e-mail não está confirmado,
+202
+como eu estou tentando acessar com jorge,
+203
+argosacademy.com,
+204
+e eu já estou implementando o superbase,
+205
+que tem todo um fluxo de gestão de usuários,
+206
+então a aplicação não deu essa orientação,
+207
+mas provavelmente um e-mail de confirmação foi enviado para este e-mail,
+208
+então eu vou abrir a caixa de e-mail,
+209
+é isso mesmo, repare que eu tenho aqui,
+210
+uma mensagem de confirmação de e-mail,
+211
+preciso confirmar este e-mail,
+212
+legal, confirmação foi feita,
+213
+repare que ele retorna para a aplicação,
+214
+vou clicar aqui em começar agora,
+215
+e vou tentar entrar novamente,
+216
+muito bem, ele deu um erro de página não encontrada,
+217
+vou apenas copiar aqui essa informação,
+218
+voltando aqui, olha só,
+219
+consegui confirmar o e-mail,
+220
+e quando fiz login, recebi o erro da imagem,
+221
+muito bem,
+222
+corrija,
+223
+bom, ele está adicionando um diretório, vou aceitar,
+224
+basicamente aqui é um grupo de rotas que ele está configurando,
+225
+ele está solicitando agora criar outro diretório,
+226
+vamos fazer isso,
+227
+então ele criou diretórios novos e moveu arquivos,
+228
+legal, ele reorganizou algumas rotas,
+229
+vamos ver se foi o suficiente,
+230
+vou acessar aqui a página inicial,
+231
+vou clicar em começar agora,
+232
+vou tentar entrar com usuário e senha que eu cadastrei,
+233
+bacana, agora nós caímos dentro da aplicação,
+234
+temos aqui as páginas funcionando,
+235
+a de relatórios ainda está com erro,
+236
+não tem problema,
+237
+temos o dashboard,
+238
+temos as transações,
+239
+vamos adicionar uma nova transação, por exemplo, aluguel,
+240
+vou colocar aqui 5 mil, categoria,
+241
+não tem a categoria moradia,
+242
+e aqui também não tem a opção de cadastro de categorias,
+243
+nós poderíamos solicitar esse cadastro,
+244
+então vou apenas trocar a despesa,
+245
+vou colocar salário, 12 mil, o tipo receita, o tipo receita,
+246
+salário PJ, por exemplo,
+247
+a data vou salvar,
+248
+ele deu um erro,
+249
+vou fazer o seguinte,
+250
+vou copiar esse erro,
+251
+na verdade vou preencher os dados primeiro,
+252
+e agora vou tirar um print,
+253
+e vou falar,
+254
+ajuste o erro que está ocorrendo na imagem,
+255
+aí vou colocar a imagem,
+256
+e também vou colocar aqui, a rota, a rota, a rota, a rota, a rota, a rota,
+257
+nesse caso é transações, muito bem,
+258
+voltando ao Antigraft,
+259
+vou colocar a rota,
+260
+vou só passar aqui para cima, melhor,
+261
+bacana, vamos aguardar,
+262
+ele está querendo alterar o arquivo transactions.ts,
+263
+vamos aceitar a alteração, bugets também,
+264
+legal, ele explica o erro,
+265
+vamos testar,
+266
+então voltando na aplicação,
+267
+vou atualizar tudo,
+268
+vamos tentar cadastrar novamente, salário PJ, o valor,
+269
+categoria salário, receita,
+270
+muito bem, agora,
+271
+foi feita a gravação, posso adicionar,
+272
+vou colocar agora, lazer, viagem para
+273
+São Luís do Paraíba,
+274
+o valor gasto na viagem,
+275
+como despesa,
+276
+vou deixar aí uma data qualquer,
+277
+legal, então estamos conseguindo fazer a inserção dos registros,
+278
+também estamos conseguindo remover,
+279
+veja só, cliquei em remover,
+280
+ainda não está removendo,
+281
+mas nós poderíamos seguir,
+282
+encaminhando prompts,
+283
+para implementar as funcionalidades da aplicação,
+284
+voltando no Super Base,
+285
+vou só acessar aqui,
+286
+repare que nesse momento,
+287
+na parte de autenticação,
+288
+nós temos um usuário,
+289
+você viu que ele automaticamente encaminhou um e-mail,
+290
+solicitando que o usuário confirme aquele respectivo e-mail,
+291
+temos uma confirmação importante sendo feita,
+292
+e na parte de banco de dados,
+293
+repare que nós temos as tabelas,
+294
+e que os registros vão sendo inseridos nas tabelas,
+295
+então se clicarmos aqui em tables,
+296
+podemos acessar uma tabela específica,
+297
+por exemplo, transactions,
+298
+podemos ver aqui as colunas e os registros,
+299
+aqui eu cliquei para ver as colunas,
+300
+mas na verdade eu quero ver os dados da tabela, agora sim,
+301
+então repare que as informações vão sendo cadastradas,
+302
+tudo funcionando muito bem,
+303
+claro que seria necessário a atividade de Code Review,
+304
+sobre a implementação que foi feita pelo agente de IA,
+305
+mas basicamente nós temos uma aplicação funcional,
+306
+nós podemos finalizar as iterações por aqui sobre esse projeto,
+307
+até para que a aula não fique tão extensa,
+308
+mas o que eu quero ressaltar aqui,
+309
+até este momento do curso,
+310
+nós desenvolvemos,
+311
+utilizando o agente de Atom Antigravity,
+312
+ainda de forma, digamos, básica,
+313
+basicamente um Vibe Coding,
+314
+o que não é o indicado no dia a dia,
+315
+nós basicamente encaminhamos prompts,
+316
+e com exceção do plano de implantação,
+317
+que aí é algo que realmente traz muitos benefícios,
+318
+com exceção do plano,
+319
+você viu aqui mais do mesmo,
+320
+porém a partir dos próximos módulos,
+321
+você vai aprender a como configurar o ambiente
+322
+onde o agente de IA vai executar,
+323
+ou seja, nós vamos customizar as habilidades do agente,
+324
+nós vamos adicionar regras,
+325
+vamos adicionar workflows,
+326
+e vamos também implementar conexões via MCP
+327
+com serviços externos,
+328
+e tudo isso vai criar um ambiente ideal
+329
+para aí sim os prompts serem ainda mais eficientes.
+330
+Então, até aqui, realmente,
+331
+com exceção do planejamento,
+332
+nós apenas trabalhamos no estilo Vibe Coding,
+333
+mas é agora que nós vamos começar a realmente
+334
+trazer recursos para o ambiente
+335
+para que os nossos agentes trabalhem
+336
+praticamente de forma autônoma. Combinado?
+337
+Bom, então, até a próxima aula.
+
+--- Regras (Rules) - Introdução ---
+
+1
+A partir dessa aula, eu vou apresentar para você
+2
+como funcionam e como podemos implementar as regras no AntiGraft.
+3
+Basicamente, falando as regras,
+4
+elas servem para definir o comportamento do agente.
+5
+Como assim, o comportamento do agente?
+6
+Bom, pense o seguinte.
+7
+Nós vamos trabalhar com o apoio de agentes
+8
+que muitas vezes irão executar as tarefas de forma autônoma,
+9
+ou mesmo de forma supervisionada.
+10
+Esses agentes, por trás,
+11
+possuem uma integração com um modelo de IA generativa.
+12
+Então, dada a tarefa,
+13
+muito provavelmente o modelo já tem o conhecimento necessário
+14
+para resolver essa tarefa.
+15
+O agente vai fazer essa interface para nós.
+16
+Mas pense o seguinte. Pense no agente de IA,
+17
+pense nesse labirinto como sendo a tarefa a ser realizada pelo agente,
+18
+e tenha em mente que a solução que esse agente pode encontrar
+19
+é uma solução diversa.
+20
+Existem várias possibilidades do agente
+21
+resolver aquilo que foi solicitado para ele.
+22
+De modo que a solução encontrada por ele
+23
+pode ou não ser uma solução
+24
+mais ou menos aproximada da solução ideal
+25
+para aquela tarefa dentro daquele projeto. O que acontece?
+26
+Acontece que quando nós definimos as regras,
+27
+nós vamos definir o comportamento do agente de IA
+28
+para que ele tome determinados caminhos,
+29
+baseando-se nessas regras,
+30
+de modo a encontrar a solução mais apropriada para aquela tarefa. Percebe?
+31
+Então, é uma forma de guiar o agente de IA
+32
+dentro da solução do desafio que estamos implementando.
+33
+Então, observando o labirinto como sendo a tarefa a ser realizada,
+34
+as regras seriam esse caminho vermelho
+35
+que nós vamos tentar delinear
+36
+para que o agente de IA encontre a resposta,
+37
+a solução mais apropriada para o que foi solicitado para ele. Percebe?
+38
+Fazendo um paralelo,
+39
+nós, desenvolvedores,
+40
+nós trabalhamos com o desenvolvimento das aplicações
+41
+seguindo um developer guide, um guia de desenvolvimento.
+42
+Então, é muito comum as equipes terem um guia de desenvolvimento
+43
+onde está especificado
+44
+todos os detalhes daquele projeto específico,
+45
+como, por exemplo, a stack que vai ser utilizada,
+46
+quais serão as boas práticas que serão adotadas naquele projeto,
+47
+os padrões de nomenclatura,
+48
+quais frameworks ou quais metodologias serão utilizadas.
+49
+Enfim, é muito comum que as equipes de desenvolvimento
+50
+tenham um developer guide, um guia de desenvolvimento,
+51
+e aí, a todo momento, o desenvolvedor
+52
+ou os desenvolvedores precisam olhar para aquele documento,
+53
+revisitar o conteúdo, relembrar essas regras
+54
+para, aí sim, implementar o código.
+55
+Com os agentes de IA, a ideia é a mesma.
+56
+Então, imagine pegar esse developer guide,
+57
+quebrar tudo isso em regras
+58
+e adicionar essas regras no projeto,
+59
+de modo que as regras, inclusive,
+60
+poderão ser versionadas com o código fonte do projeto.
+61
+E aí, quando esse projeto for clonado por outros desenvolvedores,
+62
+essas regras já estarão no contexto do projeto,
+63
+permitindo com que os comandos dados para os agentes de IA
+64
+sejam, digamos, dentro das regras,
+65
+equivalentes em diferentes ambientes
+66
+por diferentes programadores interagindo com aquele código.
+67
+Então, as regras possuem essa característica.
+68
+Elas definem o comportamento do agente,
+69
+criando, digamos, apontamentos,
+70
+formas do agente decidir
+71
+dentro daquilo que é esperado para aquele respectivo projeto.
+72
+Lembrando que os projetos possuem regras variadas.
+73
+Existem regras que são comuns para vários projetos
+74
+e existem regras que são aplicáveis a projetos específicos.
+75
+Então, esse tipo de implementação também é suportada no AntiGravity.
+76
+Na próxima aula, nós vamos começar a criar as regras
+77
+e aí eu tenho certeza que tudo isso ficará muito mais claro na sua mente. Então, até lá.
+
+--- Regras para o Espaço de Trabalho ---
+
+1
+Nessa aula, nós vamos adicionar duas regras ao projeto,
+2
+ou seja, regras que fazem sentido especificamente para este projeto,
+3
+para o app Orçamento Pessoal.
+4
+Como nós faremos a inclusão das regras para o projeto,
+5
+essas regras serão vinculadas ao workspace do projeto. Combinado?
+6
+Bom, quando o projeto foi iniciado, ele criou aqui dois arquivos,
+7
+o agents.md e o cloud.md.
+8
+Eu vou apenas remover esses arquivos daqui,
+9
+porque eles podem gerar alguns conflitos
+10
+em relação a como o AntiGraft armazena as regras
+11
+dentro da estrutura de diretórios, ok?
+12
+Bom, então vamos lá.
+13
+Eu vou acessar, então, a aba de criação das regras.
+14
+Nós temos dois caminhos, basicamente.
+15
+Eu posso vir aqui na opção AntiGraft Settings,
+16
+na sequência em Customizations,
+17
+clicar em Manage.
+18
+Ele abre a tela de customização,
+19
+e aqui nós temos as regras, ou Rules,
+20
+e os fluxos de trabalho, ou Workflows.
+21
+E eu também posso acessar essa tela,
+22
+vou só retornar aqui para o chat do agente,
+23
+eu posso acessar essa tela clicando nesses três pontinhos
+24
+e na sequência em Customization, ok?
+25
+Então, alcanço a mesma tela.
+26
+Por enquanto, vamos desconsiderar a aba Workflows,
+27
+e vamos nos concentrar aqui na aba de Rules, de regras.
+28
+Como eu comentei, podemos criar regras globais
+29
+e regras associadas ao workspace do projeto.
+30
+Então, nessa aula, as duas regras serão para o projeto,
+31
+especificamente.
+32
+Eu vou apenas copiar o nome da regra.
+33
+Olha só, vou clicar em Workspace,
+34
+vou colocar o nome da regra.
+35
+Nós precisamos utilizar caracteres em caixa baixa,
+36
+separados por traço, né?
+37
+Sem caracteres especiais para definição do nome das regras.
+38
+Vou teclar Enter,
+39
+e ele entra numa tela de configuração da regra.
+40
+Nós temos um modo de ativação da regra.
+41
+Então, ela pode ser ativada de forma manual,
+42
+ou seja, lá na hora do prompt,
+43
+nós citaríamos a regra para ser considerada.
+44
+Ela pode ficar sempre ativa,
+45
+então, sempre quando prompts forem disparados contra os agentes,
+46
+eles vão considerar as regras.
+47
+Aqui nós podemos aplicar um modelo de decisão,
+48
+e o glob seria basicamente definir aqui
+49
+gatilhos, padrões,
+50
+para identificar os arquivos
+51
+onde aquelas regras seriam disparadas.
+52
+Então, eu poderia falar que aquela regra, especificamente,
+53
+seria disparada para todos os arquivos JS, ok?
+54
+No nosso caso, eu vou criar aqui
+55
+uma regra que estará sempre ativa.
+56
+Então, o agente sempre vai se preocupar
+57
+em estreitar a solução em função da regra.
+58
+E para facilitar um pouco,
+59
+eu já deixei o texto pronto,
+60
+apenas para facilitar, para não ter que digitar tudo.
+61
+Então, qual que é a regra?
+62
+Repare que ela é específica para o projeto.
+63
+Eu estou falando que toda lógica que envolve valores monetários
+64
+deve usar decimal,
+65
+de acordo com o Python, ou big.js, ou decimal.js,
+66
+para JavaScript e TypeScript,
+67
+em vez de float ou number, nativo,
+68
+para evitar erros de arredondamento
+69
+em cálculos financeiros.
+70
+Validar e rejeitar entradas negativas
+71
+em campos de receita,
+72
+e entradas positivas em campos de despesa,
+73
+salvo quando o domínio explicitamente permita, né?
+74
+Nunca exibir valores financeiros
+75
+sem formatação de moeda.
+76
+Então, é uma forma de exibição do conteúdo.
+77
+Respeitando, coloquei o ptbr.
+78
+Incluir testes monetários para qualquer função de cálculo.
+79
+Saldo total de categoria, projeção mensal.
+80
+Legal. Então, eu estou definindo essa regra,
+81
+vou teclar Ctrl S,
+82
+e agora nós já temos uma regra
+83
+associada ao workspace,
+84
+e ela é armazenada
+85
+lá dentro do diretório .agents,
+86
+dentro do diretório roles.
+87
+Então, o Antigravity cria essa estrutura de diretórios
+88
+e adiciona um arquivo aqui.
+89
+Nós podemos interagir com esse arquivo
+90
+e editar as informações,
+91
+de modo que ele também pode ser versionado, né?
+92
+Ele acompanha o projeto,
+93
+então outros desenvolvedores,
+94
+interagindo na aplicação,
+95
+teriam essa regra,
+96
+estreitando ou definindo o comportamento do agente.
+97
+Bacana. Vou adicionar mais uma regra,
+98
+vou só copiar o nome da próxima regra.
+99
+Nesse caso,
+100
+segurança e privacidade dos dados do usuário.
+101
+Vou deixar aqui também
+102
+para sempre ser considerada pelo agente,
+103
+e vou copiar o conteúdo da regra.
+104
+Vou colocar aqui, e qual a regra?
+105
+Por se tratar de uma aplicação
+106
+que lida com dados financeiros pessoais sensíveis,
+107
+nunca logar, imprimir ou expor valores de transações,
+108
+saldos ou dados de usuário em console.log,
+109
+print ou arquivos de log em ambiente de produção.
+110
+Dados financeiros não devem ser armazenados
+111
+em local storage ou session storage
+112
+sem criptografia.
+113
+Toda comunicação com APIs externas
+114
+deve usar HTTPS e incluir tratamento explícito
+115
+de erros de autenticação.
+116
+Ao gerar SEADs, MOCs ou dados de teste,
+117
+usar apenas valores fictícios,
+118
+nunca reutilizar ou hardcoded dados reais
+119
+de usuários no código.
+120
+Vou salvar essa regra,
+121
+e eu posso seguir escrevendo regras para o projeto.
+122
+Conforme o projeto vai evoluindo,
+123
+conforme você vai obtendo uma clareza maior
+124
+sobre o projeto,
+125
+você pode ir definindo essas regras.
+126
+Lembrando que se você conseguir iniciar o projeto
+127
+já com as regras prévias,
+128
+com o tempo você vai pegando jeito.
+129
+Se você conseguir logo no início já ter as regras
+130
+antes de executar o primeiro prompt,
+131
+isso vai te ajudar muito a obter já
+132
+na inicialização do projeto,
+133
+o comportamento desejado por trás da aplicação.
+134
+Então, agora é uma questão muito mais
+135
+de entender as regras
+136
+antes de começar a simplesmente
+137
+vibecodar o projeto.
+138
+Bacana. Então, as duas regras foram criadas.
+139
+Nós podemos voltar aqui no chat,
+140
+e eu vou falar para o agente,
+141
+ajuste o projeto de acordo com as regras definidas.
+142
+Vou colocar no modo de planejamento.
+143
+Então, ele primeiro vai entender as regras,
+144
+vai entender o contexto,
+145
+vai montar um plano de execução,
+146
+e depois ele vai passar a executar isso.
+147
+Vamos ver o que ele corrige,
+148
+baseado nas regras que foram definidas.
+149
+Olha só.
+150
+Na criação do plano de implantação,
+151
+ele está pedindo para fazer a instalação das libs,
+152
+que foram citadas lá nas regras.
+153
+Então, aqui ele pede para instalar o decimal.js,
+154
+e ele também quer instalar o vtest. Vou autorizar.
+155
+Provavelmente nós teremos um erro aqui.
+156
+Ele vai modificar a forma de inserção
+157
+desse comando no terminal. Vamos testar. Ainda com erro.
+158
+Olha só, ele encontrou agora o comando que está funcionando
+159
+por questões de permissão. Vou executar.
+160
+Agora sim deve fazer a instalação.
+161
+Vamos aguardar o processo.
+162
+Ele promoveu alterações em alguns arquivos.
+163
+Eu já vou aceitar essas alterações.
+164
+Lembrando que como o projeto está versionado,
+165
+depois eu consigo avaliar essas alterações
+166
+durante o processo de commit
+167
+e também durante o processo de code review.
+168
+Vou aceitar aqui outra alteração sugerida.
+169
+Então, repare que ao passo em que ele forma
+170
+o plano de implantação,
+171
+ele também segue executando as ações.
+172
+Em algumas situações ele vai perguntar se pode ou não,
+173
+mas como no prompt eu falei para que ele montasse o plano,
+174
+ele entendeu que montando o plano,
+175
+ele poderia seguir executando.
+176
+Então, por isso que é interessante falar para montar o plano
+177
+e aguardar e não executar diretamente o plano.
+178
+Aguardar uma confirmação.
+179
+Bom, aqui ele está tentando realizar testes.
+180
+Olha só, teremos problemas em relação à permissão
+181
+da execução do comando.
+182
+Ele mudou aqui a forma de execução do comando.
+183
+Vamos testar agora. Muito bem.
+184
+Como nós havíamos colocado na regra para implementar testes,
+185
+para sempre validar as informações de transação,
+186
+então ele está fazendo isso.
+187
+Muito bem. Trouxe aqui um resumo do que foi feito.
+188
+Legal.
+189
+Podemos fechar aqui todas as abas.
+190
+No controle de versão do Git,
+191
+podemos avaliar exatamente cada uma das alterações que foram feitas.
+192
+Podemos validar isso com bastante precisão.
+193
+Lembrando que o objetivo do curso não é as funcionalidades em si,
+194
+mas os recursos de configuração por trás do Antigravity
+195
+para tornar o agente de IA melhor,
+196
+para resolver o atendimento às soluções desejadas.
+197
+Então, por isso que eu não vou entrar no detalhe do que foi alterado,
+198
+mas basicamente o que nós podemos fazer aqui é testar a aplicação.
+199
+Eu vou abrir um terminal. Olha só.
+200
+E vou executar o comando npm run dev, aqui pelo terminal mesmo,
+201
+e vamos testar no navegador se a aplicação continua funcionando.
+202
+Vamos ver se tem algum erro.
+203
+Bom, a aplicação está em execução.
+204
+Vou abrir aqui no navegador.
+205
+Legal. A aplicação foi carregada.
+206
+Vamos tentar fazer o acesso.
+207
+Lembrando que o acesso, quando nós estamos servindo a aplicação,
+208
+o primeiro acesso a cada uma das rotas
+209
+exige a compilação dos assets daquela respectiva rota.
+210
+Então, o primeiro acesso é um pouquinho demorado mesmo.
+211
+Olha só, tivemos um erro na rota aqui do dashboard.
+212
+Vou colocar qual é.
+213
+E vou pegar um print.
+214
+Vou submeter esse print.
+215
+Ajuste.
+216
+Vamos aceitar a modificação.
+217
+Vamos dar uma olhada agora.
+218
+Bacana. Repare que a aplicação está em execução.
+219
+Vamos dar uma olhada agora.
+220
+Bacana. Repare que ele já está logado na aplicação.
+221
+Vou só confirmar. Vou clicar aqui em sair.
+222
+Legal. A sessão foi interrompida.
+223
+Deixa eu tentar acessar diretamente.
+224
+Está protegida. Então, vamos lá.
+225
+Vou entrar aqui com o usuário e senha.
+226
+Legal. O login foi feito.
+227
+Aparentemente, a aplicação está funcionando.
+228
+Com exceção de relatórios. Bacana.
+229
+Por enquanto é isso.
+230
+Na próxima aula, nós vamos retomar falando sobre regras, mas agora de forma global. Então, até lá.
+
+--- Regras Globais ---
+
+1
+Nessa aula, nós vamos adicionar mais três regras.
+2
+Porém, essas regras serão adicionadas de forma global.
+3
+Isso significa que as regras estarão ativas,
+4
+serão consideradas pelo agente
+5
+em todos os projetos abertos no AntiGraft,
+6
+sem nenhum tipo de configuração prévia, ok?
+7
+São regras que ficam associadas ao usuário do sistema operacional.
+8
+Então, essas regras, a não ser que elas sejam adicionadas no código,
+9
+elas não são versionadas, porque elas não ficam no repositório do projeto.
+10
+Olha só, vamos lá, vamos criar as regras globais e isso tudo vai ficar mais claro.
+11
+Acessando a parte de Customization, na aba Roles, vamos clicar em Global,
+12
+e repare que é aberto aqui no editor um arquivo chamado Gemini.md,
+13
+que fica no diretório c://users, nome do usuário,
+14
+ponto Gemini, onde estão os arquivos globais do AntiGraft, ok?
+15
+Então, é nesse local que as regras são inseridas.
+16
+E aí todos os projetos abertos no AntiGraft irão compartilhar as regras definidas aqui.
+17
+E aí nós podemos escrever tantas regras quanto necessárias.
+18
+Eu já escrevi algumas regras, três regras, que eu acho que são muito importantes
+19
+e que eu vou compartilhar com você. Eu copiei o texto para facilitar um pouco.
+20
+Lembrando que essas regras estão disponíveis como recurso da aula,
+21
+só você localizar a opção para fazer o download.
+22
+Bom, então a primeira regra é a salvaguarda contra exclusão destrutiva,
+23
+e aí tem uma diretriz, proibir a autonomia em operações de remoção
+24
+e exigir verificação rigorosa em múltiplas etapas.
+25
+Aqui a descrição, olha só, o agente está terminantemente proibido
+26
+de realizar exclusões físicas de dados.
+27
+Na sequenciação, qualquer operação destrutiva deve ser tratada como um evento crítico,
+28
+e por aí vai. Então vou definindo aqui as regras,
+29
+e o agente vai sempre ficar atento a essas regras.
+30
+Isso vai determinar o comportamento do agente frente às decisões
+31
+que forem aparecendo para ele.
+32
+Então, além dessa primeira regra que eu acho muito importante,
+33
+a salvaguarda contra exclusão destrutiva,
+34
+tem uma outra regra que eu utilizo muito,
+35
+que é a validação de contexto e versionamento.
+36
+Então, sempre priorizar a conformidade técnica
+37
+com o ambiente real do projeto.
+38
+Então, ao invés de ele tomar alguma ação baseada
+39
+em algum conhecimento que o modelo já tenha armazenado antes,
+40
+não, olha, confere aqui o ambiente dentro do contexto do ambiente do projeto,
+41
+aí sim faça as devidas operações.
+42
+Então, novamente, trouxe aqui uma diretriz,
+43
+uma descrição, antes de implantar qualquer padrão arquitetural
+44
+ou funcionalidade, verifique obrigatoriamente as versões específicas,
+45
+e tudo mais. Trouxe aqui a ação,
+46
+então é sempre bom definir essas características nas regras globais.
+47
+E, por fim, uma terceira regra que eu estou propondo aqui
+48
+é com relação à segurança e restrição no nível da fonte.
+49
+Então, enraizar a integridade dos dados
+50
+na camada de persistência ou infraestrutura.
+51
+Na sequência, a descrição seria implementar políticas de segurança
+52
+e restrições de acesso a dados na camada mais baixa
+53
+e profunda possível do sistema,
+54
+no banco de dados, camada de serviço e infraestrutura.
+55
+A ação, como ele deve se comportar,
+56
+então nós podemos ir definindo as regras,
+57
+lembrando que essas regras são globais,
+58
+então são regras que fazem sentido independente do projeto.
+59
+Todos os projetos que eu trabalho,
+60
+eu estou apresentando aqui para você,
+61
+três regras que eu sempre utilizo.
+62
+Claro, existem outras regras também,
+63
+você vai, aos poucos,
+64
+criando o seu portfólio de regras e vai adicionando, ok?
+65
+Lembrando que você pode ter um repositório à parte
+66
+só para versionar as suas regras globais,
+67
+ou configurações globais,
+68
+caso você queira compartilhar com outras pessoas.
+69
+Da forma como está,
+70
+essas regras, elas não entram no versionamento do projeto.
+71
+Então, caso você queira versionar as regras globais,
+72
+você pode criar um arquivo no diretório do projeto,
+73
+Gemini.md, por exemplo,
+74
+copiar esse conteúdo lá e colocar ali no readme
+75
+a orientação de que essas regras globais
+76
+devem ser colocadas ali no contexto do usuário,
+77
+no sistema operacional.
+78
+Lembrando que você também pode copiar o caminho,
+79
+olha só, vou ver se ele acessa por aqui,
+80
+eu acho que não.
+81
+Mas você pode acessar diretamente no sistema operacional,
+82
+navegando até este caminho.
+83
+Então, no meu caso, lá em C dois pontos,
+84
+users, vai depender se estiver traduzido
+85
+o seu sistema operacional,
+86
+nesse caso é usuários, george.gemini,
+87
+aqui está o arquivo em questão, ok?
+88
+Bom, então, vou deixar essas regras globais.
+89
+A partir de agora,
+90
+o agente, ele vai considerar essas regras
+91
+durante a execução dos prompts.
+92
+Por essa aula é isso,
+93
+vamos avançar entendendo os recursos disponíveis no Antigravity.
+94
+Então, até a próxima aula.
+
+--- Refatorando o projeto de acordo com as regras ---
+
+1
+No cenário ideal, as regras estarão configuradas no ambiente,
+2
+seja no projeto, seja de forma global,
+3
+elas estarão configuradas antes de qualquer prompt,
+4
+antes do agente executar qualquer ação.
+5
+Só que nós sabemos que no dia a dia isso não acontece,
+6
+principalmente quando estamos trabalhando com projetos ligados.
+7
+Então, em muitas situações,
+8
+as regras vão aparecer depois do andamento do projeto,
+9
+depois que muita coisa já evoluiu dentro do projeto.
+10
+Com o tempo, você vai colocando as regras na frente,
+11
+agora que você já conhece esse recurso.
+12
+Mas nas situações em que as regras são criadas depois,
+13
+é importante solicitar para que o agente considere aquelas regras
+14
+e refatore o projeto.
+15
+Então, aqui eu vou fazer exatamente isso.
+16
+Refatore o projeto de acordo com as regras roles globais. Muito bem.
+17
+Vamos disparar esse prompt em modo de planejamento
+18
+para que ele consiga entender aqui todo o contexto,
+19
+e vamos aguardar a solução aqui por parte do agente.
+20
+Legal. Ele propôs um plano de implantação.
+21
+O plano está todo em inglês.
+22
+Vou pedir aqui para traduzir.
+23
+Ele fez a tradução.
+24
+Então, vamos dar uma olhada aqui, né?
+25
+Refatoração do projeto para conformidade com as regras.
+26
+Então, é importante.
+27
+Vou implantar o softlead, exclusão lógica para todos os dados,
+28
+considerando a salvaguarda contra a exclusão destrutiva. Legal.
+29
+E agora, eu vou fazer o mesmo com a regra.
+30
+Então, eu vou fazer o mesmo com a regra.
+31
+A salvaguarda contra a exclusão destrutiva. Legal.
+32
+A interface do usuário para exclusão
+33
+será atualizada para exigir confirmação tripla. Bacana.
+34
+Então, mudanças propostas.
+35
+Aqui estão todas as mudanças. Legal.
+36
+Então, esse plano vai seguir as regras globais.
+37
+Podemos solicitar para que o agente implemente o plano.
+38
+Ele está solicitando a execução dos testes.
+39
+Vamos seguir aqui aprovando.
+40
+Ele está tentando executar, mas com erro de permissão, né?
+41
+Ele está encontrando aqui alternativas para execução do teste.
+42
+Muito bem.
+43
+Então, ele promoveu uma sequência de testes.
+44
+Então, ele vai executar o primeiro teste. Muito bem.
+45
+Então, ele promoveu uma série de alterações no projeto.
+46
+Vou aceitar todas as alterações.
+47
+Vou fechar aqui todos os scripts.
+48
+O único detalhe aqui é que, no caso do SupaBase,
+49
+nós estamos adicionando as alterações direto pelo dashboard.
+50
+Então, eu vou ver exatamente qual foi a mudança
+51
+que aconteceu aqui no script. Olha só.
+52
+Ele gerou aqui todas essas instruções SQL.
+53
+Então, eu vou executar essas instruções
+54
+lá pelo dashboard do SupaBase.
+55
+Vou só retornar ao SupaBase.
+56
+Vou acessar a organização, o projeto,
+57
+dentro do projeto, no SQL Editor,
+58
+dentro do projeto, no SQL Editor, vou executar as queries.
+59
+Lembrando que é importante que você valide o resultado das queries,
+60
+ter certeza que nada está sendo removido.
+61
+Aqui eu estou executando porque nós estamos em um ambiente,
+62
+digamos, ainda de testes, sem dados reais.
+63
+Então, não tem problema.
+64
+Mas é importante validar essas operações
+65
+feitas diretamente em banco de dados.
+66
+Então, se observarmos aqui o banco de dados, olha só.
+67
+Vamos ver se temos a tabela nova.
+68
+Só atualizar essa tela.
+69
+Vou só confirmar aqui nas instruções SQL.
+70
+Na verdade, são só alter tables, não é?
+71
+E algumas policies que ele fez a inclusão.
+72
+Ele não chegou a criar uma tabela nova.
+73
+Legal. Só fez a alteração mesmo?
+74
+Bacana. Então, feito isso, vamos testar a aplicação.
+75
+Voltando aqui no navegador,
+76
+vou teclar um Ctrl-R, vamos tentar acessar a aplicação.
+77
+Legal. Aparentemente, tudo funcionando, não é?
+78
+Vou tentar inserir uma nova transação.
+79
+Olha só. Houve um erro aqui na transação.
+80
+Vamos ver se a gente consegue ver o erro aqui na transação.
+81
+Olha só. Houve um erro aqui na transação.
+82
+Então, nós podemos solicitar o ajuste.
+83
+Lembrando que todas as iterações feitas com a gente
+84
+vão respeitar as regras que foram estabelecidas,
+85
+tanto as regras do projeto, quanto as regras globais.
+86
+Então, vamos ver se a gente consegue ver o erro aqui na transação.
+87
+Olha só. Houve um erro aqui na transação.
+88
+Então, vamos teclar um Ctrl-R, vamos tentar acessar a aplicação.
+89
+Olha só. Houve um erro aqui na transação.
+90
+Então, vamos teclar um Ctrl-R, vamos tentar acessar a aplicação.
+91
+Tanto as regras do projeto, quanto as regras globais.
+92
+Eu vou aceitando as alterações.
+93
+Novamente, o objetivo aqui não são as funcionalidades,
+94
+mas as funcionalidades da aplicação,
+95
+e sim os recursos dentro do Antigraft
+96
+para potencializar a efetividade dos agentes, ok?
+97
+Então, ele finalizou. Podemos testar.
+98
+Vou, inclusive, servir a aplicação novamente.
+99
+Vamos atualizar tudo.
+100
+Legal, vou tentar fazer a inserção.
+101
+Olha só, ele deu o erro aqui dizendo que as receitas devem ser positivas ou zero,
+102
+e despesas devem ser negativas ou zero.
+103
+Então, vou colocar aqui novamente.
+104
+Dessa vez, deu certo.
+105
+Vale verificar se é uma feature realmente útil,
+106
+já que não foi, digamos, uma feature que não foi tão intuitiva
+107
+colocar um valor negativo direto no campo.
+108
+Então, é algo que pode ser revisto. Fica aí a dica.
+109
+Como existe uma regra que estabelece esse comportamento,
+110
+então, essa regra também pode ser usada.
+111
+O importante é ter as regras definidas no projeto e de forma global
+112
+para que o comportamento do agente se torne um pouco mais previsível.
+113
+Lembrando que ele vai sempre procurar a melhor solução
+114
+dentro da base de conhecimento do modelo,
+115
+e essa melhor solução, ela pode não ser a ideal.
+116
+Então, por isso que as regras vão contribuir
+117
+para que o comportamento do agente se torne um pouco mais previsível.
+118
+Então, por isso que as regras vão contribuir
+119
+para estreitar os caminhos que o agente vai tomar,
+120
+deixá-lo, digamos, menos imprevisível.
+121
+Mas é tudo questão de refinar, de ajustar,
+122
+de orquestrar melhor as decisões
+123
+que o agente vai tomando dentro do projeto e também de forma global.
+124
+Bom, nós ainda temos muitos assuntos pela frente,
+125
+então, eu te vejo na próxima aula. Até lá.
+
+--- Fluxos de Trabalho (Workflows) - Introdução ---
+
+1
+No Autograft, os fluxos de trabalho, ou workflows,
+2
+são fluxos reutilizáveis de tarefas
+3
+que organizam como que o agente deve executar um trabalho
+4
+do início ao fim.
+5
+Como desenvolvedores, nós estamos a todo momento
+6
+executando fluxos de trabalho
+7
+para alcançar um determinado resultado.
+8
+E esses fluxos de trabalho
+9
+geralmente possuem uma sequência lógica de passos
+10
+e, inclusive, podem ser reutilizados.
+11
+Nós podemos fazer várias vezes em um mesmo projeto
+12
+ou até podemos reutilizar em projetos diferentes.
+13
+E uma vez que esses fluxos de trabalho são identificados
+14
+e estão bem estruturados,
+15
+eles podem ser abstraídos e delegados
+16
+para um agente de IA no Autograft.
+17
+Eu trouxe alguns exemplos de fluxos de trabalho
+18
+no dia a dia de qualquer dev.
+19
+Por exemplo, a criação de uma funcionalidade no projeto.
+20
+Quando nós precisamos criar uma funcionalidade,
+21
+geralmente, o que nós vamos fazer é o quê?
+22
+Nós vamos ler os requisitos da funcionalidade,
+23
+vamos analisar a arquitetura atual do projeto,
+24
+vamos criar um plano de implantação.
+25
+Se houver a necessidade de armazenamento de dados,
+26
+nós vamos criar as migrations,
+27
+vamos executar as migrations no banco de dados,
+28
+vamos criar as rotas da API, os endpoints da API,
+29
+vamos criar a interface de usuário
+30
+para o front-end da aplicação, se for esse o caso.
+31
+Também vamos adicionar as validações,
+32
+vamos escrever os testes, rodar o lint e o build
+33
+e vamos gerar a documentação.
+34
+Então, novas funcionalidades,
+35
+quando criadas, podem seguir um fluxo de trabalho.
+36
+Quando nós estamos falando da correção de um bug,
+37
+geralmente, o que é feito? Qual é o fluxo de trabalho?
+38
+Geralmente, nós realizamos a leitura dos logs,
+39
+depois tentamos reproduzir o erro,
+40
+identificamos a causa raiz,
+41
+criamos algumas hipóteses acerca de como aquele erro aconteceu
+42
+e aí, de fato, aplicamos uma correção,
+43
+rodamos os testes agora com a correção implementada,
+44
+na sequência, é feita uma validação
+45
+para verificar se houve ou não alguma regressão
+46
+em função da implantação e, no final, geramos um relatório.
+47
+Então, geralmente, é assim
+48
+que nós trabalhamos com a correção de bugs.
+49
+Quando estamos falando de revisar um pull request
+50
+ou um merge request,
+51
+uma outra atividade de trabalho,
+52
+um outro fluxo de trabalho também bem estruturado, bem comum,
+53
+o que é feito nesse caso?
+54
+Normalmente, é feita a leitura do DIF,
+55
+daquele PR ou daquele MR.
+56
+Nós vamos, depois, verificar os padrões do projeto,
+57
+vamos procurar pelos cold emails,
+58
+vamos procurar por vulnerabilidades,
+59
+vamos validar a tipagem,
+60
+vamos verificar a cobertura de testes,
+61
+vamos também gerar comentários acerca daquele desenvolvimento
+62
+e, claro, no final, vamos ou não aprovar a solicitação de mudança.
+63
+Então, repare que existem ali algumas tarefas,
+64
+algumas etapas bem específicas dentro desse fluxo de trabalho.
+65
+E não para por aí.
+66
+Se você se lembra bem, em aulas anteriores,
+67
+nós implementamos uma integração com o Super Base.
+68
+Se a nossa stack tem essa característica
+69
+e nós estamos trabalhando em vários projetos com essa mesma stack,
+70
+então nós podemos ter um fluxo de trabalho específico
+71
+para a integração com o Super Base.
+72
+Sempre quando um novo projeto for iniciado,
+73
+nós podemos ativar esse fluxo de trabalho.
+74
+Nós vamos, basicamente, verificar a estrutura do projeto,
+75
+instalar o SDK do Super Base,
+76
+configurar as variáveis de ambiente,
+77
+vamos criar o client para comunicação com o Super Base,
+78
+vamos configurar a autenticação,
+79
+vamos criar as tabelas iniciais,
+80
+testar a conexão e gerar as instruções finais.
+81
+Então, são etapas dentro de um fluxo de trabalho
+82
+que também pode ser abstraído,
+83
+pode ser separado e entregue
+84
+para que um agente de IA faça essas atividades para nós.
+85
+Outro exemplo seria a geração de documentação.
+86
+Agora, com a IA,
+87
+se tornou muito mais fácil documentar os desenvolvimentos.
+88
+Então, o que é feito nesse fluxo de trabalho?
+89
+Basicamente, nós vamos escanear o código,
+90
+vamos identificar os módulos,
+91
+vamos detectar os endpoints,
+92
+vamos detectar as entidades,
+93
+vamos gerar diagramas e criar também conteúdo markdown
+94
+com toda a documentação necessária
+95
+e, claro, vamos atualizar o ritmo do projeto.
+96
+Então, com o apoio de IA,
+97
+nós podemos delegar esse fluxo de trabalho
+98
+com essas etapas para o agente,
+99
+para que ele cuide dessa tarefa para nós.
+100
+Então, a ideia aqui é o seguinte.
+101
+Quando você tem um fluxo de trabalho razoavelmente estruturado,
+102
+nós podemos isolar isso e entregar isso
+103
+para que o agente passe a executar para nós.
+104
+E aí o nosso trabalho agora é melhorar toda essa implementação.
+105
+A partir da próxima aula,
+106
+nós vamos ver como nós podemos criar os primeiros fluxos de trabalho,
+107
+qual que é o resultado que nós podemos obter
+108
+e, a partir daí, eu tenho certeza
+109
+que você vai conseguir pensar em como pegar os seus fluxos de trabalho,
+110
+transpor isso para os agentes de IA do AntiGraft
+111
+e começar a utilizar os fluxos de trabalho
+112
+por meio dos agentes de IA dentro dos seus projetos,
+113
+no seu dia a dia.
+114
+Bom, então, até a próxima aula.
+
+--- Fluxos de Trabalho para o Espaço de Trabalho ---
+
+1
+Nessa aula, nós vamos trabalhar na criação de um fluxo de trabalho
+2
+para o projeto, que faça sentido especificamente para este projeto.
+3
+Então, será um fluxo de trabalho associado ao Workspace.
+4
+Para criar um fluxo de trabalho, vamos acessar a opção,
+5
+ou as opções adicionais, e vamos clicar em Customization.
+6
+Na sequência, na aba Workflows, ou fluxos de trabalho,
+7
+vamos selecionar se queremos que seja um fluxo de trabalho global,
+8
+ou seja, para qualquer projeto aberto pelo Antigrav,
+9
+ou se será um fluxo de trabalho associado ao Workspace do projeto especificamente.
+10
+Então, nesse caso, eu vou seguir aqui como sendo um fluxo de trabalho
+11
+para o projeto, para o Workspace,
+12
+e será um fluxo de trabalho para o pre-commit.
+13
+Então, imagine que você fez uma alteração no código,
+14
+você está desenvolvendo uma funcionalidade, ou ajustando, enfim,
+15
+e você precisa executar uma ação,
+16
+geralmente nós executamos uma ação de pre-commit.
+17
+Algumas tarefas antes de efetivar o commit
+18
+daquela mudança que foi promovida dentro do código.
+19
+Então, isso pode ser abstraído para um fluxo de trabalho.
+20
+Vou chamar, então, de pre-commit, legal.
+21
+E para facilitar um pouco o andamento da aula,
+22
+eu vou copiar o conteúdo que eu já deixei escrito,
+23
+para não ter que ficar digitando.
+24
+Então, olha só, a descrição será,
+25
+verifica a tipagem, estética, qualidade e build do código
+26
+antes de comitar alterações. Muito bem.
+27
+E os passos? Vou copiar e trazer aqui também.
+28
+Então, olha só, separei em duas categorias,
+29
+basicamente nós teremos os passos nesse workflow,
+30
+mas além dos passos, eu também coloquei alguns critérios de aceite,
+31
+que na prática também são passos, que deverão ser executados,
+32
+mas estou apenas separando aqui um pouquinho as ações.
+33
+Então, primeiro, o que eu quero?
+34
+Eu quero verificar se a sintaxe e tipagem estão corretas.
+35
+Então, execute npm run build,
+36
+e aí por que associado ao projeto?
+37
+Porque neste projeto, que é um projeto baseado em Node,
+38
+faz sentido executar o npm run build para buildar a aplicação.
+39
+Pode ser que um outro projeto,
+40
+que não tenha ali, por exemplo, o framework next,
+41
+pode ser que neste outro projeto,
+42
+o build seja feito de outra forma,
+43
+ou nem sequer seja necessário buildar a aplicação.
+44
+Então, por isso, nesse caso,
+45
+nós temos uma particularidade do projeto.
+46
+Mas esse mesmo workflow poderia ser copiado para outro projeto,
+47
+desde que ele tenha a mesma stack,
+48
+e, claro, fazendo sentido,
+49
+você pode reaproveitar dessa forma, copiando o conteúdo.
+50
+Então, execute o npm run build, ou o npxtsc non-emit,
+51
+e não ignore erros de tipagem.
+52
+Na sequência, lint e estilo.
+53
+Então, execute o linter no projeto para garantir a qualidade do código.
+54
+Execute o printer no projeto para garantir a estética do código.
+55
+Resumo de alterações depois.
+56
+Olha só, identifique se houve adição, remoção ou alteração
+57
+significativa na lógica de negócio.
+58
+E os critérios de aceite.
+59
+Então, zero erros de lint.
+60
+Não será permitido erros de lint.
+61
+Zero erros de printer, ou seja, de estética do código.
+62
+E aí eu estou falando aqui de identação,
+63
+utilização de aspas duplas ou aspas simples,
+64
+mas seguindo o critério definido no lint.
+65
+Então, uma vez que o critério for definido,
+66
+aquilo deve ser seguido em todos os casos.
+67
+Então, o printer traz esse controle para nós.
+68
+Além da tipagem, olha só.
+69
+Então, a tipagem TypeScript deve ser 100% válida,
+70
+e o build deve ser concluído sem avisos críticos.
+71
+Legal, uma vez que eu defini esse workflow,
+72
+repare que dentro do diretório .agents,
+73
+ele cria um diretório chamado workflows com o precommit.mt.
+74
+Então, nós podemos ir melhorando esse conteúdo.
+75
+E como ele passa a ser versionado, né,
+76
+então todos os desenvolvedores terão acesso a esse workflow
+77
+quando o projeto for clonado.
+78
+De modo que agora eu posso vir aqui no prompt
+79
+e solicitar para que o agente execute essa tarefa, esse workflow.
+80
+Então, olha só, nós podemos utilizar o barra de data
+81
+e selecionar o workflow que nós queremos executar, ok?
+82
+Aplique o workflow corrigindo o projeto.
+83
+Legal, vou disparar esse prompt
+84
+e vamos aguardar a execução dos passos.
+85
+Vou apenas fechar essa aba.
+86
+Ele está tentando executar o comando npxtsc++ no emit.
+87
+Vou dizer aqui que sim, podemos tentar fazer essa execução.
+88
+Ele não conseguiu, vai adaptar o comando, né?
+89
+Vamos avançar aqui.
+90
+Olha só, ele vai tentar executar o nint agora.
+91
+Ele gerou um plano de implantação, bacana.
+92
+Eu acabei não selecionando essa opção, né?
+93
+Mas ele entendeu que seria interessante adicionar esse plano.
+94
+Então, vamos proceder aqui com a execução do plano.
+95
+Muito bem, então este workflow identificou diversos ajustes,
+96
+ele traz aqui, né?
+97
+Apliquei todas as correções previstas,
+98
+o resumo das validações e tudo mais.
+99
+Trouxe as alterações, eu vou aceitar todas.
+100
+Lembrando que o objetivo não é exatamente o código ou o projeto,
+101
+mas sim a funcionalidade do AntGrav,
+102
+que é a funcionalidade de workflow.
+103
+Então, eu posso fechar tudo.
+104
+E nós podemos visualizar aqui as alterações que foram feitas.
+105
+As correções foram implementadas.
+106
+Antes de, de fato, executar o commit, nós podemos fazer o seguinte.
+107
+Vou abrir um terminal, vou executar um npm run dev,
+108
+vou apenas verificar se a aplicação continua funcional.
+109
+Ela foi iniciada, vou abrir o navegador.
+110
+Ok, tela inicial foi carregada.
+111
+Vamos tentar fazer o login.
+112
+Acessou a aplicação.
+113
+Aparentemente funcional.
+114
+Vou adicionar uma nova transação.
+115
+Olha só, ele reclamou, né?
+116
+Porque despesas, nesse caso, devem ser inseridas com valor negativo.
+117
+Então, é um comportamento que a gente pode corrigir depois.
+118
+Vamos ver se a gente consegue fazer o login.
+119
+Vamos ver se a gente consegue fazer o login.
+120
+Vamos ver se a gente consegue fazer o login.
+121
+Vamos ver se a gente consegue fazer o login.
+122
+Vamos ver depois.
+123
+Ok, aparentemente a informação foi armazenada, está sendo apresentada.
+124
+Legal, a aplicação está funcional.
+125
+Então, agora eu tenho um workflow já definido dentro do meu projeto,
+126
+que eu posso executar antes de qualquer commit.
+127
+Então, eu rodei aqui apenas para identificar os problemas,
+128
+mas agora eu poderia, de fato, realizar o commit.
+129
+Posso até fazer isso.
+130
+Vou pausar a aplicação.
+131
+Posso criar uma nova branch,
+132
+seguindo o padrão aqui de branch que eu estou criando nesse curso,
+133
+com o nome do módulo, na sequência, o nome da aula.
+134
+Nesse caso, o módulo é o Fluxos de Trabalho. Workflows. Fluxos.
+135
+Passo a passo para executar tarefas.
+136
+E a aula é o Fluxos de Trabalho para o Espaço de Trabalho. Branch criada.
+137
+Vamos adicionar as alterações e vamos efetivar o commit.
+138
+Adiciona Fluxo de Trabalho de pré-commit.
+139
+Bacana. Vou fazer um envio lá para o repositório. Muito bem.
+140
+Se eu realizar uma alteração no código,
+141
+antes de efetivar o commit, agora eu posso solicitar
+142
+a execução do workflow de pré-commit,
+143
+identificando ali ajustes que devem ser adicionados.
+144
+É interessante que antes de você executar o pré-commit,
+145
+que você execute o git add apenas para colocar as suas mudanças no stage.
+146
+Então, assim você garante as suas mudanças no stage.
+147
+E aí depois, com a execução do workflow de pré-commit,
+148
+aí você pode ver as diferenças sugeridas pelo workflow de pré-commit
+149
+e adicionar aquelas que fizerem sentido.
+150
+Muito provavelmente com o tempo,
+151
+todas elas serão bastante importantes e serem adicionadas.
+152
+Mas faça com calma, utilize as camadas de controle de versões do git
+153
+para evitar perder informação.
+154
+Então, eu te encontro na próxima aula. Até lá.
+
+--- Fluxos de Trabalho Globais ---
+
+1
+Nessa aula, nós vamos criar mais um workflow, mais um fluxo de trabalho.
+2
+Porém, agora, será um fluxo de trabalho global.
+3
+A ideia é que ele possa ser reutilizado não apenas no app de orçamento pessoal,
+4
+mas também em outros projetos que forem abertos pelo Antigraft.
+5
+Então, vamos lá. Eu vou acessar a parte de customizações,
+6
+e aqui, em workflows, vou acessar a opção global.
+7
+E, nesse caso, eu vou criar um workflow que será específico
+8
+para gerar documentação técnica em aplicações Next.js, ok?
+9
+Eu vou apenas copiar o nome para facilitar, para não ter que digitar tudo.
+10
+Então, o nome será Next.js Gerador de Documentação Técnica e Arquitetura.
+11
+Vou teclar Enter, e eu vou colocar o conteúdo.
+12
+Então, a descrição, vou copiar para facilitar.
+13
+Então, essa fica sendo a descrição.
+14
+Analisa a estrutura do diretório, arquivos de configuração e lógica de negócio
+15
+para gerar um readme.md ou architecture.md profissional,
+16
+incluindo diagramas mermaid,
+17
+e aí são diagramas que são criados a partir de uma linguagem artificial,
+18
+código que descreve os diagramas,
+19
+e aí aplicações que suportam mermaid conseguem interpretar esse código,
+20
+conseguem transformar esse código em diagrama.
+21
+Então, é um diagrama baseado em código, ok?
+22
+E, basicamente, esses diagramas vão explicar os fluxos de dados.
+23
+Legal. E aí, eu vou pular os passos aqui
+24
+e os critérios de aceite desse fluxo de trabalho. Então, olha só.
+25
+Primeiro, mapeamento de stack.
+26
+Identifica as principais tecnologias, coloquei alguns exemplos,
+27
+lendo o pack de JSON, então essa referência é importante,
+28
+e arquivos de infraestrutura.
+29
+Ou seja, se houver arquivos ali, Terraform, Gensible, Dockerfile,
+30
+tudo isso também vai ser lido.
+31
+Dois, análise de fluxo.
+32
+Então, analise as pastas srcapp, wholepages e srclib
+33
+para entender a hierarquia de rotas
+34
+e integração com serviços e bancos de dados.
+35
+Depois, a geração de diagramas mermaid.
+36
+Isso é bem legal, você vai ver o resultado.
+37
+Então, crie um gráfico de entidade relacionamento
+38
+se houver arquivos de schema de bancos de dados,
+39
+crie um gráfico de arquitetura de componentes ou fluxo de dados,
+40
+então um diagrama de sequência,
+41
+para as funcionalidades principais.
+42
+Redação técnica, escreva a documentação
+43
+seguindo uma estrutura de visão geral,
+44
+o que o sistema resolve, arquitetura.
+45
+Detalhes sobre o padrão adotado,
+46
+exemplo, clean, architecture, ou camadas.
+47
+Guia de execução, como subir o ambiente.
+48
+Então, descrever também se o ambiente vai ser executado com Docker,
+49
+se é necessário executar as migrations, enfim.
+50
+O local da documentação, então,
+51
+insira a documentação no readme.tmd
+52
+e os critérios de aceite.
+53
+Então, a documentação deve refletir 100%
+54
+da estrutura real de pastas do projeto,
+55
+os diagramas mermaid devem ser sintaticamente corretos
+56
+e renderizáveis,
+57
+instruções de infraestrutura devem estar presentes
+58
+se houver arquivos de Terraform ou de K8s no projeto,
+59
+e a linguagem técnica clara,
+60
+porém acessível para stakeholders de negócio.
+61
+Bacana, vou salvar esse workflow
+62
+e agora repare que ele não está dentro do diretório workflows,
+63
+ele foi salvo lá dentro do diretório global,
+64
+nesse caso, no meu caso, dentro do diretório C2.users.georg.gemini
+65
+barra config, barra global workflows.
+66
+Então, esse workflow está disponível
+67
+para o usuário do meu sistema operacional,
+68
+portanto, acessível em todos os projetos no Antigravity,
+69
+que está instalado aqui no meu usuário do sistema operacional.
+70
+Então, nós podemos vir aqui,
+71
+acessar o workflow, bacana, e executar.
+72
+Vamos aguardar o resultado.
+73
+Muito bem, ele trouxe aqui alguns detalhes,
+74
+então, a visão geral, mapeamento completo da stack,
+75
+guia de execução local, enfim, e fez alteração do readme.
+76
+Então, vou aceitar todas as alterações
+77
+e vou dar uma olhada no readme. Olha só, então,
+78
+plataforma de orçamento pessoal e controle financeiro,
+79
+a visão geral do sistema,
+80
+a stack tecnológica, muito bem,
+81
+a arquitetura do software, legal,
+82
+o fluxo de rotas e pastas, bacana,
+83
+diagramas e fluxos.
+84
+Então, repare que ele está utilizando Mermaid,
+85
+está definindo o diagrama com base em código.
+86
+Nós podemos, inclusive, vir aqui, olha só,
+87
+nas extensões do Antigravity
+88
+e pesquisar por uma extensão capaz de interpretar Mermaid.
+89
+Vou pegar essa que tem uma quantidade significativa
+90
+de downloads, bem avaliada. Vou instalar.
+91
+Instalação feita.
+92
+Vamos dar uma olhada aqui no readme.
+93
+Vamos voltar aqui para a parte do Mermaid.
+94
+Ele identificou o código,
+95
+mas ele não gerou o gráfico, a visualização.
+96
+Ele só trouxe o highlight.
+97
+Vou só confirmar aqui.
+98
+Ele não é um visualizador.
+99
+Vou só fechar e abrir de novo o readme.
+100
+Vamos ver se temos aqui outra extensão.
+101
+Vou pegar essa aqui, olha, Mermaid Viewer.
+102
+Enquanto essa vai sendo instalada, eu vou desinstalar essa.
+103
+Muito bem.
+104
+Vou fechar o readme.
+105
+Então, vamos ver aqui. Muito bem.
+106
+Vou fechar o readme.
+107
+Ok, vamos dar uma olhada.
+108
+Vou só reiniciar aqui, conforme ele solicitou.
+109
+Vamos voltar aqui no readme e vamos confirmar.
+110
+Ele tem agora um preview.
+111
+Legal, agora ele permite visualizar
+112
+qual seria o resultado.
+113
+Olha só, o gráfico de Mermaid.
+114
+Vou só colocar um tema.
+115
+Neutro, não.
+116
+Base, dark, melhor.
+117
+Dark ficou melhor.
+118
+Ok, então aqui nós temos
+119
+um diagrama de fluxo de dados e segurança. Bacana.
+120
+Vamos ver aqui se temos outro diagrama.
+121
+Olha só, ele trouxe apenas um.
+122
+Mas é possível solicitar a criação de outros diagramas
+123
+de acordo com a necessidade.
+124
+E aí, utilizando o Mermaid,
+125
+a vantagem nesse caso é justamente ter o diagrama definido como código
+126
+e poder gerar todos esses diagramas utilizando linguagem natural
+127
+fazendo com que as solicitações no prompt
+128
+criem gráficos baseados em código.
+129
+Aí sim, a linguagem artificial do Mermaid. Bacana.
+130
+Espero que você tenha gostado de desenvolver esse workflow novamente.
+131
+Você pode ir refinando as tratativas dos workflows.
+132
+A ideia é essa mesmo.
+133
+Se acessarmos novamente a parte de agentes,
+134
+vou só abrir o painel lateral novamente.
+135
+Olha só, aqui em Customization.
+136
+Caso você queira acessar o workflow global que você criou,
+137
+você pode vir por aqui,
+138
+acessar e modificar as instruções, os passos,
+139
+incluir novos passos,
+140
+e adicionar também ou alterar os critérios de aceite.
+141
+Bom, nós ainda temos muitos assuntos pela frente,
+142
+então te vejo na próxima aula. Até lá.
+
+--- Habilidades (Skills) - Introdução ---
+
+1
+As habilidades, ou skills, são módulos reutilizáveis de conhecimento
+2
+que um determinado agente pode utilizar para executar uma tarefa específica.
+3
+Então, imagine que nós temos um projeto
+4
+e que nós precisamos executar um prompt,
+5
+e o agente de IA, para que ele consiga executar esse prompt de forma adequada,
+6
+é interessante que ele tenha um conhecimento ou uma capacidade especializada.
+7
+E aí, nós podemos plugar essas habilidades, essas skills.
+8
+Por exemplo, se o nosso prompt for para a criação de uma, digamos,
+9
+funcionalidade dentro de um framework Next, por exemplo,
+10
+nós poderíamos ter ali no contexto preparado uma skill de Next.
+11
+Isso vai dar maior capacidade, maior conhecimento, maior contexto
+12
+para que o agente resolva a solicitação
+13
+utilizando essa base de conhecimento prévia, essa skill, essa habilidade.
+14
+E nós podemos ter várias skills no nosso projeto,
+15
+tantas quanto necessárias, e elas podem ser combinadas.
+16
+Por exemplo, nós podemos ter uma skill de testes automatizados,
+17
+uma skill de especialista em banco de dados,
+18
+de Postgre, de Docker, e assim, consecutivamente.
+19
+De modo que cada skill vai ser, na prática, um documento de texto,
+20
+um markdown, que nós vamos colocar ali instruções especializadas
+21
+sobre aquela respectiva habilidade,
+22
+contexto técnico para aquela respectiva habilidade,
+23
+e padrões de implantação, e assim, consecutivamente.
+24
+Tudo o que faz sentido para definir uma especialidade
+25
+do ponto de vista de capacidade e conhecimento,
+26
+tudo isso pode ser adicionado a esse documento
+27
+que vai definir essa respectiva skill.
+28
+Então, se houver um prompt em que aquela skill é necessária,
+29
+basta marcar aquela skill para entrar no contexto da execução daquele prompt.
+30
+Isso vai ser bem útil, vai otimizar muito o resultado dos nossos prompts.
+31
+Então, olha só, se nós temos as regras, os fluxos de trabalho e as skills,
+32
+as habilidades, como que nós podemos entender isso, digamos,
+33
+de uma forma um pouco mais prática, combinando esses recursos,
+34
+pense nas regras como definindo o comportamento do agente.
+35
+Então, imagine um projeto em que nós podemos ter, por exemplo, duas regras.
+36
+A primeira regra é sempre usar TypeScript.
+37
+A segunda regra é sempre adicionar testes.
+38
+Legal, essas duas regras vão definir todo o comportamento do agente.
+39
+Na sequência, nós podemos colocar algumas skills,
+40
+ou seja, todo o conhecimento relacionado ao TypeScript pode ser uma skill.
+41
+Todo o conhecimento relacionado ao Jest pode ser outra skill.
+42
+Todo o conhecimento relacionado ao Next, outra skill.
+43
+Todo o conhecimento relacionado ao Superbase, também outra skill.
+44
+E quando eu falo todo o conhecimento,
+45
+eu estou falando basicamente dos principais pontos
+46
+em relação a essas tecnologias que eu citei.
+47
+Pode ser a documentação, pode ser uma skill já pronta
+48
+pelo fornecedor daquela tecnologia.
+49
+Você viu nas aulas de Superbase que o Superbase disponibiliza
+50
+duas skills para download.
+51
+Então, pode ser que o fornecedor já tenha as skills disponíveis
+52
+para manipulação daquele recurso.
+53
+E você pode ir incrementando,
+54
+você pode baixar isso de repositórios da internet.
+55
+Hoje já é possível no GitHub localizar repositórios só de skills.
+56
+É possível baixar, incorporar no seu projeto, ir melhorando,
+57
+colaborar com as skills que já estão publicadas na internet, enfim.
+58
+Então, as regras definem o comportamento.
+59
+As skills definem ali a capacidade, o conhecimento, as habilidades.
+60
+E uma vez que nós temos as regras e temos as habilidades,
+61
+os workflows, os fluxos de trabalho entram sequenciando as tarefas.
+62
+Então, basicamente, nesse exemplo em que nós temos as regras
+63
+e as habilidades, nós poderíamos ter um workflow
+64
+de adicionar funcionalidade de UI mais back-end.
+65
+Então, ao executar esse workflow, esse fluxo de trabalho,
+66
+basicamente ele teria alguns passos.
+67
+Criar o módulo, criar a API, criar a tela, criar testes, fazer deploy.
+68
+Então, todos esses passos seriam implementados
+69
+com as regras no contexto e com as habilidades no contexto.
+70
+E aí, a depender do prompt, nós vamos selecionar ou a skill,
+71
+ou a habilidade, ou as habilidades necessárias dentro daquela execução.
+72
+Então, realmente é um recurso muito bacana,
+73
+que você vai aprender um detalhe como implementar
+74
+já a partir da próxima aula. Então, até lá!
+
+--- Repositórios de downloads de Habilidades ---
+
+1
+Antes de partirmos para a criação das habilidades,
+2
+é interessante que você saiba que é possível fazer download
+3
+de habilidades prontas para os nossos projetos.
+4
+Todas aquelas habilidades que já são comuns de mercado,
+5
+que envolvem principalmente a utilização técnica das ferramentas,
+6
+tudo isso já está provavelmente disponível
+7
+como habilidade para ser baixada em algum local.
+8
+Então, ao invés de sair criando um skill do zero,
+9
+é interessante verificar se já não existe algo pronto,
+10
+pelo menos para servir como base para as nossas customizações.
+11
+No GitHub, por exemplo, é possível pesquisar por skills AI,
+12
+e ao fazer essa pesquisa, já existem diversos repositórios
+13
+destinados ao versionamento de skills, de habilidades.
+14
+Então, você pode verificar a pontuação dos repositórios
+15
+e testar as skills disponíveis nesses repositórios.
+16
+Existe um repositório em especial,
+17
+que é o Antigravity, Einstein Skills,
+18
+que tem sido utilizado como referência.
+19
+Ele já possui uma quantidade significativa de estrelas,
+20
+já foram feitos diversos forks,
+21
+então, muitas pessoas acompanhando.
+22
+Então, é um repositório que está sendo usado como referência.
+23
+E aqui dentro, se acessarmos o diretório de skills,
+24
+olha só, tem muita coisa, ok?
+25
+Por exemplo, tem uma skill aqui de Next,
+26
+que é a Next Best Practices.
+27
+Então, nós podemos acessar esse skill, olha só.
+28
+É um arquivo MD, um arquivo Markdown.
+29
+Nós podemos ler o conteúdo.
+30
+Basicamente, são detalhes de boas práticas voltadas para o Next.
+31
+Então, nós podemos ler aqui o conteúdo,
+32
+podemos baixar esse arquivo.
+33
+Muito bem, arquivo baixado.
+34
+Aqui no diretório de downloads, olha só,
+35
+eu vou fazer o seguinte, eu vou primeiro abrir o Antigravity,
+36
+e aqui dentro de .agents, skills,
+37
+nós até já temos duas, né?
+38
+Aqui instalamos lá do Super Base.
+39
+Eu vou abrir mais um diretório,
+40
+chamado Next.js,
+41
+Best Practices, muito bem.
+42
+E vou colocar essa skill aqui dentro. Bacana.
+43
+Agora nós temos uma skill de boas práticas para o Next,
+44
+e a partir dessa skill,
+45
+nós podemos citá-la, adicioná-la aos prontos,
+46
+para que o agente de A
+47
+incorpore todas as definições implementadas na skill.
+48
+Então, olha só, vou utilizar aqui o barra,
+49
+vou selecionar a skill,
+50
+aqui está, Next.js, Best Practices,
+51
+e vou pedir para que o agente revise o código
+52
+aplicando as boas práticas definidas na skill.
+53
+Muito bem, vamos encaminhar esse prompt,
+54
+e vamos aguardar a conclusão.
+55
+Ele finalizou a execução propondo um plano de implantação.
+56
+Então, aqui está o plano.
+57
+Revisão e reestruturação do ecossistema, legal, importante.
+58
+Transição de state para o URL.
+59
+Não há pendências críticas de design ou arquitetura
+60
+que impeçam a execução desse plano.
+61
+Então, mudanças propostas, legal,
+62
+nós iríamos analisar ali todos os detalhes, evidentemente,
+63
+adicionar anotações, se fosse o caso.
+64
+Aqui eu vou apenas pedir para que ele execute o plano.
+65
+Gerou a relação de tarefas,
+66
+está executando aqui cada uma das tarefas agora.
+67
+Tarefas concluídas, ele fez a alteração de diversos arquivos,
+68
+eu vou aceitar as alterações.
+69
+Lembrando que, uma vez que está tudo versionado,
+70
+é possível identificar aqui exatamente as mudanças.
+71
+Vou fechar os arquivos,
+72
+não é o objetivo analisar as alterações em código.
+73
+Vamos apenas testar a aplicação.
+74
+Vou abrir um novo terminal, npm run dev.
+75
+Vou abrir a aplicação no navegador.
+76
+A aplicação, ela não está entrando em execução,
+77
+vou só dar uma olhada no console.
+78
+E olha só, está falando que ele deu um erro por conta do middleware.
+79
+No next, na versão que nós estamos utilizando,
+80
+na verdade, ele não espera um arquivo middleware,
+81
+ele espera um arquivo proxy.
+82
+Então, vou só dar uma olhada aqui.
+83
+Então, ficou duplicado, ok?
+84
+Pode ser algo aqui da skill que nós adicionamos
+85
+que ainda não está atualizada para a versão 16.
+86
+Então, mais um ponto importante.
+87
+Vou só pesquisar se tem algo sobre middleware. Não tem.
+88
+Vou só solicitar, olha só.
+89
+Adicione ao arquivo skill.md
+90
+do next.js best-practices.
+91
+A informação de utilização do proxy.ts
+92
+ao invés do middleware.ts.
+93
+Adicione isso como regra.
+94
+Erro identificado no projeto atualmente.
+95
+Vou colocar aqui o erro para dar mais contexto. Muito bem.
+96
+Vou só aguardar.
+97
+Olha só.
+98
+Ele trouxe aqui essa regra para o arquivo.
+99
+Vou aceitar essa alteração. Bacana.
+100
+Ele quer fazer o rename do arquivo,
+101
+mas eu vou fazer o seguinte.
+102
+Eu vou dar um Skype por enquanto, não vou fazer nada.
+103
+Vou falar o seguinte.
+104
+Analise os arquivos.
+105
+E aí eu posso arrastar para cá a referência desses arquivos. Olha só.
+106
+E ajuste para que todo o conteúdo continue funcional em proxy.ts
+107
+de modo a remover o arquivo middleware.ts do projeto.
+108
+Ele está perguntando se eu quero remover.
+109
+Lembra que nós temos uma regra pedindo uma tripla confirmação
+110
+em relação à remoção, não é?
+111
+Então, aqui eu vou falar que sim.
+112
+Sim, confirma a remoção.
+113
+Está pedindo de novo.
+114
+Agora, vamos, finalmente, passar aqui pela tripla confirmação.
+115
+Ele vai executar o comando de remoção.
+116
+Ok, o arquivo foi removido.
+117
+Em tese o proxy.ts tem tudo o que é necessário.
+118
+Vou apenas cancelar aqui a execução.
+119
+Ele quer validar para verificar se não tem nenhum erro no projeto.
+120
+Ok, ele concluiu o trabalho. Vamos testar. Npm run dev.
+121
+Npm run dev. Npm run dev. Npm run dev. Npm run dev. Npm run dev. Npm run dev.
+122
+Vou abrir a aplicação no navegador.
+123
+Legal, dessa vez a aplicação foi iniciada. Vamos avançar.
+124
+Fez o login.
+125
+Aparentemente, tudo funcionando.
+126
+Bom, então, até a próxima aula.
+
+--- [EXTRA] - Repositórios de downloads de Habilidades parte 2 ---
+
+[No transcript available for this lecture]
+
+--- Introdução ---
+
+1
+A partir dessa aula, você vai aprender o que é e como utilizar o MCP.
+2
+Nessa aula, eu vou me concentrar em apresentar para você uma introdução sobre MCP.
+3
+Então, vamos lá.
+4
+MCP, em inglês, é o acrônimo de Model Context Protocol.
+5
+Em português, seria algo como Protocolo de Contexto do Modelo.
+6
+O MCP é um protocolo criado para padronizar a comunicação
+7
+entre os modelos de inteligência artificial e ferramentas externas
+8
+que são adicionadas ou necessárias dentro dos nossos projetos.
+9
+Na prática, o MCP funciona como uma ponte,
+10
+permitindo que os agentes de IA se conectem a serviços como bancos de dados,
+11
+APIs, sistemas de arquivos, plataformas como o Notebook LM,
+12
+ou o Stripe, ou o Gmail, o GitHub, Superbase, e por aí vai.
+13
+Existem diversas ferramentas hoje que já disponibilizam um MCP Server
+14
+e que, portanto, podem ser consumidas por meio desse protocolo.
+15
+Isso está cada vez mais comum e é já uma prática de mercado
+16
+desenvolver as ferramentas e disponibilizar esse recurso também.
+17
+E aí o que acontece?
+18
+Em vez de cada ferramenta, cada uma dessas ferramentas que eu trouxe aqui como exemplo,
+19
+ao invés de cada uma delas disponibilizar uma integração específica
+20
+para cada um dos modelos de IA disponíveis no mercado,
+21
+nós temos vários, lembra?
+22
+Só da Antrock nós temos o Opus, o Sone, o Hyco.
+23
+Quando falamos ali do Gemini, nós temos o Flash.
+24
+Enfim, são muitos modelos à disposição.
+25
+Então, ao invés de essas ferramentas implementarem integrações específicas para cada modelo,
+26
+a comunidade se reuniu em torno do desenvolvimento de um protocolo de comunicação
+27
+que definisse um padrão único de comunicação.
+28
+Então, atendendo ao protocolo de comunicação,
+29
+tanto faz o modelo que está ali por trás do agente, ok?
+30
+Dessa forma, o agente consegue descobrir as ferramentas que estão disponíveis,
+31
+que estão integradas via MCP,
+32
+e ele consegue solicitar informações a essas ferramentas
+33
+para executar as ações dentro dessas ferramentas.
+34
+Por exemplo, o Notebook LM, caso você não conheça, é uma ferramenta do Google,
+35
+onde nós temos um banco de dados multimodal.
+36
+Nós podemos subir diferentes arquivos, diferentes dados para o Notebook LM,
+37
+e podemos, a partir do Notebook LM, por exemplo,
+38
+fornecer uma base de contexto para os agentes
+39
+que estão integrados via MCP com a nossa conta no Notebook LM.
+40
+Mas não para por aí, né?
+41
+Essa integração, ela não libera apenas contexto,
+42
+ela também permite acesso a ferramentas,
+43
+como, por exemplo, uma vez que o MCP está configurado
+44
+entre o Antigroup e o Gmail,
+45
+o nosso agente, ele ganha a capacidade
+46
+de utilizar os serviços dentro do Gmail.
+47
+Ele consegue, por exemplo, disparar e-mails automaticamente.
+48
+Como nós temos diferentes plataformas, diferentes serviços,
+49
+e estamos trabalhando ora com contexto, ora com ações,
+50
+ferramentas que permitem realizar ações,
+51
+então, para que tudo isso seja possível de forma organizada,
+52
+tendo em vista que, por trás de um agente,
+53
+nós ainda podemos ter vários modelos de inteligências artificiais,
+54
+então, com todo esse cenário,
+55
+é necessário um protocolo padronizado,
+56
+justamente para eliminar essa complexidade de integração direta.
+57
+Então, o protocolo MCP vai regular tudo isso para nós.
+58
+Arquiteturalmente, o modelo, ele conversa com um cliente MCP, ok?
+59
+Então, nós temos um modelo conversando com um cliente MCP,
+60
+que, por sua vez, se comunica com um servidor MCP
+61
+responsável por dar acesso ao serviço externo que estamos consumindo.
+62
+Nesse exemplo, eu expandi um pouquinho o notebook ADM,
+63
+nessa imagem, apenas para demonstrar
+64
+que cada ferramenta vai ter o seu MCP server ali,
+65
+e que o MCP client do Antigroup
+66
+vai se comunicar com esse MCP server da ferramenta.
+67
+Isso permite com que a IA utilize conhecimento persistente,
+68
+documentos, workflows e recursos externos
+69
+durante a geração das respostas que ela pretende dar para o usuário final.
+70
+Então, isso torna os agentes muito mais capazes,
+71
+isso expande a atuação do agente dentro de outras ferramentas,
+72
+recursos externos conectados ao nosso projeto.
+73
+Isso torna os agentes mais capazes com o maior nível de contextualização,
+74
+além de estar integrado a ferramentas
+75
+que fazem parte do sistema produtivo do negócio.
+76
+Então, apenas entendendo o fluxo,
+77
+funciona mais ou menos assim na prática.
+78
+Primeiro, nós, desenvolvedores, vamos encaminhar o prompt.
+79
+O Antigraft vai encaminhar esse prompt para o agente.
+80
+O agente monta o contexto inicial,
+81
+inclusive pode ser um plano de implantação,
+82
+uma relação de tarefas, por exemplo,
+83
+o agente monta esse contexto inicial e chama a LLM.
+84
+A LLM, você já sabe, temos várias à disposição,
+85
+ele vai chamar aquela para a qual o prompt foi direcionado.
+86
+A LLM, ela analisa o prompt,
+87
+e ela consegue identificar se precisa de contexto
+88
+ou de ferramentas externas.
+89
+Ela solicita, por sua vez, ao agente,
+90
+o uso de alguma tool via MCP.
+91
+Caso ela identifique que é necessário
+92
+alguma comunicação externa via MCP,
+93
+ela repassa essa informação para o agente.
+94
+O agente vai executar o MCP Client do Antigraft,
+95
+e é o MCP Client, por sua vez,
+96
+que vai se comunicar com o MCP Server.
+97
+O MCP Server acessa o serviço externo,
+98
+nesse exemplo, o Notebook LLM,
+99
+de modo que o serviço externo vai retornar os dados,
+100
+eventualmente vai retornar algum contexto também,
+101
+e o MCP Server devolve tudo isso para o MCP Client.
+102
+O MCP Client devolve tudo isso para o agente,
+103
+o agente injeta as informações recebidas em um novo contexto
+104
+e direciona isso para a LLM.
+105
+E a LLM gera a resposta final,
+106
+com todo aquele conteúdo necessário.
+107
+Ela retorna isso para o agente, retorna essa resposta para o agente,
+108
+e o agente retorna isso para o usuário final.
+109
+Então, essa é a comunicação que acontece
+110
+quando nós estamos trabalhando com o protocolo MCP.
+111
+O protocolo em si é implementado entre o MCP Client e o MCP Server.
+112
+A comunicação entre agente e modelo
+113
+já é uma dinâmica que acontece dentro do AntiGraft
+114
+ou de qualquer outra ferramenta que trabalhe dessa forma,
+115
+permitindo a integração via MCP.
+116
+O protocolo, a implementação do protocolo está nesse caminho aqui,
+117
+entre o Client e o Server.
+118
+Apenas expondo aqui dentro da ferramenta, nesse caso do AntiGraft,
+119
+que o agente tem acesso a se comunicar com ferramentas externas
+120
+por meio desse Client que, por sua vez, implementa o protocolo.
+121
+Então, essa dinâmica traz muita produtividade
+122
+na hora da integração das ferramentas,
+123
+fazendo com que o nosso agente se torne capaz
+124
+de executar aquilo que estiver disponível em ferramentas externas.
+125
+Vai depender do que as ferramentas externas disponibilizam de acesso
+126
+por meio do seu MCP Server.
+127
+Bom, agora que você já tem uma ideia inicial,
+128
+vamos partir para a prática.
+129
+Então, até a próxima aula.
+
+--- Servidores MCP no Google Antigravity IDE ---
+
+1
+Para ter acesso à relação de servidores MCP configurados no projeto,
+2
+basta clicar em Opções Adicionais e, na sequência, MCP Servers. O que acontece?
+3
+Essa listagem traz uma relação de MCP Servers,
+4
+ou seja, de servidores MCP externos,
+5
+que podem ser adicionados ao nosso projeto.
+6
+Essa listagem é carregada por padrão na instalação do Antwerp IDE.
+7
+Então, meio que é um setup inicial.
+8
+Mas aqueles serviços que não estão listados aqui
+9
+e que possuem um MCP Server,
+10
+eles podem ser adicionados manualmente.
+11
+Então, nas próximas aulas,
+12
+nós vamos configurar tanto um MCP Server dessa listagem,
+13
+previamente carregado,
+14
+quanto um MCP Server de um recurso que não está listado aqui.
+15
+Apenas para que você entenda que é possível
+16
+fazer a configuração de forma manual, tá bom?
+17
+Mas repare que na instalação do Antwerp IDE,
+18
+ele já traz uma série de serviços
+19
+que podem ser facilmente plugados ao nosso projeto
+20
+para fornecer contexto ou para fornecer funcionalidade
+21
+para os nossos agentes de inteligência artificial. Então, olha só.
+22
+Aqui nós temos, por exemplo, o MCP Server do Firebase.
+23
+Firebase, caso você não conheça,
+24
+é um serviço do Google, ele funciona como um ecossistema
+25
+que permite bancos de dados, permite autenticação de usuários,
+26
+storage de arquivos, execução de funções,
+27
+enfim, ele funciona como um back-end as a service,
+28
+muito parecido com o Super Base.
+29
+Então, é um recurso bem interessante.
+30
+Outro recurso que nós temos aqui,
+31
+olha só, o próprio GitHub, né?
+32
+Nós podemos configurar o MCP do GitHub,
+33
+dando contexto para o nosso agente de inteligência artificial.
+34
+Então, lá no GitHub, eu poderia,
+35
+no repositório do projeto em questão,
+36
+configurar as milestones e as ishas
+37
+e ter acesso a tudo isso diretamente pelo prompt do projeto.
+38
+Aqui nós temos também o Stripe.
+39
+Olha só, o Stripe é um gateway de pagamento.
+40
+Então, se você for desenvolver um SaaS,
+41
+tiver ali planos de assinatura,
+42
+você pode utilizar o Stripe
+43
+para fazer toda a parte financeira da sua aplicação.
+44
+O Redis, que é um banco de dados em memória,
+45
+o MongoDB, que é um banco de dados não relacional, o Notion.
+46
+O Notion funciona como uma base de dados,
+47
+de documentos e tarefas.
+48
+Então, nós podemos utilizá-lo
+49
+como uma espécie de base de conhecimento.
+50
+Facilmente, podemos configurar o MCP server
+51
+e o nosso agente terá acesso ao contexto do Notion
+52
+e poderá executar ações dentro do Notion também.
+53
+Olha só, o Paypal, o Heroku, o SupaBasic,
+54
+que, inclusive, estamos utilizando no nosso projeto,
+55
+como um back-end da service,
+56
+tanto para as tabelas de banco de dados
+57
+quanto para a parte de autenticação. E por aí vai. O Sonar Cube.
+58
+O Sonar Cube serve para fazer a análise de código,
+59
+para verificar se existem bugs, vulnerabilidades,
+60
+cobertura de testes, os code smells, enfim.
+61
+Imagine o nosso agente integrado com o Sonar Cube
+62
+analisando o nosso projeto.
+63
+Existem diversos servidores já pré-configurados
+64
+aqui no Antigravide IDE.
+65
+Nós vamos trabalhar com alguns
+66
+e eu tenho certeza que,
+67
+ao entender o potencial do MCP,
+68
+deste protocolo que fornece contexto para os modelos,
+69
+eu tenho certeza que, ao entender isso,
+70
+você vai enxergar um grande potencial
+71
+para as suas aplicações.
+72
+Por isso que os players que trabalham com desenvolvimento,
+73
+estão criando plataformas de desenvolvimento,
+74
+fugindo de tocar no código
+75
+e avançando no sentido de integrar aplicações
+76
+por meio de agentes.
+77
+Então realmente é um recurso muito poderoso,
+78
+você precisa conhecer
+79
+e neste módulo você vai ter a oportunidade de conhecer.
+80
+Então eu te encontro na próxima aula. Até lá.
+
+--- Entendendo o Runtime dos MCP Servers ---
+
+1
+Antes de avançarmos,
+2
+é importante que você compreenda um conceito fundamental
+3
+em relação ao funcionamento dos MCP Servers.
+4
+Acontece que quando nós configuramos um MCP Server,
+5
+o agente passa a utilizar o MCP Client,
+6
+que está disponível no host,
+7
+ou seja, no computador onde o antigraphic está em execução,
+8
+e o MCP Client é o responsável
+9
+por iniciar e estabelecer a comunicação com o MCP Server.
+10
+Então, ele faz essa ponte.
+11
+Porém, para que isso aconteça,
+12
+o MCP Server precisa ser executado em um ambiente de execução,
+13
+ou seja, em um runtime.
+14
+Em outras palavras, o MCP Server precisa existir
+15
+como um processo ativo no sistema operacional
+16
+para que o agente consiga utilizar as suas ferramentas e recursos.
+17
+Esse runtime pode ser executado de diferentes formas.
+18
+Nós podemos utilizar a plataforma Node,
+19
+ou o Python, ou o Docker,
+20
+ou trabalhar com binários desenvolvidos em Go,
+21
+Rust, C++, enfim.
+22
+Existem aqui diferentes formas de provisionar um ambiente,
+23
+um espaço de execução para o MCP Server.
+24
+Inclusive, olha só, utilizando a AWS Lambda,
+25
+ou o Cloudflare Worker, enfim, ou o próprio Java,
+26
+nós precisamos disponibilizar esse ambiente de execução.
+27
+De modo geral, o Docker é o runtime mais indicado.
+28
+Isso porque o Docker possibilita o isolamento do ambiente,
+29
+justamente o ponto principal do Docker,
+30
+esse isolamento do ambiente,
+31
+e também por evitar conflitos e dependências.
+32
+Nós podemos ter vários servidores MCP.
+33
+Então, com o Docker, cada MCP vai ter,
+34
+além do isolamento do ambiente,
+35
+a possibilidade de dentro desse ambiente ter dependências específicas
+36
+para cada um dos servidores MCP.
+37
+Ele também facilita a padronização entre diferentes computadores.
+38
+Então, por exemplo,
+39
+um MCP desenvolvido aqui para um determinado recurso externo,
+40
+se ele utilizar o Docker, por exemplo, para o GitHub,
+41
+que inclusive é o caso,
+42
+facilmente esse MCP pode ser utilizado
+43
+em diferentes computadores, por diferentes programadores,
+44
+porque o ambiente virá baseado em uma imagem
+45
+que será comum e isolada.
+46
+Então, todos os desenvolvedores envolvidos
+47
+terão condições de executar aquele MCP Server
+48
+independente do sistema operacional,
+49
+porque a execução será isolada a partir de um container
+50
+baseado em uma imagem pré-definida.
+51
+Então, isso ajuda muito.
+52
+Isso, consequentemente, traz produtividade,
+53
+traz uma forma de execução mais simples
+54
+desses serviços externos de contextos e ferramentas.
+55
+Embora o Docker seja a recomendação,
+56
+acontece que não é obrigatório
+57
+que seja utilizado o Docker para o MCP Server.
+58
+Vai depender da maturidade.
+59
+Você vai notar que algumas ferramentas
+60
+vão disponibilizar o MCP Server,
+61
+e já com o Docker, o Manticraft, por exemplo,
+62
+você vai ver isso acontecendo quando instalarmos o GitHub.
+63
+E esses serviços externos,
+64
+se eles estiverem maduros o suficiente,
+65
+muito provavelmente o que eles irão disponibilizar
+66
+serão configurações do MCP Server
+67
+já utilizando o Docker.
+68
+Portanto, na prática,
+69
+muitos dos MCP Servers modernos,
+70
+incluindo, como eu comentei, o MCP Server do GitHub,
+71
+já utilizam o Docker como runtime padrão.
+72
+Isso significa que o MCP Client
+73
+executa o container Docker
+74
+responsável por iniciar o MCP Server. Percebe?
+75
+No meu ambiente, aqui no meu computador,
+76
+eu já estou com o Docker instalado.
+77
+Se eu acessar aqui o terminal,
+78
+pode ser pelo Antigraph mesmo,
+79
+se eu executar o comando docker //version,
+80
+repare que o comando é reconhecido no sistema operacional.
+81
+Então, antes de avançar para a próxima aula,
+82
+reserve um tempo para fazer a instalação do Docker
+83
+no seu ambiente de trabalho, ok?
+84
+Para fazer a instalação do Docker,
+85
+basta acessar o site do Docker.
+86
+Olha só, docker.com.
+87
+Na página inicial, podemos acessar Docker Desktop.
+88
+E aqui teremos a opção de download do Docker
+89
+de acordo com o sistema operacional.
+90
+No caso do Windows, é bem simples,
+91
+basicamente, next, next, next.
+92
+No Mac também é bastante facilitado.
+93
+No caso do Linux, dependendo da distro,
+94
+existem ali alguns passos.
+95
+Nessa aula, ou neste curso,
+96
+eu não vou cobrir a instalação do Docker.
+97
+Esse processo de instalação do Docker
+98
+já é um pouco mais complicado,
+99
+mas o processo de instalação do Docker
+100
+já é amplamente coberto pela documentação oficial,
+101
+e também você pode assistir a alguns vídeos na internet, né?
+102
+Procurar algumas referências de vídeos
+103
+para realizar a instalação.
+104
+Então, antes de continuar para a próxima aula,
+105
+certifique-se de que o comando
+106
+docker version está funcionando no seu sistema operacional
+107
+e está retornando à versão do Docker.
+108
+Sendo assim, eu te encontro na próxima aula. Até lá.
+
+--- Configurando o MCP Server do GitHub ---
+
+1
+Nessa aula, nós faremos o setup do MCP Server do GitHub.
+2
+A ideia é que o agente do AntiGraft consiga sair aqui do contexto,
+3
+do ambiente local, e ir até o GitHub
+4
+para encontrar seja contexto, seja funcionalidades.
+5
+Então, o protocolo MCP vai permitir que o nosso agente faça
+6
+essas ações em fontes externas, em aplicações externas.
+7
+Para que essa comunicação seja possível,
+8
+é necessário criar no GitHub um personal access token.
+9
+Esse access token vai ser cadastrado aqui no AntiGraft,
+10
+e é dessa forma que o agente fará a autenticação lá no GitHub.
+11
+E, uma vez que a autenticação é feita,
+12
+também é necessário liberar, autorizar
+13
+o que esse agente poderá fazer dentro do GitHub,
+14
+dentro do nosso espaço, no caso, do nosso repositório
+15
+ou dos repositórios em questão, ok?
+16
+Bom, então, vamos lá. Voltando no AntiGraft,
+17
+lá na opção de MCP Servers,
+18
+o GitHub já vem aqui por padrão,
+19
+e nós podemos clicar na opção Install.
+20
+Ele solicita, então, o personal access token.
+21
+Então, nós devemos agora acessar o nosso repositório lá no GitHub.
+22
+Na verdade, é a nossa conta, no GitHub.
+23
+Então, aqui em Profile, eu vou na opção Settings.
+24
+Na sequência, em Developer Settings,
+25
+Personal Access Token,
+26
+Find Grand Tokens.
+27
+E aí, vou gerar aqui um novo token.
+28
+Ele solicita uma confirmação.
+29
+Nesse caso, ele está pedindo a minha senha.
+30
+Vou inserir aqui. Muito bem.
+31
+Vamos dar um nome para o nosso token.
+32
+Vou chamar de AntiGraft-mcp-server.
+33
+Podemos adicionar uma descrição,
+34
+tempo de expiração,
+35
+quais repositórios poderão ser acessados.
+36
+Então, se serão só os repositórios públicos
+37
+ou todos os repositórios,
+38
+ou mesmo um repositório específico.
+39
+Nesse caso, eu vou usar o repositório de Antigraft.
+40
+Nesse caso, eu vou selecionar aqui o app Orçamento Pessoal.
+41
+Como é um repositório específico,
+42
+eu posso, inclusive, customizar aqui o nome do token.
+43
+Vou colocar, então, traço app Orçamento Pessoal. Bacana.
+44
+Então, apenas o único repositório.
+45
+E aqui as permissões.
+46
+Nesse repositório, o que nós podemos fazer? É via agente. Olha só.
+47
+Podemos acessar a parte de actions,
+48
+administração, secrets dos agentes, variáveis,
+49
+os metadados dos artefatos.
+50
+Enfim, uma série de coisas podem ser configuradas aqui.
+51
+Eu vou selecionar as issues. Bacana.
+52
+Olha só, pull request, variáveis, webhooks, workflows. Legal.
+53
+Essa lista, claro, ela vai aumentando
+54
+conforme novas funcionalidades vão sendo disponibilizadas.
+55
+E uma vez que nós selecionamos aqui o que fazer,
+56
+qual o nível de acesso?
+57
+Então, por exemplo, issues, eu posso ler e escrever?
+58
+Vou falar que sim, ok?
+59
+Metadados, nesse caso, está bloqueado aqui somente leitura.
+60
+Vou gerar esse token.
+61
+Tela de confirmação.
+62
+Lembrando que a qualquer momento nós podemos remover
+63
+ou adicionar os tokens.
+64
+Aqui ele reclamou por conta do tamanho do nome do token.
+65
+Então, vou simplificar as coisas. Legal.
+66
+Vamos tentar criar novamente.
+67
+Ok, token criado.
+68
+Vou copiar o token e voltando no Notebrift,
+69
+eu vou adicionar o token aqui na instalação.
+70
+Ele está salvando a configuração. Muito bem.
+71
+O GitHub, o MCP server do GitHub
+72
+já está habilitado no projeto.
+73
+Repare que aqui nós temos acesso à configuração,
+74
+temos acesso também a algumas informações de ferramentas.
+75
+Por essa aula, o nosso objetivo foi apenas esse setup inicial.
+76
+Na próxima aula, vamos entrar um pouco mais nos detalhes e no uso. Então, até lá.
+
+--- Gerenciamento de MCP Servers configurados no projeto ---
+
+1
+Na aula anterior, se você se lembra bem,
+2
+nós fizemos o setup do MCP Server do GitHub.
+3
+Nessa aula, a ideia é que você entenda
+4
+aonde é possível gerenciar essa configuração
+5
+do MCP Server do GitHub
+6
+e também dos demais MCP Servers
+7
+que serão configurados no projeto, ok?
+8
+Então, o primeiro passo é acessar as opções adicionais
+9
+na sequência MCP Servers,
+10
+e basta clicar na opção Manage MCP Servers.
+11
+Aqui, repare que nós temos o total de ferramentas
+12
+que foram configuradas apenas para o GitHub.
+13
+Essa informação vai totalizar todas as ferramentas
+14
+de todos os MCP Servers configurados.
+15
+É que só no GitHub, olha só,
+16
+nós temos 43 ferramentas de 43 disponíveis,
+17
+todas habilitadas.
+18
+Porém, repare um detalhe importante.
+19
+Se você se lembra bem,
+20
+lá no GitHub, quando nós criamos o Personal Access Token,
+21
+nós colocamos um acesso bem restrito, apenas as issues.
+22
+Então, voltando aqui na opção Find Granted Tokens,
+23
+acessando o token que foi criado e configurado lá no MCP,
+24
+repare que aqui as únicas permissões que nós temos
+25
+é a leitura de metadados e a leitura e a escrita de issues.
+26
+Então, nesse caso, acaba sendo ruim
+27
+deixar todas essas ferramentas habilitadas
+28
+porque o agente vai identificar
+29
+que existe essa ferramenta à disposição,
+30
+mas ele não terá acesso a essa ferramenta
+31
+porque nós não configuramos o acesso.
+32
+Por mais que ele consiga fazer a autenticação no GitHub,
+33
+ele não vai conseguir ter acesso a usar recursos
+34
+que não estão relacionados com a escrita e a leitura de issues.
+35
+Então, por isso, olha só, eu vou desabilitar algumas ferramentas,
+36
+todas aquelas que não estão relacionadas com issues.
+37
+Então, essa primeira eu vou retirar.
+38
+Adicionar comentários e issues, eu vou deixar.
+39
+Essa relacionada a pull request, eu vou retirar.
+40
+Olha só. Assinar Copilot para issue,
+41
+eu vou deixar, está relacionado com issue.
+42
+Criação de brain, eu vou retirar.
+43
+Criar ou atualizar arquivo, eu vou retirar.
+44
+Pull request, criar repositório,
+45
+remover arquivo, fork, pegar commits,
+46
+conteúdos de arquivos, labels,
+47
+todas essas que não estão relacionadas com issue,
+48
+eu vou removendo aqui.
+49
+Olha só, aqui nós temos justamente leitura e escrita de issues. Vou deixar.
+50
+Listagem de branch não é o caso, listagem de commits.
+51
+Olha só, listar tipos de issues, eu vou deixar.
+52
+Acredito que o acesso que foi configurado
+53
+tenha acesso a essa informação também.
+54
+Provavelmente, né?
+55
+Aquele acesso padrão de metadados.
+56
+Então, vou deixar.
+57
+Lista de issues também.
+58
+O demais, vou retirando.
+59
+Aqui é a pesquisa de issues, vou deixar.
+60
+Muito bem.
+61
+Então, no final, de todas as ferramentas disponíveis no MCP,
+62
+eu vou deixar aqui o link para você ver
+63
+como é que funciona o MCP,
+64
+de todas as ferramentas disponíveis no MCP,
+65
+eu vou utilizar apenas oito.
+66
+E aí, eu vou evitar com que o agente acabe se confundindo
+67
+tentando utilizar ferramentas das quais ele não tem acesso, ok?
+68
+Claro que eu poderia voltar lá no GitHub
+69
+e liberar acesso se fosse esse o caso.
+70
+O importante aqui é que você entenda que,
+71
+uma vez que você tem acessos específicos,
+72
+é importante no MCP definir apenas as ferramentas
+73
+que estarão liberadas para aqueles respectivos acessos.
+74
+Senão, o agente vai acabar retornando o erro de acesso
+75
+ao tentar realizar essas ações, ok?
+76
+Então, configuração feita. Nesse momento,
+77
+temos aqui apenas oito de 43 ferramentas ativas, né?
+78
+43, no caso, do GitHub.
+79
+Por essa aula, é isso.
+80
+Na próxima aula, retomamos
+81
+utilizando agora, de fato, o MCP do GitHub
+82
+fazendo com que o nosso agente interaja lá no GitHub
+83
+por meio de linguagem natural sendo disparada no prompt do projeto.
+84
+Então, até a próxima aula.
+
+--- Consultando Issues do repositório ---
+
+1
+Nessa aula, nós vamos adicionar um prompt
+2
+que fará com que o agente se comunique com o GitHub.
+3
+A ideia é verificar se existe alguma isho disponível no repositório.
+4
+Então, aqui no repositório App Orçamento Pessoal,
+5
+na parte de ishos,
+6
+repare que, nesse momento, não existe nenhuma isho aberta, ok?
+7
+Mas vamos confirmar, vamos deixar o agente fazer essa validação.
+8
+Verifique se existe alguma isho aberta
+9
+para este projeto no GitHub.
+10
+Vou encaminhar o prompt, vamos aguardar.
+11
+Muito bem, o agente identificou
+12
+que essa ação deve ser feita via a ferramenta MCP,
+13
+lá com o GitHub.
+14
+Ele está perguntando se eu quero habilitar essa comunicação só desta vez
+15
+ou se eu quero habilitar sempre.
+16
+Ou, se não, se eu quero falar para o agente fazer outra coisa.
+17
+Eu vou falar que eu quero sempre habilitar,
+18
+vou clicar em Submit, vamos aguardar.
+19
+Olha só, constei o repositório no GitHub
+20
+e não foram encontradas ishos abertas ou fechadas cadastradas. Show de bola.
+21
+Então, o que eu vou fazer agora?
+22
+Eu já coloquei a aplicação em execução
+23
+e existe aqui na aplicação um comportamento
+24
+que tem me incomodado bastante.
+25
+Olha só, vou abrir aqui a aplicação.
+26
+Vou só acessá-la no navegador. Aqui está.
+27
+Se você se lembra bem,
+28
+quando nós adicionamos transações de despesas,
+29
+nós precisamos colocar um valor negativo.
+30
+Em algum momento, eu defini uma regra
+31
+que deu a entender que esse seria o comportamento.
+32
+Mas, na prática, essa experiência eu tenho achado muito ruim.
+33
+Então, o que eu vou fazer?
+34
+Eu vou abrir uma isha para corrigir esse comportamento.
+35
+Não é um bug, porque em algum local eu defini essa condição.
+36
+É mais um refactor, um ajuste mesmo que deve ser feito.
+37
+Então, aqui eu vou fazer o seguinte.
+38
+Eu vou simular a inclusão de uma despesa.
+39
+Por exemplo, no curso de Antigrav,
+40
+uma despesa de R$30.
+41
+Vou colocar aqui normal,
+42
+como qualquer pessoa colocaria, direto o valor.
+43
+Vou colocar como Educação, Despesa,
+44
+e ao clicar em Salvar, temos o erro.
+45
+O que eu fiz? Apenas para agilizar o andamento da aula.
+46
+Eu descrevi nesse texto.
+47
+Vou colocar aqui no chat, eu já explico o porquê.
+48
+Eu coloquei o seguinte texto.
+49
+Ao acessar a rota, e aí é essa rota aqui,
+50
+e clicar em Mais, Nova Transação, esse botão,
+51
+ao tentar inserir uma transação do tipo despesa,
+52
+com o valor sem o sinal de negativo,
+53
+o sistema apresenta o erro
+54
+Receitas devem ser positivas ou zero
+55
+e despesas devem ser negativas ou zero.
+56
+E aí eu disse, nesse caso, que eu quero corrigir esse comportamento,
+57
+fazendo com que valores de despesas
+58
+não precisem ser informados com o sinal negativo na frente.
+59
+Após corrigir esse comportamento,
+60
+reveja as regras do workspace do projeto
+61
+para identificar onde esse problema foi gerado.
+62
+E me aponte o local e me oriente como ajustar,
+63
+levando em consideração este novo comportamento esperado.
+64
+Eu escrevi o texto de forma corrida,
+65
+apontando ali o máximo de contexto possível,
+66
+e eu estou trazendo para um outro assistente de inteligência artificial,
+67
+poderia ser aqui o próprio AntiGraph,
+68
+mas eu estou trazendo aqui apenas para demonstrar
+69
+que eu posso solicitar para que um outro assistente
+70
+ajuste o texto a seguir
+71
+para otimizar a criação de uma issue
+72
+que será implementada por meio de um agente de IA. Olha só.
+73
+Dessa forma, a minha expectativa
+74
+é ter um texto com maior coerência, com maior concordância
+75
+e quebrando esse texto em etapas.
+76
+Olha só que bacana.
+77
+Muito bem.
+78
+Eu vou copiar o título,
+79
+então, corrigir comportamento de validação
+80
+de transação de despesa.
+81
+Vou colocar aqui uma nova issue no projeto.
+82
+Esse será o título.
+83
+Vou copiar o conteúdo.
+84
+Vou colocar aqui, vou apenas revisar rapidamente.
+85
+Contexto, ao acessar a rota, tal, tal, tal.
+86
+O sistema atualmente exige que a transação do tipo despesa
+87
+seja informada manualmente com um sinal, ok.
+88
+Exemplo, então, valor informado sem resultado,
+89
+erro de validação, mensagem exibida.
+90
+O problema, a experiência atual não é intuitiva para o usuário,
+91
+pois ele precisa conhecer previamente a regra. Legal.
+92
+O comportamento esperado é que o usuário possa informar as despesas
+93
+utilizando apenas valores positivos.
+94
+O sistema seja responsável
+95
+por converter automaticamente o valor para negativo. Bacana.
+96
+Para receitas, valores positivos devem continuar sendo aceitos.
+97
+O sistema deve armazenar receitas com valores positivos, ok.
+98
+Na sequência, o usuário deve poder informar.
+99
+Ele trouxe alguns exemplos
+100
+e o sistema converte automaticamente para negativo.
+101
+Exemplos, tipo despesa, ele trouxe mais um exemplo aqui.
+102
+Objetivo da implementação,
+103
+remover a necessidade de informar manualmente o sinal,
+104
+ajustar validações relacionadas,
+105
+garantir consistência entre UI, regras de negócio e persistência,
+106
+revisar possíveis impactos em.
+107
+Olha só, ele pede para revisar, ok.
+108
+Revisão das rules do workspace.
+109
+Após implantar a correção,
+110
+revisar as rules do workspace do projeto para indicar
+111
+onde a regra atual de obrigatoriedade de valor negativo foi definida,
+112
+qual camada está incorporando esse comportamento.
+113
+Informar claramente o arquivo local responsável pela regra atual,
+114
+o motivo do problema ter sido gerado,
+115
+quais ajustes devem ser realizados
+116
+para alinhar as rules ao novo comportamento esperado.
+117
+Garantir que as rules futuras deixem explícito
+118
+que o usuário informa valores absolutos para despesas
+119
+e o sistema é responsável pela conversão interna do sinal.
+120
+Muito bem, então, vou criar essa isha.
+121
+Legal. Voltando no Antigravity, vou fazer aquela mesma pergunta. Vou até copiar.
+122
+Vou colocar aqui, vou pedir para verificar
+123
+se existe alguma isha aberta.
+124
+E olha só, meio que ele trouxe aqui, né,
+125
+que ele verificou novamente e que não existem ishos abertas,
+126
+o que é estranho, né?
+127
+Acredito que ele tenha usado aqui o contexto do chat.
+128
+Então, vou colar aqui novamente a pergunta,
+129
+mas antes eu vou colocar um barra clear
+130
+para que ele não considere o conteúdo prévio do chat,
+131
+para que ele realmente realize, né,
+132
+uma nova pesquisa lá no GitHub.
+133
+Vamos dar uma olhada se assim vamos obter um bom resultado?
+134
+Legal. Agora sim, né, ele desprezou o contexto do chat,
+135
+o que já estava aqui,
+136
+e ele localizou uma nova isha. Muito bem.
+137
+Na próxima aula, nós vamos utilizar todo esse contexto da isha
+138
+para, de fato, implementar o desenvolvimento.
+139
+Eu não vou fazer nessa aula para não ficar tão extenso.
+140
+Então, eu te encontro na próxima aula. Até lá.
+
+--- Implementando a solução de uma Issue no projeto via MCP Server do GitHub ---
+
+1
+Agora que o agente do AntiGravity já consegue
+2
+acessar o contexto do GitHub por meio do protocolo MCP,
+3
+nessa aula, o nosso objetivo vai ser implementar
+4
+o que foi solicitado na isho 1.
+5
+Então, eu vou fazer o seguinte.
+6
+Eu vou entrar com o comando barra clear
+7
+e vou falar, implemente a demanda descrita na isho.
+8
+Vou colocar aqui a isho.
+9
+Consulte novamente o GitHub
+10
+e acesse o conteúdo na íntegra.
+11
+Muito bem. Como ele fez um resumo,
+12
+eu não quero que ele utilize o resumo aqui do chat
+13
+para realizar a implantação.
+14
+Quero que realmente ele vá na origem, pegue todo o contexto da origem.
+15
+Eu vou falar o seguinte.
+16
+Gere um plano de implantação
+17
+e não execute o plano.
+18
+Aguarde minha revisão.
+19
+Legal. Vou disparar esse prompt.
+20
+Vamos aguardar com que o agente realize a tarefa.
+21
+Muito bem. O agente está tentando executar os testes.
+22
+Vou falar que ele pode sempre executar esse comando,
+23
+seguir por este caminho.
+24
+Ele está dando esse erro de execução de alguns comandos no terminal
+25
+então ele procura outras formas de executar o comando.
+26
+Vamos avançar aqui.
+27
+Ok. O comando dessa vez foi executado. Vamos aguardar.
+28
+Muito bem. Então, ele criou o plano de implantação.
+29
+Vou fazer uma revisão rápida para que a aula não fique tão extensa.
+30
+Vou, inclusive, finalizar aqui o servidor da aplicação.
+31
+Vou limpar o terminal.
+32
+E olha só. Plano de implantação,
+33
+correção da validação de transação de despesa.
+34
+Ok. Análise do estado atual e causa raiz, validação rigorosa,
+35
+impacto na UI, regras de negócio, proposta de solução.
+36
+Então, aqui ele descreve todos os detalhes,
+37
+o que vai ser modificado.
+38
+Ok. Eu vou proceder aqui com a execução.
+39
+Lembrando que o nosso objetivo é muito mais as funcionalidades do Antigraph
+40
+do que necessariamente o resultado na aplicação.
+41
+Lembrando que na atividade do dia a dia
+42
+você deve ler, interagir e ajustar
+43
+os planos de implantação de acordo com cada necessidade.
+44
+Aqui eu vou seguir. Vamos proceder com a implantação.
+45
+O agente está tentando executar o link.
+46
+Vou falar que ele pode sempre executar utilizando este comando. Vamos aguardar.
+47
+Ok. O agente finalizou as alterações.
+48
+Eu vou aceitar todas as alterações.
+49
+Lembrando que nós ainda temos a camada de vacinamento do Git
+50
+para validar cada uma dessas alterações.
+51
+Não é o caso. Vou apenas fechar aqui todas as abas
+52
+e vou fazer um teste no navegador.
+53
+Vou executar o npm run dev.
+54
+Vamos conferir ali na navegação se o resultado esperado foi alcançado.
+55
+A aplicação está em execução.
+56
+Vamos tentar cadastrar uma transação.
+57
+Vou colocar aqui o curso do Antigrav.
+58
+30, educação, despesa, data.
+59
+Muito bem. Deu certo.
+60
+Vamos tentar agora uma positiva.
+61
+Olha só. Vou colocar aqui como salário,
+62
+consultoria, duas horas, 220. Receita. Muito bem.
+63
+Entrada realizada com sucesso.
+64
+Podemos finalizar por aqui esse ajuste.
+65
+E no Antigrav, eu posso interagir com a ish.
+66
+Eu posso falar, por exemplo,
+67
+faça um resumo dos ajustes
+68
+e adicione o resumo
+69
+como comentário na ish.
+70
+E aí, para ter certeza, vou passar o nome dela.
+71
+Vou só copiar aqui.
+72
+Muito bem.
+73
+Vamos aguardar com que a gente faça essa interação.
+74
+Novamente, ele identificou esse recurso aqui no MCP, essa tool.
+75
+Vou falar que eu quero manter habilitada aqui e sempre usá-la.
+76
+Olha só. Adicionei o resumo dos ajustes como comentário.
+77
+Bacana. Vamos dar uma olhada.
+78
+Acessando a ish lá no repositório do projeto.
+79
+Vou atuarizar a página.
+80
+Muito bem. Temos aqui, então, o comentário.
+81
+Então, ajustes implementados com sucesso, segue o resumo,
+82
+camada de regras, validação de entrada,
+83
+qualidade estética e verificação.
+84
+Lembrando que eu poderia ter solicitado primeiro o resumo,
+85
+poderia ter solicitado para revisar o resumo,
+86
+antes de, de fato, enviar o resumo para a ish.
+87
+De qualquer forma, na ish,
+88
+eu ainda tenho acesso a fazer os ajustes, se necessário. Combinado?
+89
+Bom, espero que você tenha entendido o poder do MCP,
+90
+o poder desse protocolo,
+91
+que faz com que os nossos agentes consigam acessar contextos externos.
+92
+Não só contexto, mas também ativar ações
+93
+dentro dessas ferramentas externas.
+94
+Isso é muito bacana, isso é muito poderoso
+95
+e traz muita produtividade para o dia a dia.
+96
+Então, até a próxima aula.
+
+--- Arquivo de configuração (JSON) dos MCP Servers ---
+
+1
+Nessa aula, eu vou apresentar para você
+2
+o arquivo de configuração dos MCP Servers.
+3
+É um arquivo JSON, e ele guarda todas as configurações
+4
+de todos os MCP Servers configurados no ambiente.
+5
+Para ter acesso a este arquivo,
+6
+nós vamos acessar a opção MCP Servers,
+7
+Manage MCP Servers,
+8
+e vamos clicar na opção View Raw Config.
+9
+Então, esse é o arquivo de configuração.
+10
+Então, nós temos aqui no MCP Store
+11
+uma série de servidores MCP pré-configurados
+12
+que estão sendo disponibilizados pelo time do Antigravity.
+13
+Então, são MCPs que estão sendo adicionados aqui por demanda.
+14
+Conforme o Antigravity vai sendo desenvolvido,
+15
+novos servidores MCP vão sendo adicionados
+16
+ou removidos dessa listagem.
+17
+E quando eles são instalados,
+18
+todas as configurações ficam neste arquivo,
+19
+que está lá no diretório C2.0, no meu caso,
+20
+e users, nome do usuário, ponto de MNI,
+21
+config, MCP, config, JSON.
+22
+Então, repare que esse arquivo de configuração
+23
+é para o usuário, ele é global.
+24
+Essa configuração de MCP está disponível para todos os projetos
+25
+que forem abertos dentro do Antigravity, ok?
+26
+Legal. E aí, quando nós instalamos o GitHub, por exemplo,
+27
+repare que ele trouxe aqui uma série de informações.
+28
+Ele trouxe, por exemplo, qual o comando utilizado
+29
+para a execução do runtime.
+30
+Então, repare que o GitHub utiliza o Docker.
+31
+E quais são os argumentos que são encaminhados
+32
+para a execução de um container dentro do Docker.
+33
+Então, basicamente, o que nós temos aqui é o seguinte.
+34
+Quando o agente do Antigravity entende que tem que usar uma tool do GitHub,
+35
+ele, basicamente, sobe um container no Docker.
+36
+E aqui estão os parâmetros, olha só.
+37
+Então, basicamente, o comando é esse aqui.
+38
+Ele passa como variável de ambiente
+39
+esta variável, a GitHub Personal Access Token,
+40
+e o valor dela está definido aqui abaixo,
+41
+que é o Access Token que nós criamos lá no GitHub,
+42
+na conta do usuário.
+43
+Na sequência, ele encaminha a imagem
+44
+que vai ser utilizada para subir o container.
+45
+Então, essa imagem, olha só,
+46
+é a imagem do MCP Server do GitHub, ok?
+47
+Então, o agente, se comunicando com o MCP Client do Antigravity,
+48
+entende que precisa subir esse ambiente de execução, este runtime,
+49
+para que o agente consiga se comunicar, de fato, com o GitHub. Bacana, não é?
+50
+E nesse arquivo também estão listados, ou listadas,
+51
+as tools que estão desabilitadas
+52
+por conta do permissionamento que foi aplicado a este token.
+53
+Cada MCP configurado dentro desse arquivo
+54
+vai ter ali as suas particularidades, evidentemente.
+55
+Mas essa é uma estrutura básica de um MCP Server.
+56
+E é por aqui que nós vamos gerenciar todos os servidores MCP,
+57
+sejam instalados aqui pelo MCP Store do Antigravity IDE,
+58
+sejam configurados manualmente.
+59
+Uma possibilidade que nós temos, não é?
+60
+De adicionar diretamente nesse arquivo
+61
+uma configuração para um MCP Server
+62
+que não esteja listado aqui no MCP Store do Antigravity.
+63
+Bom, então, agora que você já conhece este arquivo,
+64
+você já sabe que ele centraliza as configurações
+65
+dos servidores MCP, que é um arquivo global.
+66
+A configuração dos servidores MCP estarão disponíveis
+67
+para todos os projetos abertos no Antigravity,
+68
+agora que você já tem essa consciência
+69
+e que você também já fez a instalação de um MCP Server,
+70
+nesse caso, do GitHub.
+71
+A partir da próxima aula, vamos entender
+72
+como que nós podemos adicionar um MCP Server de forma manual,
+73
+um que não esteja listado aqui nesta relação.
+74
+Então, até a próxima aula.
+
+--- Configurando manualmente o MCP Server do NotebookLM ---
+
+1
+Nessa aula, nós vamos agregar mais uma ferramenta externa
+2
+ao nosso projeto, utilizando o protocolo MCP.
+3
+A ideia é agregar o notebook.lm.
+4
+O notebook.lm é uma ferramenta criada pelo Google
+5
+e ela funciona como um repositório de conhecimento.
+6
+Todo esse conhecimento é montado de forma personalizada.
+7
+Ou seja, nós, enquanto usuários do notebook.lm,
+8
+temos condições de subir arquivos para um notebook.
+9
+Então, nós podemos subir diversos tipos de arquivos,
+10
+arquivos multimodais, arquivos de texto,
+11
+PDFs, páginas web, enfim.
+12
+É possível fazer upload de diversos arquivos.
+13
+E, com isso, nós vamos montando uma base de conhecimento.
+14
+O notebook.lm possui dentro dele um assistente de IA
+15
+que utiliza um modelo, nesse caso, o modelo do Gemini,
+16
+já que o notebook.lm também é da Google.
+17
+Então, o que acontece?
+18
+Esse assistente fará pesquisas,
+19
+porém, utilizando como base
+20
+a base de conhecimento personalizada do usuário.
+21
+Então, quando nós solicitamos algo para o assistente de IA,
+22
+ele vai, primeiro, consultar prioritariamente
+23
+o que está na base de conhecimento.
+24
+E aí, coletando esses dados personalizados,
+25
+que foram cadastrados pelo próprio usuário, por nós,
+26
+esse assistente vai formar a resposta.
+27
+Ele vai utilizar um modelo externo, como eu comentei, o Gemini,
+28
+apenas para melhorar a resposta dada.
+29
+Mas a fonte da informação
+30
+terá como prioridade a base de conhecimento personalizada.
+31
+Então, essa estratégia do notebook.lm
+32
+é semelhante a um HAG.
+33
+Em que a base de conhecimento prioritária
+34
+é uma base, digamos, privada.
+35
+As nossas informações, em um determinado espaço,
+36
+sendo utilizadas como preferência
+37
+na hora de formar as respostas do assistente de IA.
+38
+Nessa aula, nós traremos, portanto, essa integração.
+39
+Nosso objetivo é fazer a configuração do MCP.
+40
+E, na próxima aula, vamos explorar um pouco
+41
+a funcionalidade do notebook.lm.
+42
+Um detalhe legal é que, como eu comentei,
+43
+muitas ferramentas disponibilizam servidores MCP,
+44
+mas que ainda não estão disponíveis para serem instaladas
+45
+aqui por meio da relação de MCP servers do AntiGraft.
+46
+Mas isso não impede a configuração.
+47
+É só entender qual é o ambiente de execução do MCP server
+48
+e, na sequência, fazer a configuração manual disso
+49
+no arquivo mcp-config.json.
+50
+E, claro, nós podemos utilizar o próprio agente de IA do AntiGraft
+51
+para gerar essa configuração para nós.
+52
+Então, eu já criei um prompt,
+53
+eu deixei pronto para agilizar um pouco o andamento da aula,
+54
+e a solicitação que eu vou fazer é essa, olha só.
+55
+Atue como especialista em configuração do AntiGraft IDE
+56
+e no Model Context Protocol.
+57
+Preciso integrar o servidor MCP do notebook.lm
+58
+ao meio ambiente do AntiGraft.
+59
+Me forneça o bloco JSON exato
+60
+para adicionar nas configurações do mcp-config.json
+61
+esse arquivo aqui, ok? Do AntiGraft.
+62
+Então, vou disparar essa requisição,
+63
+vamos aguardar a resposta.
+64
+Legal. Então, ele trouxe aqui as instruções
+65
+para integrar o MCP server,
+66
+adiciona o seguinte bloco
+67
+dentro do objeto mcp-servers.
+68
+Então, este é o bloco.
+69
+Aqui ele trouxe uma versão completa, né?
+70
+Já dentro do mcp-servers.
+71
+Se observarmos esse arquivo,
+72
+o objeto em questão é esse aqui.
+73
+É que neste momento nós já temos
+74
+o GitHub mcp-server configurado.
+75
+Então, o que eu vou fazer é o seguinte.
+76
+Pode ser aqui embaixo mesmo, vou adicionar uma vírgula
+77
+e vou adicionar esse conteúdo
+78
+referente ao notebook.lm.
+79
+Eu só vou colocar aqui embaixo. Bacana.
+80
+O que é importante para nós aqui neste momento?
+81
+Repare que o runtime, o ambiente de execução
+82
+do mcp-server é o npx.
+83
+Então, nós precisamos ter o node e o npm
+84
+disponíveis aqui no nosso ambiente, né?
+85
+Onde o AntiGraft está em execução.
+86
+Porque o agente,
+87
+quando ele iniciar o mcp-client,
+88
+o mcp-client vai basicamente executar o npx
+89
+traço y passando este pacote.
+90
+Que é o notebook.lm traço mcp-latest.
+91
+Então, essa execução gera o mcp-server
+92
+que, por sua vez,
+93
+vai se conectar com o notebook.lm.
+94
+Ok? Então, essa é a configuração básica.
+95
+E aqui, mais um detalhe importante no caso do notebook.lm.
+96
+Ele não possui um access token.
+97
+Ele, na verdade, depende de uma autenticação via sessão.
+98
+Então, nós precisamos fazer com que
+99
+o próprio mcp-server estabeleça uma sessão
+100
+com o notebook.lm.
+101
+Essa é uma característica da integração com o notebook.lm.
+102
+Cada serviço externo tem a sua respectiva configuração.
+103
+Aqueles que são mais maduros
+104
+vão utilizar o personal access token
+105
+e o ambiente de execução será o Docker.
+106
+Mas, nas ferramentas que ainda não estão nesse nível de maturidade,
+107
+nós temos ali algumas particularidades
+108
+e precisamos entender isso.
+109
+Lembrando que o próprio chat assistente de IA do Antigravity
+110
+pode nos ajudar a realizar essas configurações, tá bom?
+111
+Então, ele mesmo fala, olha só, na autenticação.
+112
+Como o notebook.lm não possui uma API oficial pública,
+113
+o servidor utiliza automação de navegador em segundo plano
+114
+para interagir com o serviço.
+115
+Após salvar o arquivo de configuração
+116
+e o Antigravity carregar o servidor,
+117
+você precisará instruir o seu assistente de IA
+118
+com o comando como fazer login no notebook.lm.
+119
+Então, eu já vou até copiar aqui, olha só.
+120
+Para abrir a janela do navegador
+121
+e realizar a autenticação em sua conta Google.
+122
+Os cookies da sessão serão salvos localmente
+123
+para que o login não precise ser repetido constantemente.
+124
+Bacana. Então, eu vou só fechar o Antigravity.
+125
+Eu já salvei o arquivo, vou abrir novamente
+126
+para garantir que tudo será recarregado.
+127
+Podemos acessar a relação de servidores MCP.
+128
+Olha só o gerenciamento.
+129
+Então, repare que nesse momento nós temos aqui ao lado o notebook.lm
+130
+com 20 tools de 20 disponíveis.
+131
+Bacana. Ao todo, temos então 28 tools habilitadas,
+132
+sendo oito do GitHub.
+133
+Legal. Vou deixar todas ativadas.
+134
+E agora que o servidor aqui já foi reconhecido,
+135
+a configuração já foi reconhecida,
+136
+eu vou fazer o seguinte, eu vou voltar aqui no assistente.
+137
+Vou falar, fiz a configuração do mcp do notebook.lm.
+138
+Agora preciso, e vou colar, fazer login no notebook.lm.
+139
+Olha só, ele está tentando utilizar uma tool do notebook.lm
+140
+que é a Get Health.
+141
+Vou dizer que sim, pode utilizar sempre.
+142
+Essa aqui é a resposta da execução da tool,
+143
+então volta aqui em formato JSON também.
+144
+Agora ele quer utilizar outra tool,
+145
+que é a de reautenticação.
+146
+Muito provavelmente eu já fiz a autenticação anteriormente,
+147
+então ele vai tentar reautenticar.
+148
+Vou falar que sim.
+149
+No seu caso, ele deve tentar fazer uma autenticação inicial.
+150
+Vai abrir um navegador, vai pedir e-mail e senha,
+151
+é só seguir as tools para de fato estabelecer a autenticação.
+152
+Olha só, aqui no meu caso ele abriu o navegador.
+153
+Basicamente é essa tela.
+154
+Então, sendo uma nova autenticação ou uma reautenticação,
+155
+nós vamos passar por esse fluxo.
+156
+Então, vou entrar com o e-mail.
+157
+Vou aprovar o meu smartphone.
+158
+Muito bem, então ele fez com sucesso a autenticação.
+159
+O processo de login e autenticação foi concluído.
+160
+Os próximos passos.
+161
+Para começar a utilizar o notebook.lm no fluxo de trabalho,
+162
+obtenha um link de compartilhamento de um caderno existente
+163
+no painel do Google Notebook.lm
+164
+e adicione o caderno à biblioteca local do MCP,
+165
+utilizando as ferramentas notebook.lm com a URL obtida.
+166
+Então, nós vamos precisar fazer um cadastro.
+167
+Mas isso é um assunto para a próxima aula.
+168
+Nessa aula, o objetivo foi configurar o serviço externo
+169
+por meio da inclusão manual,
+170
+da configuração lá no arquivo de configuração dos servidores MCP
+171
+e ter, basicamente, uma noção de como funciona o notebook.lm,
+172
+qual é a ideia dele, basicamente, um HAG
+173
+para que seja possível utilizar uma base de conhecimento personalizada,
+174
+específica do nosso domínio, da nossa empresa, do nosso projeto.
+175
+Bom, então, até a próxima aula.
+
+--- Interagindo com o NotebookLM via MCP ---
+
+1
+Na aula anterior, nós integramos o Quantigraph com o Notebook LM por meio do protocolo MCP.
+2
+Nessa aula, vamos apenas executar alguma tool para verificar essa integração funcionando na prática.
+3
+Vale reforçar que o nosso curso não é de Notebook LM, portanto eu não vou entrar no detalhe de como
+4
+utilizar o Notebook LM.
+5
+Eu vou apenas deixar agora uma rápida introdução sobre essa ferramenta.
+6
+Então, aqui no quadrante à esquerda, nós podemos importar os arquivos.
+7
+Podemos fazer uploads de arquivos, criando a nossa base de conhecimento.
+8
+Ao centro, nós temos o chat e por meio do assistente de IA, que por trás utiliza o modelo do Gemini,
+9
+nós temos condições de fazer consultas sobre a nossa base de conhecimento.
+10
+E ainda com essa base de conhecimento, nós temos algumas ações prontas aqui no estúdio
+11
+basicamente prontas, pré-definidas, que vão utilizar essa base de conhecimento para fazer um resumo em áudio,
+12
+fazer uma apresentação de slides, resumo em vídeo, mapa mental e por aí vai.
+13
+Então, nós temos aqui um estúdio já com recursos bastante interessantes
+14
+e a possibilidade de utilizar inteligência artificial sobre a nossa base de conhecimento
+15
+com tipos diferentes de arquivos, arquivos em diferentes formatos.
+16
+Legal. Agora, vamos fazer o seguinte, voltando aqui no AntiGraphic,
+17
+eu vou entrar com um prompt básico, apenas para que seja possível fazer um resumo do nosso projeto
+18
+e criar um novo caderno lá no Notebook LM.
+19
+Então, eu vou copiar um texto que eu já deixei pronto.
+20
+Olha só, vou colocar aqui. Qual a ideia?
+21
+Analise este projeto e gere um resumo comercial com no máximo 300 caracteres.
+22
+O resumo deve destacar o principal valor da aplicação, utilizar linguagem comercial persuasiva,
+23
+ser claro para potenciais clientes não técnicos e focar em benefícios e não em detalhes técnicos.
+24
+Após gerar o resumo, solicite minha confirmação antes de criar um novo notebook no Notebook LM
+25
+e enviar o conteúdo. Então, voltando aqui, olha só, no Notebook LM, eu vou apenas retornar.
+26
+Repare que nós temos um caderno aqui sem título, que foi criado a princípio para testes.
+27
+Eu vou excluir, não vou deixar nada aqui. Muito bem. E eu vou entrar com esse prompt.
+28
+Então, vamos dar uma olhada. Aqui está a proposta de resumo comercial.
+29
+286 caracteres. Conquiste a liberdade financeira com controle total e descomplicado.
+30
+Monitore receitas, despesas e metas mensais através de gráficos claros que facilitam suas decisões.
+31
+Uma plataforma moderna e outra segura projetada para valorizar seu dinheiro e garantir a
+32
+tranquilidade do seu futuro.
+33
+Legal. Então, ele está pedindo a confirmação, deseja aprovar este resumo comercial.
+34
+Então, vou dizer aqui que sim. Crie um novo caderno no Notebook LM e adicione este resumo.
+35
+Vou enviar. Olha só, ele respondeu aqui para mim que, na verdade, eu preciso criar um novo caderno.
+36
+Na sequência, eu preciso clicar em compartilhar e copiar o link. Colocar o link aqui.
+37
+Muito bem. Então, vamos fazer isso. Voltando aqui, vou criar um novo caderno.
+38
+Vou chamar de app orçamento pessoal. Muito bem. Vamos aqui na opção de compartilhar.
+39
+Aqui está restrito qualquer pessoa com link. Vou copiar. É isso. É isso mesmo.
+40
+Como eu estou com autenticação, eu vou fazer o seguinte. Eu vou deixar restrito mesmo.
+41
+Em tese, a autenticação deveria ser suficiente para realizar as operações aqui. Vamos testar.
+42
+Olha só. Vou colocar o link. Vou colocar acesso restrito. Porém, já estou autenticado via MCP.
+43
+Vamos ver se é o suficiente. Cole a URL. Ele ainda vai pedir para adicionar o caderno ou o Notebook
+44
+à biblioteca local do MCP.
+45
+Então, ele deve solicitar alguns dados de cadastro. Olha só. Nome do caderno.
+46
+Ele já até carregou. Orçamento pessoal, resumo comercial, a descrição, os tópicos, caso de uso.
+47
+Então, ele ficou bem específico para o resumo comercial, mas poderia ser um caderno com diversas informações
+48
+de diferentes fontes, sendo trabalhados por pessoas diferentes da equipe.
+49
+Poderiam aqui ter várias informações. Então, na verdade, eu vou deixar um pouco mais genérico.
+50
+Eu vou copiar aqui essas instruções.
+51
+Então, nome do caderno. App, orçamento pessoal. Bacana. Descrição. Contém a base de conhecimento do
+52
+app orçamento pessoal.
+53
+Tópicos, finanças pessoais, controle de orçamento, resumo comercial. Legal.
+54
+Casos de uso, consultar argumentos de vendas, apresentar benefícios da plataforma, revisar propostas
+55
+de valor. Bacana.
+56
+Então, eu vou criar um caderno mais genérico. Olha só. Ele quer executar a tool do notebook. Vou falar que sim.
+57
+E aí, um caderno mais genérico, como eu comentei, pode ser compartilhado entre diferentes pessoas da equipe.
+58
+Aqui ele está querendo agora adicionar a fonte. A fonte, olha só, é o resumo.
+59
+Então, é como se eu estivesse fazendo um upload de um arquivo do tipo texto. Vou falar que sim.
+60
+Muito bem. Segundo o agente, ele fez a inclusão. Vamos voltar aqui no navegador. Vou atualizar.
+61
+Olha só. Texto coletado. Bacana. Aqui está o resumo. Excelente.
+62
+Como eu comentei, nós podemos retornar aqui na parte de fontes e seguir subindo uma série de arquivos.
+63
+E da mesma forma que nós conseguimos enviar fontes aqui do nosso projeto via MCP direto para o notebook LM,
+64
+nós podemos, a partir do AntiGraft, consultar informações que estão aqui dentro por meio de uma
+65
+consulta feita pelo próprio assistente do notebook LM.
+66
+A dica é que você realize alguns testes solicitando ações dentro do notebook LM por meio do AntiGraft.
+67
+O próprio chat, por meio do agente, vai te orientar em relação às tools que serão utilizadas e o que
+68
+é possível fazer ou não.
+69
+Tendo em mente que no notebook LM você poderá ter a sua base de dados personalizada.
+70
+A partir desse entendimento, você já sabe o que pode fazer com que o seu agente vá até o notebook LM
+71
+para encontrar mais contexto.
+72
+Bacana, não é? Espero que você tenha gostado de adicionar mais essa ferramenta.
+73
+Repare que esse tipo de implementação torna a produtividade, o nosso trabalho, extremamente poderoso.
+74
+Cada vez mais as integrações são mais consistentes e é uma tendência de mercado.
+75
+Cada vez mais as plataformas devem liberar os seus servidores MCP para que toda essa comunicação
+76
+possa se dar por meio de uma linguagem natural,
+77
+tendo um agente de inteligência artificial por trás, fazendo a parte complexa, a parte difícil.
+78
+Então, até a próxima aula.
+
+--- Agradecimento ---
+
+1
+Parabéns, você acaba de concluir este curso.
+2
+Eu quero deixar aqui os meus agradecimentos.
+3
+Eu espero que você tenha gostado de participar deste curso,
+4
+que ao longo da jornada você tenha aprendido coisas novas
+5
+e que já esteja cheio de ideias para começar a aplicar no seu dia a dia.
+6
+Eu vou deixar um convite aqui para você,
+7
+para que você me siga nas redes sociais,
+8
+para ficar por dentro das novidades.
+9
+E, claro, espero te encontrar por aí, quem sabe em um novo curso. Até a próxima!

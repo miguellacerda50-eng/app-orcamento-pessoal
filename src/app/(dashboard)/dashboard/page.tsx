@@ -1,5 +1,4 @@
 import { getTransactions } from '@/actions/transactions'
-import { getCategories } from '@/actions/categories'
 import { SummaryCards } from '@/components/dashboard/SummaryCards'
 import { CashFlowChart } from '@/components/dashboard/CashFlowChart'
 import { CategoryDistribution } from '@/components/dashboard/CategoryDistribution'
@@ -8,10 +7,7 @@ import { PlusCircle, Wallet } from 'lucide-react'
 import Link from 'next/link'
 
 export default async function DashboardPage() {
-  const [transactions, categories] = await Promise.all([
-    getTransactions(),
-    getCategories(),
-  ])
+  const transactions = await getTransactions()
 
   // Cálculos consolidados
   const totalIncome = transactions
